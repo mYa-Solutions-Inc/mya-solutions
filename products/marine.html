@@ -38,12 +38,36 @@
   <div class="intro">
     <p class="lede">Jean held a 6-DOF underwater vehicle on station — within ±0.5 m depth and 1.0 m horizontal drift — for 363 s against a 120 s criterion. Median drift 0.042 m. Five of five designed fails correct. No training, no learned policy.</p>
     <div class="actions">
-      <a class="btn btn--primary" href="#proof">See the results ↓</a>
+      <a class="btn btn--primary" href="#inspection-mission">September: the inspection mission ↓</a>
+      <a class="btn btn--line" href="#proof">August results</a>
       <a class="btn btn--line" href="../evidence/reports/marine-sil-methodology-v1.0.pdf" target="_blank" rel="noopener">Read the methodology (PDF)</a>
       <a class="btn btn--line" href="#honest">The test that lied</a>
     </div>
   </div>
 
+
+  <!-- September 2026: full inspection mission -->
+  <section id="inspection-mission" class="band band--steel" data-summary="Marine SIL, September 2026: Building Autonomy That Cannot Lie To You. An autonomous underwater vehicle planned and flew a complete ten-phase structure inspection with no human in the loop: 328 s, clean exit, an 8.871 m vertical sweep at 98.7% of commanded rate, refusals at the floor margin and at a position-budget expiry predicted to within 0.1 s. Every number scored against simulator ground truth. Over a hundred defects found and published, including a decision layer that scored every option identically. Simulation of a tidal current at Carquinez Strait; no physical hardware.">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">New · September 2026 · Inspection mission</p>
+        <h2 class="title">A full inspection, <span class="em">no human in the loop.</span></h2>
+        <p class="lede">A BlueROV2-class vehicle, in a simulation of a tidal current at the west end of Carquinez Strait, descends, measures the water's density from its own rate of rise, transits to a structure, holds station against the current, sweeps 8.871 m up the structure face, refuses to go below its floor margin and records what it therefore did not inspect, then returns home and surfaces. Ten phases. 328 seconds. Clean exit.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">98.7%</div><div class="stat-l">Of commanded sweep rate — 8.871 m at 0.0789 m/s against 0.0800</div></div>
+        <div class="stat"><div class="stat-n">0.075 m</div><div class="stat-l">Median error tracking a moving depth setpoint — max 0.149 m</div></div>
+        <div class="stat"><div class="stat-n">0.348 m</div><div class="stat-l">Maximum lateral excursion during the sweep</div></div>
+        <div class="stat"><div class="stat-n">0.1 s</div><div class="stat-l">Refusal at position-budget expiry, against the time predicted before flight</div></div>
+      </div>
+      <p class="body mt-3">Every number is scored against simulator ground truth, not against what the vehicle believes. Five predictions are printed above every flight; two failed in the final run, and both failures are in the report. Getting here surfaced over a hundred defects — among them a decision layer that, for the life of the project, scored every option identically while a stale regulator flew the vehicle. It is published in full, because underwater no one is watching to notice.</p>
+      <p class="body">Before moving the autonomy onto the vehicle, we measured the control path over a wide-area link: p99 latency was 152% of the 100 ms loop budget. The loop cannot close remotely. Autonomy has to live on the vehicle — the local-first thesis, measured rather than asserted.</p>
+      <div class="actions mt-2">
+        <a class="btn btn--on-dark" href="../evidence/reports/marine-sil-inspection-methodology-2026-09.pdf" target="_blank" rel="noopener">Read the September report (PDF)</a>
+      </div>
+      <p class="fine mt-3">Gazebo + ROS 2 · BlueROV2-class vehicle · site from USGS WRI 92-4064. This is a SIL. No physical hardware. It does not claim real-hardware performance.</p>
+    </div>
+  </section>
 
   <!-- B05 Headline stats, on steel -->
   <section id="the-same-engine-pointed-at-the-deep" class="band band--steel">
