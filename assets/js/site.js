@@ -156,7 +156,7 @@
           '<button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>' +
         "</div>" +
       "</div></header>" +
-      (back && !isHome ? '<div class="back-line"><a href="' + url(back) + '">← ' + esc(backLabel) + "</a></div>" : "") +
+      (back && !isHome ? '<nav class="back-line" aria-label="Back"><a href="' + url(back) + '">← ' + esc(backLabel) + "</a></nav>" : "") +
       '<div class="drawer-scrim" data-close></div>' +
       '<nav class="drawer" id="drawer" aria-label="Menu"><div class="drawer-head"><span class="wordmark">mYa Solutions</span><button class="drawer-close" type="button" aria-label="Close menu" data-close>×</button></div>' + drawerHTML() + "</nav>";
   }
@@ -276,6 +276,20 @@
     });
   });
 
+  /* ── Wide tables and code scroll sideways on phones: make them reachable by keyboard ── */
+  var regionNames = {};
+  document.querySelectorAll(".table-wrap, pre.terminal").forEach(function (el) {
+    if (el.hasAttribute("tabindex")) return;
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("role", "region");
+    var cap = el.querySelector("caption");
+    var sec = el.closest("section, article");
+    var head = sec && sec.querySelector("h2, h3");
+    var base = cap ? cap.textContent.trim() : ((el.tagName === "PRE" ? "Code" : "Table") + (head ? ": " + head.textContent.trim() : ""));
+    regionNames[base] = (regionNames[base] || 0) + 1;
+    el.setAttribute("aria-label", regionNames[base] > 1 ? base + " (" + regionNames[base] + ")" : base);
+  });
+
   /* ── Window frames: wrap photographs so they sit inside the glass ──── */
   document.querySelectorAll(".duotone").forEach(function (el) {
     if (el.querySelector(":scope > .duo-clip")) return;
@@ -307,12 +321,30 @@
   if (!body.hasAttribute("data-no-jean")) load(url("assets/js/jean-config.js"), function () { load(url("assets/js/jean.js")); });
 })();
 
-/* Motion inside windows: hero films play muted and looping, unless the visitor prefers reduced motion. */
+/* Motion inside windows: hero films play muted and looping, unless the visitor prefers reduced
+   motion. Every film gets a pause control (WCAG 2.2.2 Pause, Stop, Hide); the choice is remembered. */
 (function () {
   var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var paused = false;
+  try { paused = localStorage.getItem("mya-motion") === "paused"; } catch (e) {}
   document.querySelectorAll(".window-scene video").forEach(function (v) {
     v.muted = true;
-    if (reduced) { v.removeAttribute("autoplay"); v.pause(); return; }
-    var p = v.play(); if (p && p.catch) p.catch(function () {});
+    var pane = v.closest(".window-pane");
+    var btn = document.createElement("button");
+    btn.type = "button"; btn.className = "window-motion";
+    function set(stop) {
+      if (stop) { v.pause(); } else { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      btn.setAttribute("aria-pressed", stop ? "true" : "false");
+      btn.setAttribute("aria-label", stop ? "Play the film" : "Pause the film");
+      btn.innerHTML = stop ? '<span class="i-play" aria-hidden="true"></span>' : '<span class="i-pause" aria-hidden="true"></span>';
+    }
+    btn.addEventListener("click", function () {
+      var stop = !v.paused ? true : false;
+      try { localStorage.setItem("mya-motion", stop ? "paused" : "playing"); } catch (e) {}
+      set(stop);
+    });
+    if (pane) pane.appendChild(btn);
+    v.removeAttribute("autoplay");
+    set(reduced || paused);
   });
 })();
