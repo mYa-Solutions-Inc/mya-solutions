@@ -2,7 +2,7 @@
 # DESCRIPTION: The site-index.json in this folder is a build-time copy made by deploy.sh
 #   from assets/jean/site-index.json (the real source); never commit it or local secrets.
 
-/site-index.json
+site-index.json
 .env
 node_modules/
 *.log

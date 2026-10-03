@@ -7,4 +7,4 @@
                  visitors to the closest part of the site and says plainly
                  that full answers are offline.
    ═══════════════════════════════════════════════════════════════════════ */
-window.JEAN_ENDPOINT = "";
+window.JEAN_ENDPOINT = "https://jean-site-41235504052.us-west1.run.app";
