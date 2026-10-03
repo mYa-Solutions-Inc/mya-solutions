@@ -1,7 +1,7 @@
 {
  "version": 1,
  "site": "https://myasolutions.org",
- "generated": "2026-10-03T20:06:38Z",
+ "generated": "2026-10-03T22:50:38Z",
  "pages": [
   {
    "path": "index.html",
@@ -474,6 +474,14 @@
    "text": "Physical Intelligence · Marine · 6-DOF station keeping\nSteady in the deep."
   },
   {
+   "id": "inspection-mission",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "A full inspection, no human in the loop.",
+   "summary": "Marine SIL, September 2026: Building Autonomy That Cannot Lie To You. An autonomous underwater vehicle planned and flew a complete ten-phase structure inspection with no human in the loop: 328 s, clean exit, an 8.871 m vertical sweep at 98.7% of commanded rate, refusals at the floor margin and at a position-budget expiry predicted to within 0.1 s. Every number scored against simulator ground truth. Over a hundred defects found and published, including a decision layer that scored every option identically. Simulation of a tidal current at Carquinez Strait; no physical hardware.",
+   "text": "New · September 2026 · Inspection mission\nA full inspection, no human in the loop.\nA BlueROV2-class vehicle, in a simulation of a tidal current at the west end of Carquinez Strait, descends, measures the water's density from its own rate of rise, transits to a structure, holds station against the current, sweeps 8.871 m up the structure face, refuses to go below its floor margin and records what it therefore did not inspect, then returns home and surfaces. Ten phases. 328 seconds. Clean exit.\n98.7%\nOf commanded sweep rate — 8.871 m at 0.0789 m/s against 0.0800\n0.075 m\nMedian error tracking a moving depth setpoint — max 0.149 m\n0.348 m\nMaximum lateral excursion during the sweep\n0.1 s\nRefusal at position-budget expiry, against the time predicted before flight\nEvery number is scored against simulator ground truth, not against what the vehicle believes. Five predictions are printed above every flight; two failed in the final run, and both failures are in the report. Getting here surfaced over a hundred defects — among them a decision layer that, for the life of the project, scored every option identically while a stale regulator flew the vehicle. It is published in full, because underwater no one is watching to notice.\nBefore moving the autonomy onto the vehicle, we measured the control path over a wide-area link: p99 latency was 152% of the 100 ms loop budget. The loop cannot close remotely. Autonomy has to live on the vehicle — the local-first thesis, measured rather than asserted.\nRead the September report (PDF)\nGazebo + ROS 2 · BlueROV2-class vehicle · site from USGS WRI 92-4064. This is a SIL. No physical hardware. It does not claim real-hardware performance."
+  },
+  {
    "id": "the-same-engine-pointed-at-the-deep",
    "path": "products/marine.html",
    "page": "Marine — Physical Intelligence",
@@ -742,16 +750,24 @@
    "path": "evidence/reports.html",
    "page": "Methodology reports — Evidence",
    "heading": "Six domains. One architecture. All independently verifiable.",
-   "summary": "The reports  Marine · New · August 2026 Station-Keeping SIL — Methodology & Results v1.0 Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impos…",
-   "text": "The reports\nSix domains. One architecture. All independently verifiable.\nMarine · New · August 2026\nStation-Keeping SIL — Methodology & Results v1.0\nJean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.\nRead the PDF\nOpens in the browser · no registration · 9 pages\nCybersecurity · BethanyShell\nRed-team methodology report\nCALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.\nView methodology\nOpens in DocSend · quick email registration\nRobotics · 7-DOF arm\nManipulation SIL — no training data\nStandard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.\nView SIL methodology\nOpens in DocSend · quick email registration\nEducation · Parlier, CA\nLive classroom pilot\nA +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.\nRead the testimonial\nOpens in DocSend\nMedicine · NEJM\nClinical diagnostics — local, private\nSeven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.\nWatch the cases\nYouTube playlist\nNavigation · Oakland\nAutonomous navigation — no learned policy\n5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.\nRead the Ground results\nRequest raw data\nDefense: the five validation runs are published on the\nJean for Defense\npage, with the full methodology in the cybersecurity report above."
+   "summary": "The reports  Marine · New · September 2026 Building Autonomy That Cannot Lie To You A full ten-phase structure inspection with no human in the loop: an 8.871 m sweep at 98.7% of commanded rate, refusals predicted to within 0.1 s, every num…",
+   "text": "The reports\nSix domains. One architecture. All independently verifiable.\nMarine · New · September 2026\nBuilding Autonomy That Cannot Lie To You\nA full ten-phase structure inspection with no human in the loop: an 8.871 m sweep at 98.7% of commanded rate, refusals predicted to within 0.1 s, every number scored against ground truth. Over a hundred defects, and the rules each one earned, published in full.\nRead the PDF\nOpens in the browser · no registration · 15 pages\nMarine · August 2026\nStation-Keeping SIL — Methodology & Results v1.0\nJean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.\nRead the PDF\nOpens in the browser · no registration · 9 pages\nCybersecurity · BethanyShell\nRed-team methodology report\nCALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.\nView methodology\nOpens in DocSend · quick email registration\nRobotics · 7-DOF arm\nManipulation SIL — no training data\nStandard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.\nView SIL methodology\nOpens in DocSend · quick email registration\nEducation · Parlier, CA\nLive classroom pilot\nA +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.\nRead the testimonial\nOpens in DocSend\nMedicine · NEJM\nClinical diagnostics — local, private\nSeven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.\nWatch the cases\nYouTube playlist\nNavigation · Oakland\nAutonomous navigation — no learned policy\n5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.\nRead the Ground results\nRequest raw data\nDefense: the five validation runs are published on the\nJean for Defense\npage, with the full methodology in the cybersecurity report above."
+  },
+  {
+   "id": "marine-inspection-mission-sil-september-2026",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Building Autonomy That Cannot Lie To You",
+   "summary": "Marine · New · September 2026  A full ten-phase structure inspection with no human in the loop: an 8.871 m sweep at 98.7% of commanded rate, refusals predicted to within 0.1 s, every number scored against ground truth. Over a hundred defec…",
+   "text": "Marine · New · September 2026\nBuilding Autonomy That Cannot Lie To You\nA full ten-phase structure inspection with no human in the loop: an 8.871 m sweep at 98.7% of commanded rate, refusals predicted to within 0.1 s, every number scored against ground truth. Over a hundred defects, and the rules each one earned, published in full.\nRead the PDF\nOpens in the browser · no registration · 15 pages"
   },
   {
    "id": "station-keeping-sil-methodology-results-v1-0",
    "path": "evidence/reports.html",
    "page": "Methodology reports — Evidence",
    "heading": "Station-Keeping SIL — Methodology & Results v1.0",
-   "summary": "Marine · New · August 2026  Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is …",
-   "text": "Marine · New · August 2026\nStation-Keeping SIL — Methodology & Results v1.0\nJean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.\nRead the PDF\nOpens in the browser · no registration · 9 pages"
+   "summary": "Marine · August 2026  Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is publis…",
+   "text": "Marine · August 2026\nStation-Keeping SIL — Methodology & Results v1.0\nJean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.\nRead the PDF\nOpens in the browser · no registration · 9 pages"
   },
   {
    "id": "red-team-methodology-report",
