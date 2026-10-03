@@ -1,63 +1,66 @@
 /* ═══════════════════════════════════════════════════════════════════════
-   mYa Solutions — tokens.css
-   The one place colour, type and spacing live. Change the palette here and
-   every page follows. Derived from the "Industry" system chosen for the
-   Ceremonial direction: steel accent on a light technical ground,
-   Barlow Condensed over Barlow, square corners, hairline frames.
+   FILE / ROOT:  assets/css/tokens.css  (mYa Solutions website)
+   DESCRIPTION:  The one place colour, type and spacing live — the "Windows"
+                 visual language. White sand is most of the page, warm sand
+                 for surfaces, water only where you act or where Jean points.
+                 Sunlight lives only inside the windows. Two times of day:
+                 Daylight (default) and Dusk ([data-theme="dusk"]).
+                 Every text pair meets WCAG AA in both.
    ═══════════════════════════════════════════════════════════════════════ */
 @import url('fonts.css');
 
 :root {
-  /* Ground, ink, accent */
-  --color-bg: #f2f2f3;
-  --color-surface: #e9e9ea;
-  --color-text: #1d1f20;
-  --color-accent: #5980a6;
-  --color-divider: color-mix(in srgb, #1d1f20 16%, transparent);
+  /* Ground and ink */
+  --bg: oklch(98.8% 0.007 85);          /* white sand — the page */
+  --bg-2: oklch(95.5% 0.018 85);        /* warm sand — surfaces, bands */
+  --ink: oklch(24% 0.035 240);          /* deep water — body text */
+  --ink-soft: oklch(40% 0.04 235);
+  --line: oklch(40% 0.03 75 / 0.16);
+  --frame: oklch(99.6% 0.004 85);       /* the window frame */
+  --shadow: oklch(55% 0.05 75 / 0.18);
 
-  --color-neutral-100: #f5f5f8;
-  --color-neutral-200: #e7e7ea;
-  --color-neutral-300: #d4d4d7;
-  --color-neutral-400: #b7b7ba;
-  --color-neutral-500: #98989b;
-  --color-neutral-600: #7a7a7d;
-  --color-neutral-700: #5d5d60;
-  --color-neutral-800: #424244;
-  --color-neutral-900: #2b2b2d;
+  /* Water — only where you act */
+  --accent: oklch(46% 0.09 215);        /* reef — labels, links */
+  --sea: oklch(80% 0.12 192);           /* turquoise — the one action per screen */
+  --sea-ink: oklch(22% 0.04 230);
+  --halo: oklch(82% 0.12 192 / 0.55);   /* Jean's highlight */
 
-  --color-accent-100: #eef6ff;
-  --color-accent-200: #d6ebff;
-  --color-accent-300: #b5d9fd;
-  --color-accent-400: #94bce3;
-  --color-accent-500: #749dc4;
-  --color-accent-600: #597ea3;
-  --color-accent-700: #416180;
-  --color-accent-800: #2c455d;
-  --color-accent-900: #1d2d3d;
-
-  /* Tone bands — light is the default ground; steel is reserved for
-     evidence, where numbers need contrast; ink is the footer. */
-  --band-light: var(--color-bg);
-  --band-mid: var(--color-neutral-200);
-  --band-steel: var(--color-accent-900);
-  --band-ink: var(--color-neutral-900);
+  /* Inside the windows */
+  --interior: oklch(28% 0.04 230);
+  --night-1: oklch(20% 0.04 240);
+  --night-2: oklch(30% 0.07 220);
+  --glow: oklch(88% 0.1 80 / 0.34);     /* sunlight */
+  --on-window: oklch(98% 0.008 85);
+  --on-window-soft: oklch(90% 0.02 200);
+  --on-window-accent: oklch(84% 0.11 190);
 
   /* Type */
-  --font-heading: "Barlow Condensed", system-ui, sans-serif;
-  --font-body: "Barlow", system-ui, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  /* Rhythm */
-  --gutter: 96px;
-  --band-pad: 120px;
-  --measure: 58ch;
-  --max: 1440px;
-
-  --shadow-md: 0 3px 10px color-mix(in srgb, #2b2b2d 16%, transparent);
-  --shadow-lg: 0 12px 32px color-mix(in srgb, #2b2b2d 22%, transparent);
-
-  /* Launch */
-  --launch: "2026-11-13T09:00:00-08:00";
+  /* Rhythm (rem, so the Aa control scales everything) */
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --max: 85rem;
+  --band-pad: clamp(4.5rem, 10vw, 8rem);
+  --radius-window: 1.5rem;
+  --radius-pane: 1rem;
+  --radius-card: 1.125rem;
+  --frame-pad: clamp(0.5rem, 1.2vw, 0.875rem);
+  --py: 0;
 }
 
-@media (max-width: 1100px) { :root { --gutter: 48px; --band-pad: 96px; } }
-@media (max-width: 720px)  { :root { --gutter: 24px; --band-pad: 64px; } }
+:root[data-theme="dusk"] {
+  --bg: oklch(20% 0.04 240);
+  --bg-2: oklch(25% 0.05 230);
+  --ink: oklch(97% 0.01 90);
+  --ink-soft: oklch(84% 0.03 200);
+  --line: oklch(97% 0.01 90 / 0.16);
+  --frame: oklch(27% 0.05 232);
+  --shadow: oklch(10% 0.04 240 / 0.6);
+  --accent: oklch(84% 0.11 190);
+  --sea: oklch(82% 0.12 190);
+  --sea-ink: oklch(20% 0.04 235);
+  --halo: oklch(82% 0.12 190 / 0.6);
+  --interior: oklch(30% 0.05 230);
+  --glow: oklch(86% 0.12 78 / 0.45);
+}

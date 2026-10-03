@@ -1,0 +1,13 @@
+# FILE / ROOT: services/jean-site/.gcloudignore
+# DESCRIPTION: Controls what `gcloud run deploy --source .` uploads to Cloud Build. Having
+#   this file means gcloud does NOT fall back to .gitignore, so the freshly copied
+#   site-index.json is always uploaded. Tests, secrets and local clutter stay behind.
+
+.gcloudignore
+.git
+.gitignore
+test/
+node_modules/
+.env
+*.log
+.DS_Store

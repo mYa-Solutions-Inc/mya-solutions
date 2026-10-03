@@ -10,35 +10,43 @@
 <meta property="og:description" content="Station held 363 s against a 120 s criterion, median drift 0.042 m, 5/5 designed fails correct, no training. Software-in-the-loop — methodology and results v1.0.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/marine-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Products" data-back="products/physical.html" data-back-label="Physical">
+<body data-group="Products" data-back="products/physical.html" data-back-label="Physical" data-jean-suggest="What does station keeping mean?|What can't this simulation prove?|Can I read the methodology?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Physical Intelligence · Marine<span class="hide-phone"> · 6-DOF station keeping</span></p>
-    <h1 class="display">Steady in the <span class="em">deep.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Physical Intelligence · Marine · 6-DOF station keeping. Steady in the deep. Jean held a 6-DOF underwater vehicle on station — within ±0.5 m depth and 1.0 m horizontal drift — for 363 s against a 120 s criterion. Median drift 0.042 m. Five of five designed fails correct. No training, no learned policy.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><video autoplay muted loop playsinline preload="metadata" poster="../media/plates/marine-still.jpg" aria-hidden="true"><source src="../media/hero/marine.mp4" type="video/mp4"></video></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Physical Intelligence · Marine<span class="hide-phone"> · 6-DOF station keeping</span></p>
+          <h1 class="display">Steady in the <span class="em">deep.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="What does station keeping mean?|What can't this simulation prove?|Can I read the methodology?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">Jean held a 6-DOF underwater vehicle on station — within ±0.5 m depth and 1.0 m horizontal drift — for 363 s against a 120 s criterion. Median drift 0.042 m. Five of five designed fails correct. No training, no learned policy.</p>
     <div class="actions">
       <a class="btn btn--primary" href="#proof">See the results ↓</a>
       <a class="btn btn--line" href="../evidence/reports/marine-sil-methodology-v1.0.pdf" target="_blank" rel="noopener">Read the methodology (PDF)</a>
       <a class="btn btn--line" href="#honest">The test that lied</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="../media/plates/marine-1600.jpg" alt="An illustrated underwater vehicle holding still beneath shafts of light from the surface." fetchpriority="high"></figure>
-    <div class="plate-cap"><span>Marine · Station-keeping SIL v1.0</span><span>Illustration — not the vehicle under test</span></div>
   </div>
 
+
   <!-- B05 Headline stats, on steel -->
-  <section class="band band--steel">
+  <section id="the-same-engine-pointed-at-the-deep" class="band band--steel">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Methodology &amp; Results v1.0 · August 2026</p>
@@ -56,7 +64,7 @@
   </section>
 
   <!-- What this tests + architecture -->
-  <section class="band">
+  <section id="one-engine-a-new-substrate" class="band">
     <div class="wrap">
       <div class="split split--text-wide" style="align-items:start">
         <div>
@@ -197,7 +205,7 @@ current      ~0.014 m/s steady, ~616 N to null</pre>
   </section>
 
   <!-- Statement -->
-  <section class="statement-band">
+  <section id="run-3-held-maximum-drift-to-8-centimetres-agains" class="statement-band">
     <p class="eyebrow">Phase 2 · Run 3</p>
     <h2 class="statement">Run 3 held maximum drift to 8 centimetres against a 1.0 m tolerance, and a current that would have carried the vehicle <span class="em">4.2 m</span> over the same window.</h2>
   </section>
@@ -391,13 +399,13 @@ m_eff     not identified   <span class="dim">(not required)</span>
   </section>
 
   <!-- Closing statement -->
-  <section class="statement-band band--mid">
+  <section id="the-controller-was-never-the-problem-it-was-comm" class="statement-band band--mid">
     <blockquote class="statement" style="font-family:var(--font-heading)">The controller was never the problem. It was commanding one percent of the force the vehicle required, through a path that summed its own history, against constants wrong by factors of fifty and fifteen hundred.</blockquote>
     <p class="lede center mt-2" style="margin-left:auto;margin-right:auto">Every significant defect found across this evaluation was at an interface — frames, units, clocks, sensor semantics, transport — and every one of them reported success while doing nothing. <strong>The reasoning is rarely what breaks. The interface with reality is.</strong></p>
   </section>
 
   <!-- Who -->
-  <section class="band">
+  <section id="built-for-the-deep-where-you-can-t-send-a-person" class="band">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Who this is for</p>

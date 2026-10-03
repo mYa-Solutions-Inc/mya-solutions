@@ -10,28 +10,39 @@
 <meta property="og:description" content="Don't take our word for it. The reports, the cases and the public repository, in one place.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/robotics-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Evidence" data-back="index.html" data-back-label="Home">
+<body data-group="Evidence" data-back="index.html" data-back-label="Home" data-jean-suggest="Which report should I read first?|Can I reproduce the results?|How do I request raw data?">
 <div data-site-header></div>
 <main id="main">
 
-  <section class="hero hero--interior">
-    <p class="eyebrow">Evidence · Methodology reports</p>
-    <h1 class="display">Don't take our word for it. <span class="em">Check the work.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Evidence · Methodology reports. Don't take our word for it. Check the work. The same codebase — no retraining, no domain-specific rebuilds — tested across cybersecurity, education, medicine, robotics, marine and navigation. Every report, recorded case and repository is listed here.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene painted"></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Evidence · Methodology reports</p>
+          <h1 class="display">Don't take our word for it. <span class="em">Check the work.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="Which report should I read first?|Can I reproduce the results?|How do I request raw data?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">The same codebase — no retraining, no domain-specific rebuilds — tested across cybersecurity, education, medicine, robotics, marine and navigation. Every report, recorded case and repository is listed here.</p>
     <div class="actions">
       <a class="btn btn--primary" href="#reports">See the reports</a>
       <a class="btn btn--line" href="#repo">Run the tests yourself</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <!-- What a report contains -->
-  <section class="band">
+  </div>
+<!-- What a report contains -->
+  <section id="an-industry-standard-where-one-exists-published" class="band">
     <div class="wrap split split--text-wide" style="align-items:start">
       <div>
         <p class="eyebrow">How we test</p>
@@ -57,7 +68,7 @@
       </div>
       <div class="grid grid--3">
 
-        <article class="card blueprint">
+        <article id="station-keeping-sil-methodology-results-v1-0" class="card blueprint">
           <p class="card-kicker">Marine · New · August 2026</p>
           <h3>Station-Keeping SIL — Methodology &amp; Results v1.0</h3>
           <p>Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.</p>
@@ -67,7 +78,7 @@
           </div>
         </article>
 
-        <article class="card blueprint">
+        <article id="red-team-methodology-report" class="card blueprint">
           <p class="card-kicker">Cybersecurity · BethanyShell</p>
           <h3>Red-team methodology report</h3>
           <p>CALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.</p>
@@ -77,7 +88,7 @@
           </div>
         </article>
 
-        <article class="card blueprint">
+        <article id="manipulation-sil-no-training-data" class="card blueprint">
           <p class="card-kicker">Robotics · 7-DOF arm</p>
           <h3>Manipulation SIL — no training data</h3>
           <p>Standard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.</p>
@@ -87,7 +98,7 @@
           </div>
         </article>
 
-        <article class="card blueprint">
+        <article id="live-classroom-pilot" class="card blueprint">
           <p class="card-kicker">Education · Parlier, CA</p>
           <h3>Live classroom pilot</h3>
           <p>A +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.</p>
@@ -97,7 +108,7 @@
           </div>
         </article>
 
-        <article class="card blueprint">
+        <article id="clinical-diagnostics-local-private" class="card blueprint">
           <p class="card-kicker">Medicine · NEJM</p>
           <h3>Clinical diagnostics — local, private</h3>
           <p>Seven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.</p>
@@ -107,7 +118,7 @@
           </div>
         </article>
 
-        <article class="card blueprint">
+        <article id="autonomous-navigation-no-learned-policy" class="card blueprint">
           <p class="card-kicker">Navigation · Oakland</p>
           <h3>Autonomous navigation — no learned policy</h3>
           <p>5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.</p>
@@ -139,7 +150,7 @@
   </section>
 
   <!-- Two doors -->
-  <section class="band band--mid">
+  <section id="ask-for-the-raw-data-or-watch-it-work" class="band band--mid">
     <div class="wrap">
       <div class="section-head center">
         <p class="eyebrow">Go further</p>

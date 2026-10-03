@@ -10,31 +10,39 @@
 <meta property="og:description" content="Local-first AI isn't just a privacy decision — it's an environmental one.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Impact" data-back="index.html" data-back-label="Home">
+<body data-group="Impact" data-back="index.html" data-back-label="Home" data-jean-suggest="How does local AI save water?|Who do you serve first?|What is the 10% commitment?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Leave No Trace</p>
-    <h1 class="display">Intelligence that passes through <span class="em">without leaving a mark.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Leave No Trace. Intelligence that passes through without leaving a mark. Local-first isn't just a privacy decision. It's an environmental one. Every query that stays on your device is water that didn't evaporate, electricity that didn't travel, carbon that stayed in the ground.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><img src="../media/plates/coral-1600.jpg" alt="A coral reef, fans and feather stars in clear water." fetchpriority="high"></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Leave No Trace</p>
+          <h1 class="display">Intelligence that passes through <span class="em">without leaving a mark.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="How does local AI save water?|Who do you serve first?|What is the 10% commitment?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">Local-first isn't just a privacy decision. It's an environmental one. Every query that stays on your device is <strong>water that didn't evaporate</strong>, electricity that didn't travel, carbon that stayed in the ground.</p>
     <div class="actions">
       <a class="btn btn--primary" href="#environment">See the numbers ↓</a>
       <a class="btn btn--line" href="#promise">The commitment</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="../media/plates/earthrise-1600.jpg" alt="The Earth rising over the curve of the Moon." fetchpriority="high"></figure>
-    <div class="plate-cap"><span>Giving Back · Leave no trace</span><span>Impact</span></div>
   </div>
+
 
   <!-- Act I — the numbers -->
   <section class="band" id="environment">
@@ -49,7 +57,7 @@
   </section>
 
   <!-- Evidence on steel -->
-  <section class="band band--steel">
+  <section id="the-no-data-center-path-isn-t-theoretical-it-s-a" class="band band--steel">
     <div class="wrap">
       <div class="stats">
         <div class="stat"><div class="stat-n">2</div><div class="stat-l"><strong>cups per conversation</strong><br>Water consumed by a typical 10–50 response cloud AI session, including on-site cooling and electricity generation at data centers.</div></div>
@@ -69,7 +77,7 @@
   </section>
 
   <!-- Statement -->
-  <section class="statement-band">
+  <section id="imagine-a-world-without-the-data-center-we-re-no" class="statement-band">
     <p class="statement">Imagine a world without the data center. <span class="em">We're not there yet — but every system we build moves one step closer to it.</span></p>
   </section>
 

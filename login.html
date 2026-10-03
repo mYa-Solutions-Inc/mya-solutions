@@ -10,17 +10,18 @@
 <meta property="og:description" content="Sign in to access Jean, your personal Partner Intelligence.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/blocks.css">
 <script src="assets/js/site.js" defer></script>
 </head>
-<body data-back="index.html" data-back-label="Home">
+<body data-no-jean data-back="index.html" data-back-label="Home">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B18 Auth card on a light band -->
-  <section class="band">
+  <section id="welcome-back" class="band">
     <div class="wrap--narrow center">
       <p class="eyebrow">Partner Intelligence</p>
       <h1 class="display">Welcome <span class="em">back.</span></h1>

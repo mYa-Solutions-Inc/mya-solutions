@@ -10,35 +10,43 @@
 <meta property="og:description" content="The other half of the AI story is being built in Oakland. Private, local intelligence — already proven.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Company" data-back="index.html" data-back-label="Home">
+<body data-group="Company" data-back="index.html" data-back-label="Home" data-jean-suggest="What has mYa built?|Why local instead of cloud?|What's on the road ahead?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">mYa Solutions</p>
-    <h1 class="display">The other half of the AI story is being built in <span class="em">Oakland.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="mYa Solutions. The other half of the AI story is being built in Oakland. Everyone scaled AI up — into the cloud, away from you. We built it down: onto your own machine. Private. Local. Already proven.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><video autoplay muted loop playsinline preload="metadata" poster="../media/plates/earthrise-still.jpg" aria-hidden="true"><source src="../media/hero/earthrise.mp4" type="video/mp4"></video></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">mYa Solutions</p>
+          <h1 class="display">The other half of the AI story is being built in <span class="em">Oakland.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="What has mYa built?|Why local instead of cloud?|What's on the road ahead?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">Everyone scaled AI <strong>up</strong> — into the cloud, away from you. We built it <strong>down</strong>: onto your own machine. Private. Local. Already proven.</p>
     <div class="actions">
       <a class="btn btn--primary" href="../investor.html">Request the briefing</a>
       <a class="btn btn--line" href="#rail">See the receipts ↓</a>
     </div>
-    <p class="aside">You're early.</p>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="../media/plates/earthrise-1600.jpg" alt="The Earth from orbit, its lit edge turning toward the sun." style="object-position:70% 40%" fetchpriority="high"></figure>
-    <div class="plate-cap"><span>About · Earthrise</span><span>Oakland, California</span></div>
+    <div style="grid-column:1/-1"><p class="aside">You're early.</p></div>
   </div>
 
+
   <!-- Statement (was the dawn bridge) -->
-  <section class="statement-band">
+  <section id="the-light-was-always-going-to-come-around" class="statement-band">
     <p class="statement">The light was always going to come around.</p>
   </section>
 
@@ -62,7 +70,7 @@
       </div>
       <div class="grid grid--3">
 
-        <article class="card blueprint">
+        <article id="robotics" class="card blueprint">
           <figure class="plate blueprint duotone" style="height:180px;margin-bottom:26px"><img src="../media/plates/robotics-800.jpg" alt="" loading="lazy"></figure>
           <p class="card-kicker">Robotics</p>
           <div class="card-num">7-DOF</div>
@@ -70,7 +78,7 @@
           <div class="card-foot"><a class="link-arrow" href="../products/robotics.html">See the run</a></div>
         </article>
 
-        <article class="card blueprint">
+        <article id="medicine" class="card blueprint">
           <figure class="plate blueprint duotone painted" style="height:180px;margin-bottom:26px"></figure>
           <p class="card-kicker">Medicine</p>
           <div class="card-num">7&#8202;/&#8202;7</div>
@@ -78,7 +86,7 @@
           <div class="card-foot"><span class="card--tag">See the cases →</span></div>
         </article>
 
-        <article class="card blueprint">
+        <article id="defense" class="card blueprint">
           <figure class="plate blueprint duotone" style="height:180px;margin-bottom:26px"><img src="../media/plates/lighthouse-800.jpg" alt="" loading="lazy"></figure>
           <p class="card-kicker">Defense</p>
           <div class="card-num">92.3%</div>
@@ -86,7 +94,7 @@
           <div class="card-foot"><a class="link-arrow" href="../products/bethanyshell.html">See the methodology</a></div>
         </article>
 
-        <article class="card blueprint">
+        <article id="education" class="card blueprint">
           <figure class="plate blueprint duotone" style="height:180px;margin-bottom:26px"><img src="../media/plates/teacher-800.jpg" alt="" loading="lazy" style="object-position:65% 40%"></figure>
           <p class="card-kicker">Education</p>
           <div class="card-num">+22 pts</div>
@@ -94,7 +102,7 @@
           <div class="card-foot"><a class="link-arrow" href="../products/education.html">See the pilot</a></div>
         </article>
 
-        <article class="card blueprint">
+        <article id="navigation" class="card blueprint">
           <figure class="plate blueprint duotone" style="height:180px;margin-bottom:26px"><img src="../media/plates/ground-800.jpg" alt="" loading="lazy"></figure>
           <p class="card-kicker">Navigation</p>
           <div class="card-num">5,490</div>
@@ -171,7 +179,7 @@
       </div>
       <div class="doors">
 
-        <article class="door">
+        <article id="jean-for-education" class="door">
           <div class="door-num">I</div>
           <div class="door-body">
             <div class="door-meta"><span class="door-kicker">Education</span></div>
@@ -182,7 +190,7 @@
           <figure class="plate blueprint duotone"><img src="../media/plates/teacher-800.jpg" alt="" loading="lazy" style="object-position:65% 40%"></figure>
         </article>
 
-        <article class="door">
+        <article id="jean-for-defense" class="door">
           <div class="door-num">II</div>
           <div class="door-body">
             <div class="door-meta"><span class="door-kicker">Cybersecurity</span></div>
@@ -193,7 +201,7 @@
           <figure class="plate blueprint duotone"><img src="../media/plates/lighthouse-800.jpg" alt="" loading="lazy"></figure>
         </article>
 
-        <article class="door">
+        <article id="the-clinician-s-engine" class="door">
           <div class="door-num">III</div>
           <div class="door-body">
             <div class="door-meta"><span class="door-kicker">Medicine</span></div>
@@ -204,7 +212,7 @@
           <figure class="plate blueprint duotone painted"></figure>
         </article>
 
-        <article class="door">
+        <article id="architect-the-clean-industrial-horizon" class="door">
           <div class="door-num">IV</div>
           <div class="door-body">
             <div class="door-meta"><span class="door-kicker">Sustainable extraction</span><span class="door-state">In exploration</span></div>
@@ -215,7 +223,7 @@
           <figure class="plate blueprint duotone"><img src="../media/plates/mining-800.jpg" alt="" loading="lazy"></figure>
         </article>
 
-        <article class="door">
+        <article id="defend-earth-s-vital-rims" class="door">
           <div class="door-num">V</div>
           <div class="door-body">
             <div class="door-meta"><span class="door-kicker">Ecological restoration</span><span class="door-state">In exploration</span></div>

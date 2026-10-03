@@ -10,35 +10,43 @@
 <meta property="og:description" content="92.3% APT-class block, zero false positives, about a nanosecond per check — on a box you own.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/lighthouse-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Products" data-back="index.html" data-back-label="Home">
+<body data-group="Products" data-back="index.html" data-back-label="Home" data-jean-suggest="How is BethanyShell priced?|Can I run the tests myself?|What does ~1ns per check mean?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero + product logo -->
-  <section class="hero hero--interior">
-    <img class="hero-logo" src="../assets/bethanyshell-logo.png" alt="BethanyShell" width="120">
-    <p class="eyebrow">AI Detection &amp; Response · Powered by Jean OS</p>
-    <h1 class="display">Security that never leaves your <span class="em">building.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="AI Detection & Response · Powered by Jean OS. Security that never leaves your building. Enterprise-grade defense on a box you own — 92.3% APT-class block rate, zero false positives, roughly one nanosecond per check. The light that stays steady while the storm rolls through.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><video autoplay muted loop playsinline preload="metadata" poster="../media/plates/lighthouse-still.jpg" aria-hidden="true"><source src="../media/hero/lighthouse.mp4" type="video/mp4"></video></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <img class="hero-logo" src="../assets/bethanyshell-logo.png" alt="BethanyShell" width="120">
+          <p class="eyebrow">AI Detection &amp; Response · Powered by Jean OS</p>
+          <h1 class="display">Security that never leaves your <span class="em">building.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="How is BethanyShell priced?|Can I run the tests myself?|What does ~1ns per check mean?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">Enterprise-grade defense on a box you own — 92.3% APT-class block rate, zero false positives, roughly one nanosecond per check. The light that stays steady while the storm rolls through.</p>
     <div class="actions">
       <a class="btn btn--primary" href="#report">Get the methodology report</a>
       <a class="btn btn--line" href="#proof">See the proof ↓</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="../media/plates/lighthouse-1600.jpg" alt="A lighthouse holding its beam over a storm-struck coast." fetchpriority="high"></figure>
-    <div class="plate-cap"><span>BethanyShell · The steady light</span><span>Available now</span></div>
   </div>
 
+
   <!-- B04 What it is -->
-  <section class="band">
+  <section id="you-ve-been-sold-this-three-times" class="band">
     <div class="wrap split split--text-wide">
       <div>
         <p class="eyebrow">What it is</p>
@@ -58,7 +66,7 @@
   </section>
 
   <!-- B05 The problem -->
-  <section class="band band--mid">
+  <section id="companies-overpay-to-outsource-security-and-stil" class="band band--mid">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">The problem</p>
@@ -93,7 +101,7 @@
   </section>
 
   <!-- B08 Speed -->
-  <section class="band">
+  <section id="anyone-can-be-breached-we-make-it-not-worth-thei" class="band">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Speed is the security</p>
@@ -107,7 +115,7 @@
   </section>
 
   <!-- B06 The moat -->
-  <section class="band band--mid">
+  <section id="three-layers-copy-two-never-all-three" class="band band--mid">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Why it's hard to copy</p>
@@ -192,7 +200,7 @@
   </section>
 
   <!-- B11 Video -->
-  <section class="band band--mid">
+  <section id="bethanyshell-in-motion" class="band band--mid">
     <div class="wrap--narrow">
       <div class="section-head center">
         <p class="eyebrow">See it work</p>

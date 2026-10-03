@@ -10,31 +10,39 @@
 <meta property="og:description" content="Two names. Two reasons it had to be built right. The story behind mYa Solutions and the people behind it.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/teacher-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Company" data-back="company/about.html" data-back-label="About">
+<body data-group="Company" data-back="company/about.html" data-back-label="About" data-jean-suggest="Who founded mYa Solutions?|Who is Jean named for?|Are you hiring?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Our Story</p>
-    <h1 class="display">Every problem I've solved started with someone in power deciding it <span class="em">wasn't their problem.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Our Story. Every problem I've solved started with someone in power deciding it wasn't their problem. So I stopped waiting for permission and built the bridge myself. Every single time. This company is the last bridge — and the biggest one.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><video autoplay muted loop playsinline preload="metadata" poster="../media/plates/teacher-still.jpg" aria-hidden="true"><source src="../media/hero/teacher.mp4" type="video/mp4"></video></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Our Story</p>
+          <h1 class="display">Every problem I've solved started with someone in power deciding it <span class="em">wasn't their problem.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="Who founded mYa Solutions?|Who is Jean named for?|Are you hiring?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">So I stopped waiting for permission and built the bridge myself. Every single time. This company is the last bridge — and the biggest one.</p>
     <div class="actions">
       <a class="btn btn--primary" href="#names">Why these names ↓</a>
       <a class="btn btn--line" href="#careers">Careers</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="../media/plates/teacher-1600.jpg" alt="A teacher kneels beside a student, reading together at her desk." style="object-position:60% 35%" fetchpriority="high"></figure>
-    <div class="plate-cap"><span>Our Story · The people it is for</span><span>Oakland, California</span></div>
   </div>
+
 
   <!-- The two names -->
   <section class="band" id="names">
