@@ -10,34 +10,42 @@
 <meta property="og:description" content="Land, sea, air, and the machines between them. One mind across every physical domain — without being retrained for either.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Products" data-back="index.html" data-back-label="Home">
+<body data-group="Products" data-back="index.html" data-back-label="Home" data-jean-suggest="Which domains are proven?|Does Jean need training data?|What's next for air?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Physical Intelligence</p>
-    <h1 class="display">Partner Intelligence for every physical domain <span class="em">that needs it.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Physical Intelligence. Partner Intelligence for every physical domain that needs it. Land, sea, air, and the machines between them. The same mind that reasons through a threaded needle holds a vehicle steady in a dark ocean current — without being retrained for either.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><video autoplay muted loop playsinline preload="metadata" poster="../media/plates/marine-still.jpg" aria-hidden="true"><source src="../media/hero/marine.mp4" type="video/mp4"></video></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Physical Intelligence</p>
+          <h1 class="display">Partner Intelligence for every physical domain <span class="em">that needs it.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="Which domains are proven?|Does Jean need training data?|What's next for air?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">Land, sea, air, and the machines between them. The same mind that reasons through a threaded needle holds a vehicle steady in a dark ocean current — <strong>without being retrained for either.</strong></p>
     <div class="actions">
       <a class="btn btn--primary" href="robotics.html">See the first receipt</a>
       <a class="btn btn--line" href="#domains">The domains ↓</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="../media/plates/earthrise-1600.jpg" alt="The Earth from orbit — land, sea and air seen as one system." style="object-position:70% 40%" fetchpriority="high"></figure>
-    <div class="plate-cap"><span>Physical Intelligence · One mind</span><span>Land · Sea · Air</span></div>
   </div>
 
+
   <!-- B06 The argument -->
-  <section class="band">
+  <section id="most-physical-ai-is-built-one-domain-at-a-time-m" class="band">
     <div class="wrap">
       <div class="section-head">
         <h2 class="title" style="max-width:34ch">Most physical AI is built one domain at a time — millions of demonstrations, months of training, a model that only knows the task it was fed. <span class="em">Jean OS is built differently.</span></h2>
@@ -104,7 +112,7 @@
   </section>
 
   <!-- Close -->
-  <section class="band band--rule">
+  <section id="the-bottleneck-in-physical-ai-was-never-the-hard" class="band band--rule">
     <div class="wrap center">
       <p class="eyebrow">Why it matters</p>
       <h2 class="title">The bottleneck in physical AI was never the hardware. <span class="em">It was the training.</span></h2>

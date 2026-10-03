@@ -1,0 +1,17 @@
+# FILE / ROOT: services/jean-site/.dockerignore
+# DESCRIPTION: Keeps tests (including the provider test double), secrets, docs and local
+#   clutter out of the Docker build context. Only package.json, src/ and site-index.json
+#   are copied into the image.
+
+test/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.git
+.gitignore
+.gcloudignore
+deploy.sh
+README.md

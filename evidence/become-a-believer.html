@@ -11,23 +11,31 @@
 <meta property="og:description" content="See what's possible.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Evidence" data-back="evidence/reports.html" data-back-label="Evidence">
+<body data-group="Evidence" data-back="evidence/reports.html" data-back-label="Evidence" data-jean-suggest="When is the film coming?|What is Jean?|Where's the evidence?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Become a Believer · Powered by Jean OS</p>
-    <h1 class="display">See what's <span class="em">possible.</span></h1>
-    <div class="stem" aria-hidden="true"></div>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Become a Believer · Powered by Jean OS. See what's possible.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene painted"></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Become a Believer · Powered by Jean OS</p>
+          <h1 class="display">See what's <span class="em">possible.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="When is the film coming?|What is Jean?|Where's the evidence?"></div>
+        </div>
+      </div>
+    </div>
   </section>
-
-  <!-- B11 Film frame -->
+<!-- B11 Film frame -->
   <div class="plate-wrap">
     <div class="frame-16x9 blueprint duotone painted">
       <!--
@@ -50,7 +58,7 @@
   </div>
 
   <!-- Keep me posted -->
-  <section class="band">
+  <section id="be-the-first-to-see-it" class="band">
     <div class="wrap--narrow center">
       <p class="eyebrow">Keep me posted</p>
       <h2 class="title">Be the first to <span class="em">see it.</span></h2>

@@ -10,31 +10,42 @@
 <meta property="og:description" content="$20 a month · $200 a year · $515 lifetime. The price never moves.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Products" data-back="index.html" data-back-label="Home">
+<body data-group="Products" data-back="index.html" data-back-label="Home" data-jean-suggest="What does lifetime include?|Annual or lifetime — what's the difference?|How is BethanyShell priced?">
 <div data-site-header></div>
 <main id="main">
 
-  <section class="hero hero--interior" style="padding-bottom:0">
-    <p class="eyebrow">Pricing</p>
-    <h1 class="display">One price. <span class="em">It never moves.</span></h1>
-    <p class="lede">JeanOS opens to the public on 13 November 2026. $20 a month, or $200 for a year — two months on us. A lifetime licence is $515, and $515 is the price at every stage: no presale discount, no launch-day change.</p>
-    <div data-prelaunch>
-      <div class="launch-cd" data-cd style="font-size:clamp(34px,4vw,52px)">— : — : — : —</div>
-      <div class="launch-units">days · hrs · min · sec to launch</div>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Pricing. One price. It never moves. JeanOS opens to the public on 13 November 2026. $20 a month, or $200 for a year — two months on us. A lifetime licence is $515, and $515 is the price at every stage: no presale discount, no launch-day change.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene painted"></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Pricing</p>
+          <h1 class="display">One price. <span class="em">It never moves.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="What does lifetime include?|Annual or lifetime — what's the difference?|How is BethanyShell priced?"></div>
+        </div>
+      </div>
     </div>
-    <div class="stem" aria-hidden="true"></div>
   </section>
 
-  <!-- JeanOS plans -->
+  <div class="intro">
+    <p class="lede">JeanOS opens to the public on 13 November 2026. $20 a month, or $200 for a year — two months on us. A lifetime licence is $515, and $515 is the price at every stage: no presale discount, no launch-day change.</p>
+    <div style="grid-column:1/-1"><div data-prelaunch>
+      <div class="launch-cd" data-cd style="font-size:clamp(34px,4vw,52px)">— : — : — : —</div>
+      <div class="launch-units">days · hrs · min · sec to launch</div>
+    </div></div>
+  </div>
+<!-- JeanOS plans -->
   <section class="band" style="padding-top:52px" id="jeanos">
     <div class="wrap">
       <div class="plans">
-        <article class="plan blueprint">
+        <article id="monthly" class="plan blueprint">
           <p class="card-kicker">Monthly</p>
           <div class="price">$20</div>
           <div class="per">per month</div>
@@ -44,7 +55,7 @@
           </ul>
           <a class="btn btn--line btn--block" href="mailto:contactus@myasolutions.org?subject=JeanOS%20%E2%80%94%20tell%20me%20when%20monthly%20opens" data-prelaunch>Opens 13 November — keep me posted</a>
         </article>
-        <article class="plan blueprint">
+        <article id="annual" class="plan blueprint">
           <p class="card-kicker">Annual</p>
           <div class="price">$200</div>
           <div class="per">for a full year · two months on us</div>
@@ -54,7 +65,7 @@
           </ul>
           <a class="btn btn--line btn--block" href="mailto:contactus@myasolutions.org?subject=JeanOS%20%E2%80%94%20tell%20me%20when%20annual%20opens" data-prelaunch>Opens 13 November — keep me posted</a>
         </article>
-        <article class="plan plan--feature blueprint">
+        <article id="lifetime-founder-s-circle" class="plan plan--feature blueprint">
           <p class="card-kicker">Lifetime · Founder's circle</p>
           <div class="price">$515</div>
           <div class="per">one payment · named publicly</div>
@@ -80,19 +91,19 @@
         <h2 class="title">Priced against what you pay now, <span class="em">not against a feature list.</span></h2>
       </div>
       <div class="grid grid--3">
-        <article class="card blueprint">
+        <article id="40k-appliance-25-per-seat-month" class="card blueprint">
           <p class="card-kicker">BethanyShell · Security</p>
           <h3>$40K appliance + $25 per seat / month</h3>
           <p>Or $20K leased. The box plus the seats replaces a $120–192K annual stack, so year one already costs less than what you pay now.</p>
           <div class="card-foot"><a class="link-arrow" href="bethanyshell.html#pricing">The math</a></div>
         </article>
-        <article class="card blueprint">
+        <article id="schools-and-districts" class="card blueprint">
           <p class="card-kicker">Education</p>
           <h3>Schools and districts</h3>
           <p>Talk to us about bringing Jean to a school or district. Student data never leaves the room.</p>
           <div class="card-foot"><a class="link-arrow" href="education.html">Jean for Education</a></div>
         </article>
-        <article class="card blueprint">
+        <article id="by-engagement" class="card blueprint">
           <p class="card-kicker">Defense · Physical Intelligence</p>
           <h3>By engagement</h3>
           <p>Infrastructure, robotics, marine and ground work is scoped to the environment. Tell us what you're running and what you're trying to solve.</p>
@@ -103,7 +114,7 @@
   </section>
 
   <!-- Promises -->
-  <section class="band">
+  <section id="written-here-not-in-a-policy-page-nobody-opens" class="band">
     <div class="wrap--narrow">
       <div class="section-head">
         <p class="eyebrow">What we promise at the point of sale</p>

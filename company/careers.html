@@ -10,27 +10,38 @@
 <meta property="og:description" content="We're a small team building something unreasonably large. Not actively hiring — but always listening. Send your résumé or CV and tell us why this work matters to you.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/teacher-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Company" data-back="company/team.html" data-back-label="Team">
+<body data-group="Company" data-back="company/team.html" data-back-label="Team" data-jean-suggest="Are you hiring?|How do I introduce myself?|What do you look for?">
 <div data-site-header></div>
 <main id="main">
 
-  <section class="hero hero--interior">
-    <p class="eyebrow">Company · Careers</p>
-    <h1 class="display">We're a small team building something <span class="em">unreasonably large.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Company · Careers. We're a small team building something unreasonably large. Not actively hiring — but always listening.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene painted"></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Company · Careers</p>
+          <h1 class="display">We're a small team building something <span class="em">unreasonably large.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="Are you hiring?|How do I introduce myself?|What do you look for?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">Not actively hiring — but always listening.</p>
     <div class="actions">
       <a class="btn btn--primary" href="mailto:careers@myasolutions.org?subject=Introduction%20%E2%80%94%20%5BYour%20Name%20%2F%20Role%5D&amp;body=Hi%20Ayinde%2C%0D%0A%0D%0AI%20came%20across%20mYa%20Solutions%20and%20wanted%20to%20introduce%20myself.%0D%0A%0D%0A%5BTell%20us%20a%20bit%20about%20yourself%20and%20why%20this%20work%20matters%20to%20you%5D%0D%0A%0D%0AI've%20attached%20my%20r%C3%A9sum%C3%A9%20%2F%20CV.%0D%0A%0D%0AThank%20you%20for%20your%20time.">Introduce yourself</a>
       <a class="btn btn--line" href="team.html">Meet the team</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <section class="band">
+  </div>
+<section id="heads-down-building-not-heads-up-hiring" class="band">
     <div class="wrap split split--text-wide" style="align-items:start">
       <div>
         <p class="eyebrow">Where we are</p>
@@ -48,7 +59,7 @@
     </div>
   </section>
 
-  <section class="band band--mid">
+  <section id="the-people-doing-the-hardest-work-with-the-fewes" class="band band--mid">
     <div class="wrap--narrow center">
       <p class="eyebrow">Why it matters</p>
       <h2 class="statement">The people doing the hardest work with the fewest resources come first.</h2>

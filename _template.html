@@ -24,34 +24,57 @@
 <meta name="description" content="">
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/blocks.css">
 <script src="assets/js/site.js" defer></script>
 </head>
-<body data-group="" data-back="index.html" data-back-label="Home">
+<body data-group="" data-back="index.html" data-back-label="Home" data-no-jean>
 <div data-site-header></div>
 <main id="main">
 
-  <!-- B02 Page hero (light, centred). Optional .hero-logo image above the eyebrow. -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Group · Page</p>
-    <h1 class="display">One line stating the claim, <span class="em">with emphasis.</span></h1>
-    <p class="lede">The sub. One or two sentences, never more.</p>
-    <div class="actions">
-      <a class="btn btn--primary" href="#">Primary action</a>
-      <a class="btn btn--line" href="#">Secondary</a>
+  <!-- B02 Opening window: one window, one line, and Jean.
+       Scene: a <video> (muted loop + poster), an <img>, or class="window-scene painted" when there's no photo yet.
+       data-summary is what Jean reads about this section. -->
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="One sentence Jean can read about this page.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><img src="media/plates/marine-1600.jpg" alt="Describe the image"></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Group · Page</p>
+          <h1 class="display">One line stating the claim, <em>with emphasis.</em></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="A question this page answers|Another one"></div>
+        </div>
+      </div>
     </div>
-    <div class="stem" aria-hidden="true"></div>
   </section>
-
-  <!-- B01 Plate — every photograph is a framed duotone plate -->
-  <div class="plate-wrap">
-    <figure class="plate blueprint duotone"><img src="media/plates/marine-1600.jpg" alt="Describe the image"></figure>
-    <div class="plate-cap"><span>Plate · Caption</span><span>Right caption</span></div>
+  <div class="intro">
+    <p class="lede">The sub. One or two sentences, never more.</p>
+    <div class="actions"><a class="btn btn--primary" href="#">The one action</a><a class="btn btn--line" href="#">Secondary</a></div>
   </div>
 
-  <!-- B04 Section shell — tones: (none)=light · band--mid · band--steel · band--ink. band--rule adds a top rule. -->
+  <!-- Story windows: three framed scenes, each one Jean can light up -->
+  <section class="band" id="stories">
+    <div class="wrap">
+      <div class="list-head"><h2>Three windows</h2><a class="link-arrow" href="#">All stories</a></div>
+      <div class="windows">
+        <article class="story" id="story-one" data-summary="What this story is about.">
+          <a href="#"><figure class="plate blueprint duotone"><img src="media/plates/teacher-800.jpg" alt=""></figure>
+          <p class="story-label">Label · Window 01</p><h3>Title of the story.</h3><p>One line.</p><p class="story-more">Read the story →</p></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- B01 Plate — a photograph in its own frame -->
+  <div class="plate-wrap">
+    <figure class="plate blueprint duotone"><img src="media/plates/marine-1600.jpg" alt="Describe the image"></figure>
+    <div class="plate-cap"><span>Caption</span><span>Right caption</span></div>
+  </div>
+
+  <!-- B04 Section shell — tones: (none)=white sand · band--mid=warm sand · band--steel=a night window for evidence. band--rule adds a top rule. -->
   <section class="band">
     <div class="wrap">
       <div class="section-head">

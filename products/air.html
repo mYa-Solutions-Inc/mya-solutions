@@ -10,34 +10,42 @@
 <meta property="og:description" content="Aerial autonomy is on the roadmap — same mind, new medium.">
 <meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
 <link rel="icon" href="../assets/favicon.png">
+<script>try{var t=localStorage.getItem("mya-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dusk":"day");document.documentElement.setAttribute("data-theme",t);var z=["100%","112.5%","125%"][+localStorage.getItem("mya-size")||0];if(z)document.documentElement.style.fontSize=z}catch(e){}</script>
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/blocks.css">
 <script src="../assets/js/site.js" defer></script>
 </head>
-<body data-group="Products" data-back="products/physical.html" data-back-label="Physical">
+<body data-group="Products" data-back="products/physical.html" data-back-label="Physical" data-jean-suggest="When is air coming?|How is air related to marine?|How do I get involved?">
 <div data-site-header></div>
 <main id="main">
 
   <!-- B02 Hero -->
-  <section class="hero hero--interior">
-    <p class="eyebrow">Physical Intelligence · Air</p>
-    <h1 class="display">The sky is <span class="em">next.</span></h1>
+  <section class="window-hero window-hero--interior" id="arrival" data-summary="Physical Intelligence · Air. The sky is next. The same reasoning that holds a vehicle steady in an ocean current will hold one in the wind. Aerial autonomy is on the roadmap — same mind, new medium.">
+    <div class="window">
+      <div class="window-pane window-pane--short">
+        <div class="window-scene"><video autoplay muted loop playsinline preload="metadata" poster="../media/plates/earthrise-still.jpg" aria-hidden="true"><source src="../media/hero/earthrise.mp4" type="video/mp4"></video></div>
+        <div class="window-shade"></div>
+        <div class="window-copy">
+          <p class="eyebrow">Physical Intelligence · Air</p>
+          <h1 class="display">The sky is <span class="em">next.</span></h1>
+          <div class="jean-mount" data-jean-ask data-jean-style="glass" data-jean-suggest="When is air coming?|How is air related to marine?|How do I get involved?"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro">
     <p class="lede">The same reasoning that holds a vehicle steady in an ocean current will hold one in the wind. Aerial autonomy is on the roadmap — <strong>same mind, new medium.</strong></p>
     <div class="actions">
       <a class="btn btn--primary" href="physical.html">See what's proven →</a>
       <a class="btn btn--line" href="mailto:contactus@myasolutions.org?subject=Physical%20Intelligence%20%E2%80%94%20Air">Talk to us</a>
     </div>
-    <div class="stem" aria-hidden="true"></div>
-  </section>
-
-  <div class="plate-wrap">
-    <figure class="plate plate--short blueprint duotone"><img src="../media/plates/earthrise-1600.jpg" alt="The thin bright edge of the atmosphere curving over the Earth from orbit." style="object-position:75% 50%" fetchpriority="high"></figure>
-    <div class="plate-cap"><span>Air · Aerial</span><span>On the horizon</span></div>
   </div>
 
+
   <!-- On the horizon -->
-  <section class="band">
+  <section id="one-architecture-now-taking-to-the-air" class="band">
     <div class="wrap--narrow center">
       <p class="eyebrow">On the horizon</p>
       <h2 class="title">One architecture, <span class="em">now taking to the air.</span></h2>

@@ -1,0 +1,1349 @@
+{
+ "version": 1,
+ "site": "https://myasolutions.org",
+ "generated": "2026-10-03T08:41:36Z",
+ "pages": [
+  {
+   "path": "index.html",
+   "title": "mYa Solutions — Private, local intelligence",
+   "description": "Everyone scaled AI up — into the cloud, away from you. mYa Solutions built the other half: private, local, already proven. Security, education and physical intelligence from one engine, Jean OS. Oakland, California."
+  },
+  {
+   "path": "products/bethanyshell.html",
+   "title": "BethanyShell — Security that never leaves your building",
+   "description": "BethanyShell: AI detection and response on a box you own. 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per safety check. Run every test yourself in the public repo."
+  },
+  {
+   "path": "products/education.html",
+   "title": "Jean for Education — mYa Solutions",
+   "description": "Give a teacher their evenings back. Jean for Education runs locally, keeps student data private, and has already shifted student proficiency by 22 points in a live classroom pilot."
+  },
+  {
+   "path": "products/defense.html",
+   "title": "Jean for Defense — mYa Solutions",
+   "description": "BETHANY: deterministic, auditable, zero-false-positive AI cybersecurity. Nation-state-grade defense that runs where your data already lives — no cloud dependency, no black-box decisioning."
+  },
+  {
+   "path": "products/physical.html",
+   "title": "Physical Intelligence — Partner Intelligence for every physical domain",
+   "description": "Partner Intelligence for every physical domain that needs it. Jean OS reasons architecturally — not trained on millions of domain examples — so physical intelligence reaches deployment faster. Land, sea, air, and the machines between them."
+  },
+  {
+   "path": "products/robotics.html",
+   "title": "Jean for Robotics — mYa Solutions",
+   "description": "Jean controls a 7-DOF robotic arm without training data — deterministic reasoning, not a learned policy. 11/11 standard threading, 4/4 impossible tasks refused, zero false successes."
+  },
+  {
+   "path": "products/marine.html",
+   "title": "Marine — Physical Intelligence",
+   "description": "Jean OS held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion — median drift 0.042 m, five of five designed fails correct, no training and no learned policy. A software-in-the-loop evaluation in an independent physics simulator; every constant measured on the plant, not assumed."
+  },
+  {
+   "path": "products/ground.html",
+   "title": "Ground — Physical Intelligence",
+   "description": "Jean OS evaluates thousands of live road-network route nodes with zero LLM calls in the cognitive path — deterministic ground navigation reasoning, not a model trained on driving demonstrations."
+  },
+  {
+   "path": "products/air.html",
+   "title": "Air — Physical Intelligence",
+   "description": "The same reasoning that holds a vehicle steady in an ocean current will hold one in the wind. Aerial autonomy is on the roadmap — same mind, new medium."
+  },
+  {
+   "path": "products/pricing.html",
+   "title": "Pricing — JeanOS and BethanyShell",
+   "description": "JeanOS: $20 a month, $200 for a year, or $515 for a lifetime licence. 288 founder's circle seats, named publicly. BethanyShell: a $40K appliance plus $25 per seat per month. One consistent price story."
+  },
+  {
+   "path": "evidence/reports.html",
+   "title": "Methodology reports — Evidence",
+   "description": "Every methodology report, recorded case and public repository behind mYa Solutions' claims — cybersecurity, education, robotics, marine, medicine and navigation — in one place, with how to reproduce or request the raw data."
+  },
+  {
+   "path": "evidence/become-a-believer.html",
+   "title": "Become a Believer — mYa Solutions",
+   "description": "See what's possible."
+  },
+  {
+   "path": "impact/giving.html",
+   "title": "Giving Back — mYa Solutions",
+   "description": "Local-first AI isn't just a privacy decision — it's an environmental one. mYa Solutions is built on leave no trace, and on giving back to the communities the current AI economy walked past."
+  },
+  {
+   "path": "impact/b-corp.html",
+   "title": "B Corp & the M-class share — Impact",
+   "description": "Ten percent of all earnings, written into the bylaws. The public record of mYa Solutions' charitable obligation and the annual benefit reports of LeadLifeLaugh Inc., a California benefit corporation."
+  },
+  {
+   "path": "company/about.html",
+   "title": "About — mYa Solutions",
+   "description": "Why mYa Solutions exists. One engine, many doors. Private, local intelligence for the world's hardest problems — already proven."
+  },
+  {
+   "path": "company/team.html",
+   "title": "Team — Our Story",
+   "description": "The story behind mYa Solutions. Why it was built, who it was built for, and the people behind it."
+  },
+  {
+   "path": "company/careers.html",
+   "title": "Careers — mYa Solutions",
+   "description": "We're a small team building something unreasonably large. Not actively hiring — but always listening. Send your résumé or CV and tell us why this work matters to you."
+  },
+  {
+   "path": "company/contact.html",
+   "title": "Contact — mYa Solutions",
+   "description": "How to reach mYa Solutions: products and pilots, investors, careers, press and partnerships. A person replies to every message."
+  },
+  {
+   "path": "investor.html",
+   "title": "Investor — mYa Solutions",
+   "description": "mYa Solutions investor page. Evidence-first. Every claim has a methodology, a data file, or a video behind it."
+  },
+  {
+   "path": "login.html",
+   "title": "Sign In — mYa Solutions",
+   "description": "Sign in to access Jean, your personal Partner Intelligence."
+  }
+ ],
+ "sections": [
+  {
+   "id": "arrival",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "The light was always going to come around.",
+   "summary": "Welcome to mYa Solutions. The light was always going to come around: private, local intelligence, already proven. Ask Jean anything about the site.",
+   "text": "Private, local intelligence · Oakland, California\nThe light was always going to come around."
+  },
+  {
+   "id": "who-we-are",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Who we are",
+   "summary": "Everyone scaled AI up, into the cloud and away from you. mYa Solutions built the other half: private, local, already proven. Jean OS is the one engine behind every product.",
+   "text": "Everyone scaled AI up — into the cloud, away from you. We built the other half: private, local, already proven. Jean OS does the heavy lifting."
+  },
+  {
+   "id": "windows",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Three windows, already open",
+   "summary": "All the evidence A lighthouse holding its beam over a storm-struck coast. Security · Window 01 Security that never leaves your building.",
+   "text": "Three windows, already open\nAll the evidence\nA lighthouse holding its beam over a storm-struck coast.\nSecurity · Window 01\nSecurity that never leaves your building.\nEnterprise-grade defense on a box you own — 92.3% APT-class block, zero false positives, roughly one nanosecond per check.\nRead the story →\nA teacher kneels beside a student, reading together at her desk.\nLearning · Window 02\nGive every teacher the time to teach.\nA partner that returns the hours and never lets a student's data leave the room. A live pilot in Parlier, California.\nRead the story →\nAn underwater vehicle holding steady in shafts of light.\nPhysical intelligence · Window 03\nGive machines a steady hand.\nOne mind across every physical domain — a robotic arm, an underwater vehicle, the open roads. Proven, with receipts you can verify.\nRead the story →\nAlso in development:\nJean for Defense\n· in exploration:\nsustainable extraction and coral restoration\n."
+  },
+  {
+   "id": "window-security",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Security that never leaves your building.",
+   "summary": "Security: BethanyShell, AI detection and response on a box you own. 92.3% APT-class block rate, zero false positives, about a nanosecond per check.",
+   "text": "A lighthouse holding its beam over a storm-struck coast.\nSecurity · Window 01\nSecurity that never leaves your building.\nEnterprise-grade defense on a box you own — 92.3% APT-class block, zero false positives, roughly one nanosecond per check.\nRead the story →"
+  },
+  {
+   "id": "window-learning",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Give every teacher the time to teach.",
+   "summary": "Learning: Jean for Education gives teachers back 7 to 10 hours a week, and student data never leaves the classroom. Live pilot in Parlier, California.",
+   "text": "A teacher kneels beside a student, reading together at her desk.\nLearning · Window 02\nGive every teacher the time to teach.\nA partner that returns the hours and never lets a student's data leave the room. A live pilot in Parlier, California.\nRead the story →"
+  },
+  {
+   "id": "window-physical",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Give machines a steady hand.",
+   "summary": "Physical intelligence: one mind across robotics, marine and ground autonomy — a robotic arm, an underwater vehicle held on station, open roads — with no training data.",
+   "text": "An underwater vehicle holding steady in shafts of light.\nPhysical intelligence · Window 03\nGive machines a steady hand.\nOne mind across every physical domain — a robotic arm, an underwater vehicle, the open roads. Proven, with receipts you can verify.\nRead the story →"
+  },
+  {
+   "id": "receipts",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Don't take our word for it.",
+   "summary": "The receipts: 92.3% of APT-class attacks blocked, 0 false positives across 110 benign requests, about 1.07 nanoseconds per safety check, 8,906 tests in the public repository.",
+   "text": "Don't take our word for it.\nEvery number on this site is documented, reproducible and published. Run the tests yourself.\n92.3%\nAPT-class attacks blocked — APT28 5/5, APT29 4/5, FIN7 3/3\n0\nfalse positives across 110 benign requests\n~1.07ns\nper safety check, on-device — about three clock cycles\n8,906\ntests passing in the public repo — run every one yourself\nRead the methodology\nRun the tests yourself"
+  },
+  {
+   "id": "voice",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "A voice from the work",
+   "summary": "Sebastian Benavidez III, classroom teacher in Parlier, California: Jean gave him back the capacity to teach better.",
+   "text": "Sebastian Benavidez III, classroom teacher in Parlier, California.\n“Jean didn't replace what I do — it gave me back the capacity to do it better. My students are more engaged, my planning is sharper, and I'm not exhausted by Thursday.”\nSebastian Benavidez III · Classroom teacher, Parlier, California ·\nThe pilot"
+  },
+  {
+   "id": "impact",
+   "path": "index.html",
+   "page": "mYa Solutions — Private, local intelligence",
+   "heading": "Ten percent of all earnings, written into the bylaws.",
+   "summary": "Impact: ten percent of all earnings, written into the bylaws through an M-class share, held to account by a California benefit corporation.",
+   "text": "Impact\nTen percent of all earnings, written into the bylaws.\nAn M-class share obliges the company to direct 10% of all earnings to charitable causes, and a charitable benefit corporation holds that obligation for the long run. Not a pledge — a clause.\nB Corp & the M-class share\nGiving Back"
+  },
+  {
+   "id": "arrival",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "Security that never leaves your building.",
+   "summary": "AI Detection & Response · Powered by Jean OS. Security that never leaves your building. Enterprise-grade defense on a box you own — 92.3% APT-class block rate, zero false positives, roughly one nanosecond per check. The light that stays steady while the storm rolls through.",
+   "text": "BethanyShell\nAI Detection & Response · Powered by Jean OS\nSecurity that never leaves your building."
+  },
+  {
+   "id": "you-ve-been-sold-this-three-times",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "You've been sold this three times.",
+   "summary": "What it is  Three separate products, three separate bills, three separate vendors who each hold a piece of your security — and a piece of your data. The detection tool that pages you at 2 a.m.",
+   "text": "What it is\nYou've been sold this three times.\nThree separate products, three separate bills, three separate vendors who each hold a piece of your security — and a piece of your data.\nThe detection tool that pages you at 2 a.m. — and leaves you to figure out what it means.\nThe analyst service that reads your data to defend it — from their cloud, not your building.\nThe AI assistant nobody in the building actually trusts — because it lives somewhere else.\nThey were never supposed to be three.\nBethanyShell is one. One mind. One box."
+  },
+  {
+   "id": "companies-overpay-to-outsource-security-and-stil",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "Companies overpay to outsource security — and still don't own their data.",
+   "summary": "The problem  The current model asks you to send your most sensitive data somewhere else, pay a premium for the privilege, and trust that the vendor never gets breached. When they do, your data goes with them.",
+   "text": "The problem\nCompanies overpay to outsource security — and still don't own their data.\nThe current model asks you to send your most sensitive data somewhere else, pay a premium for the privilege, and trust that the vendor never gets breached. When they do, your data goes with them.\n43%\nof US SMBs faced at least one cyberattack in the past 12 months\n$120–192K\npaid per year by a 200-seat firm for a fragmented managed-security stack\n~half\nof SMBs aren't fully confident in their MSP — and would switch for stronger security\n100%\nof that data leaves the building — and rides along when the provider gets breached"
+  },
+  {
+   "id": "proof",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "Don't take our word for it. Run the tests yourself.",
+   "summary": "The proof — red-team results, unedited  These are real results from industry-standard adversarial emulation — Caldera, Garak, PyRIT. Every number is documented, reproducible, and published in a public repository.",
+   "text": "The proof — red-team results, unedited\nDon't take our word for it. Run the tests yourself.\nThese are real results from industry-standard adversarial emulation — Caldera, Garak, PyRIT. Every number is documented, reproducible, and published in a public repository.\n92.3%\nAPT-class attacks blocked — APT28 5/5, APT29 4/5, FIN7 3/3\n0\nfalse positives across 110 benign requests in this run\n~1.07ns\nper safety check, on-device — about three clock cycles\n8,906\ntests passing in the public repo — run every one yourself\nVerified via CALDERA nation-state emulation under Software-in-the-Loop methodology. Three-run identical outcome — deterministic, not probabilistic. Full run data in the methodology report."
+  },
+  {
+   "id": "anyone-can-be-breached-we-make-it-not-worth-thei",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "Anyone can be breached. We make it not worth their time.",
+   "summary": "Speed is the security  ~1 ns per check · on-device · no round trip A cloud security check adds milliseconds of exposure to every request — a window an attacker can work in. BethanyShell runs an 18-layer constitutional defense on the box, w…",
+   "text": "Speed is the security\nAnyone can be breached. We make it not worth their time.\n~1 ns\nper check · on-device · no round trip\nA cloud security check adds milliseconds of exposure to every request — a window an attacker can work in. BethanyShell runs an 18-layer constitutional defense on the box, with nothing on the wire. Each safety check clears in about a nanosecond. There's no round trip to intercept, nothing to map, and no window to exploit. The light sweeps too fast to hide from."
+  },
+  {
+   "id": "three-layers-copy-two-never-all-three",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "Three layers. Copy two. Never all three.",
+   "summary": "Why it's hard to copy  We translated how the mind turns chaos into meaning — into math. That mathematics, compiled native, running on a biologically-inspired architecture, is a moat a giant can't cross by writing a check.",
+   "text": "Why it's hard to copy\nThree layers. Copy two. Never all three.\nWe translated how the mind turns chaos into meaning — into math. That mathematics, compiled native, running on a biologically-inspired architecture, is a moat a giant can't cross by writing a check.\n01\nThe formulas\nDozens of in-house mathematical formulas — named for Black pioneers in science and mathematics — that find the attack hiding in ordinary-looking noise. A competitor can copy a formula. They can't copy the discipline that produced dozens of them.\n02\nNative Rust\nThe whole engine compiled to run local — memory-safe, deterministic, fast enough to check in a nanosecond. Not a cloud service with a local wrapper. The real thing, on your hardware.\n03\nThe brain\nA biologically-inspired architecture of specialized regions — the structure that lets one engine reason across security, medicine, and education without being rebuilt for each.\nYour data, your system, your company — on your terms."
+  },
+  {
+   "id": "pricing",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "Twice as capable. Half of what you pay now.",
+   "summary": "The math  What you pay today The fragmented stack $120–192K per year · 200-seat firm · $50–80/user/mo Detection, analysis, and response billed separately Your data leaves the building to be defended Per-seat, per-endpoint costs that grow w…",
+   "text": "The math\nTwice as capable. Half of what you pay now.\nWhat you pay today\nThe fragmented stack\n$120–192K\nper year · 200-seat firm · $50–80/user/mo\nDetection, analysis, and response billed separately\nYour data leaves the building to be defended\nPer-seat, per-endpoint costs that grow with you\nBreached vendor means your data is breached too\nBethanyShell\nOne box. One bill.\n~$52.5K\nrecurring per year · replaces the stack above\nDetection, analysis, and response — one engine\nYour data never leaves your building\nFlat cost — near-zero marginal compute\nNothing to breach off-site because nothing leaves\nHow it's priced\nBethanyShell lands as an appliance — $40K up front (or $20K leased) plus $25 per seat per month. The box plus the seats replaces a $120–192K annual stack, so year one already costs less than what you pay now. The hardware bill rolls off over time, and the on-device AI colleague already sitting on the box becomes a near-zero-cost upgrade.\n$40K\nappliance · the wedge (or $20K leased)\n$25\nper seat / month\nYear 1\nalready costs less than your current stack"
+  },
+  {
+   "id": "repo",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "The repository is public. Run every test yourself.",
+   "summary": "Verify anything  We don't ask you to trust a number on a slide. The full evaluation suite, methodology, and SIL environment are open-source and reproducible — clone it and run the red-team emulation on your own machine.",
+   "text": "Verify anything\nThe repository is public. Run every test yourself.\nWe don't ask you to trust a number on a slide. The full evaluation suite, methodology, and SIL environment are open-source and reproducible — clone it and run the red-team emulation on your own machine. Every result on this page is verifiable. That's the whole point.\nRepo access and full run instructions are included with the methodology report below.\n# Clone the public BETHANY evaluation suite\n$ git clone https://github.com/AyindeRudolph/bethany-sil\n$ cd bethany-sil\n# Run the full Software-in-the-Loop evaluation\n$ cargo test\n# Reproduce the red-team results — CALDERA emulation\n$ cargo test --test sil_run"
+  },
+  {
+   "id": "bethanyshell-in-motion",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "BethanyShell, in motion.",
+   "summary": "See it work  A walkthrough of the engine — how it reads a threat, reasons about it, and responds, all on the box, in real time. Walkthrough video coming soon",
+   "text": "See it work\nBethanyShell, in motion.\nA walkthrough of the engine — how it reads a threat, reasons about it, and responds, all on the box, in real time.\nWalkthrough video coming soon"
+  },
+  {
+   "id": "report",
+   "path": "products/bethanyshell.html",
+   "page": "BethanyShell — Security that never leaves your building",
+   "heading": "See the full picture, or start a conversation.",
+   "summary": "Two ways forward  The methodology report Every number, every method, the full run data. The complete methodology report — red-team results, SIL run data, reproducibility instructions, and public repo access.",
+   "text": "Two ways forward\nSee the full picture, or start a conversation.\nThe methodology report\nEvery number, every method, the full run data.\nThe complete methodology report — red-team results, SIL run data, reproducibility instructions, and public repo access. Free — we just ask who you are.\nGet the methodology report\nOpens in DocSend · quick email registration · includes repo access instructions\nTalk to us\nTell us your environment. We'll tell you if it fits.\nQuestions about deployment, seat count, air-gapped configuration, or whether BethanyShell fits your stack? Write to us directly — no sales process, no auto-responder.\nWrite to us\ncontactus@myasolutions.org · we respond personally"
+  },
+  {
+   "id": "arrival",
+   "path": "products/education.html",
+   "page": "Jean for Education — mYa Solutions",
+   "heading": "Expand your favorite teacher's reach.",
+   "summary": "Jean for Education · Powered by Jean OS. Expand your favorite teacher's reach. The average teacher spends 7–10 hours a week on tasks that have nothing to do with teaching. Jean gives those hours back — privately, locally, without student data ever leaving the room.",
+   "text": "Jean for Education · Powered by Jean OS\nExpand your favorite teacher's reach."
+  },
+  {
+   "id": "learn-more",
+   "path": "products/education.html",
+   "page": "Jean for Education — mYa Solutions",
+   "heading": "Teaching is the job. The paperwork is the other job.",
+   "summary": "The world as it is  The teacher shortage isn't just about pay. It's about the weight of a system that asks its best people to be educators, administrators, data analysts, and compliance officers — simultaneously, every day.",
+   "text": "The world as it is\nTeaching is the job. The paperwork is the other job.\nThe teacher shortage isn't just about pay. It's about the weight of a system that asks its best people to be educators, administrators, data analysts, and compliance officers — simultaneously, every day.\nLesson planning. Progress reports. IEP documentation. Parent communications. Curriculum alignment. All of it lands on the same person who also has 30 students waiting for them at 8am.\nAI promised to help. Then it required teachers to learn a new tool, manage a new platform, and worry about where their students' data was going.\n“We didn't build another tool for teachers to manage. We built something that manages itself — so teachers can get back to the work only they can do.”\n7–10\nhours per week spent on tasks unrelated to teaching — returned to the educator"
+  },
+  {
+   "id": "how",
+   "path": "products/education.html",
+   "page": "Jean for Education — mYa Solutions",
+   "heading": "Three steps. Then it just gets you.",
+   "summary": "How Jean works  Jean learns how you teach — your voice, your students, your standards. It doesn't replace your judgment.",
+   "text": "How Jean works\nThree steps. Then it just gets you.\nJean learns how you teach — your voice, your students, your standards. It doesn't replace your judgment. It amplifies what you already know.\n01\nIt runs on your device\nJean installs locally. No student data ever touches a cloud server. FERPA compliance isn't a policy — it's a property of the architecture. It cannot leak what it never sends.\n02\nIt learns your voice\nJean builds a model of how you communicate — your tone, your curriculum approach, your students' needs. Lesson plans, parent communications, and reports sound like you, not a machine.\n03\nYou get your evenings back\nTasks that used to take two hours take twenty minutes. The work that only a teacher can do — connecting, inspiring, seeing a student — gets more of your time and energy."
+  },
+  {
+   "id": "proof",
+   "path": "products/education.html",
+   "page": "Jean for Education — mYa Solutions",
+   "heading": "One classroom. One pilot. Real results.",
+   "summary": "The receipt  We don't ask you to take our word for it. This happened in a real classroom, with a real teacher, and real students whose names we protect.",
+   "text": "The receipt\nOne classroom. One pilot. Real results.\nWe don't ask you to take our word for it. This happened in a real classroom, with a real teacher, and real students whose names we protect.\n+22\nPoint shift in student proficiency — live classroom pilot, Parlier CA\n7–10\nHours per week returned to the teacher — verified in pilot\n$0\nStudent data shared with any server — private by architecture\nSebastian Benavidez III, classroom teacher in Parlier, California.\n“Jean didn't replace what I do — it gave me back the capacity to do it better. My students are more engaged, my planning is sharper, and I'm not exhausted by Thursday.”\nSebastian Benavidez III\nClassroom teacher — Parlier, California\nRead the full testimonial"
+  },
+  {
+   "id": "who",
+   "path": "products/education.html",
+   "page": "Jean for Education — mYa Solutions",
+   "heading": "Three ways to be part of this.",
+   "summary": "Who this is for  For teachers Get your evenings back If you're the one staying late writing lesson plans and progress reports — Jean is built for you. It runs on your computer, learns your voice, and handles the tasks that don't require a …",
+   "text": "Who this is for\nThree ways to be part of this.\nFor teachers\nGet your evenings back\nIf you're the one staying late writing lesson plans and progress reports — Jean is built for you. It runs on your computer, learns your voice, and handles the tasks that don't require a teacher. You do.\nFor supporters\nExpand a teacher's reach\nKnow a teacher who gives everything to their students? A Founders Circle lifetime license is a gift that gives them back their time — every week, for the rest of their career. Ships November 2026.\nFor administrators & districts\nMove the needle on outcomes\n+22 points in one classroom, one pilot. Private by architecture — no FERPA workarounds, no vendor data agreements. If you want to talk district deployment, write to us directly."
+  },
+  {
+   "id": "get-access",
+   "path": "products/education.html",
+   "page": "Jean for Education — mYa Solutions",
+   "heading": "The best gift you can give a teacher is their time back.",
+   "summary": "Change the world one classroom at a time  Jean launches November 2026. Founders Circle members get lifetime access at a fixed price — before the launch, before the waitlist, before the price changes.",
+   "text": "Change the world one classroom at a time\nThe best gift you can give a teacher is their time back.\nJean launches November 2026. Founders Circle members get lifetime access at a fixed price — before the launch, before the waitlist, before the price changes.\nFounders Circle — Lifetime Access\nOwn it forever. Give it as a gift.\nOne payment. Lifetime access to Jean for Education. No monthly fees, no subscription renewals. Lock in the founding price before November launch.\n$515\nOne-time · Lifetime access · Ships November 2026\nGet lifetime access →\nWant to learn more first\nAsk us anything. We respond personally.\nQuestions about district deployment, curriculum alignment, FERPA compliance, or how Jean works? Write to us — no sales funnel, no auto-responder.\nWrite to us →\ncontactus@myasolutions.org · we respond to every inquiry\nFounders Circle is non-refundable. Access is granted at launch (November 2026). Early members receive priority onboarding and direct access to the founding team."
+  },
+  {
+   "id": "arrival",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "The attack doesn't wait. Neither should your defense.",
+   "summary": "Jean for Defense · BETHANY. The attack doesn't wait. Neither should your defense. Most AI security is passive — detect, alert, log. BETHANY is the first deterministic AI security architecture with zero false positives that enables autonomous response. Because you can't automate a system that's wrong 5% of the time.",
+   "text": "Jean for Defense · BETHANY\nThe attack doesn't wait. Neither should your defense."
+  },
+  {
+   "id": "problem",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "Probabilistic AI cannot defend deterministic infrastructure.",
+   "summary": "The problem with current AI security  The commercial generation of AI-assisted security tools shares three failure modes that make them unsuitable for regulated or OT deployment: Probabilistic false positives. Cloud-based ML models routine…",
+   "text": "The problem with current AI security\nProbabilistic AI cannot defend deterministic infrastructure.\nThe commercial generation of AI-assisted security tools shares three failure modes that make them unsuitable for regulated or OT deployment:\nProbabilistic false positives. Cloud-based ML models routinely produce false alarms. In OT environments where downtime cascades into operational failure — fuel distribution, warehouse automation, logistics infrastructure — false-positive-driven automatic response is unacceptable.\nCloud dependency. Most commercial AI security agents require cloud connectivity for model inference. This is incompatible with air-gapped OT segments, classified networks, and any environment where data sovereignty is non-negotiable.\nBlack-box decisioning. Probabilistic LLM-based detection cannot be audited at per-decision granularity. For environments where every authorization decision must be defensible to oversight — OIG, GAO, DoD — black-box detection is a compliance liability.\n“The unsolved problem: an AI-assisted security system that is deterministic, air-gappable, auditable per-decision, and precise enough to enable autonomous response.”\n5%+\nFalse positive rate for leading commercial ML security tools — operationally unacceptable for autonomous OT response\nCloud\nRequired for inference by most commercial AI security agents — incompatible with air-gapped and classified network segments\n0\nExisting commercial tools with per-decision mathematical audit trail — the DoD compliance requirement nobody has solved"
+  },
+  {
+   "id": "differentiation",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "This is a different category of product.",
+   "summary": "BETHANY vs. the field  Not a better version of what exists.",
+   "text": "BETHANY vs. the field\nThis is a different category of product.\nNot a better version of what exists. A different architecture entirely — deterministic where others are probabilistic, local where others are cloud-dependent, auditable where others are black boxes.\nProperty\nCommercial AI Security (CrowdStrike, SentinelOne, Darktrace)\nBETHANY\nDetection type\nProbabilistic ML — can't be audited per-decision\nDeterministic mathematical cascade — every decision attributable to specific layers, parameters, and threshold values\nFalse positives\n5%+ industry baseline — operationally disruptive in OT contexts\n0.0% across 1,700+ assessments — the precondition for autonomous response\nCloud dependency\nRequired for inference, signature updates, telemetry aggregation\nZero cloud dependency — fully air-gappable on commodity hardware\nAudit trail\nLog-level event records — no per-decision parameter attribution\nPer-layer, per-parameter SQLite audit trail — every block decision fully attributable and locally stored\nLearning model\nPeriodic model retraining — cloud-dependent, delayed\nJean learns continuously — every encounter hardens detection for the next one, with no retraining, no cloud update cycle, and no external dependency\nOT deployment\nLimited — cloud dependency and FP rate incompatible with OT operational tolerance\nDesigned for OT — sub-2ms p50 latency, air-gappable, protocol parsers for Modbus, DNP3, OPC UA, BACnet"
+  },
+  {
+   "id": "active",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "Zero false positives isn't a metric. It's what makes autonomous response possible.",
+   "summary": "From passive to active defense  The reason AI security has remained passive — detect and alert, never autonomously respond — is that no system has been precise enough to trust with automatic action. BETHANY changes that equation.",
+   "text": "From passive to active defense\nZero false positives isn't a metric. It's what makes autonomous response possible.\nThe reason AI security has remained passive — detect and alert, never autonomously respond — is that no system has been precise enough to trust with automatic action. BETHANY changes that equation.\nWhere the industry is today\nPassive defense\nDetect anomalies. Generate alerts. Route to human analyst. The analyst decides. The attacker moves faster than the workflow.\nDetect — probabilistic ML flags potential threat\nAlert — event logged, analyst notified\nWait — human reviews, decides, acts\nRespond — minutes to hours after detection\nWhere BETHANY is going\nActive defense\nDeterministic detection enables autonomous response. Zero false positives means you can trust the system to act — because it has never acted when it shouldn't have.\nDetect — deterministic cascade fires at sub-2ms\nAttribute — per-layer audit trail written locally\nRespond — autonomous action within the response window\nLearn — Jean hardens detection for every future encounter automatically\nComing next — Jean learns social engineering\nNetwork-layer defense can't see what Jean can.\nA credentialed insider being walked into an exfiltration sequence. An external attacker conducting reconnaissance through authorized interaction channels. These attacks don't cross the network perimeter — they walk through it with a badge.\nJean is being extended to detect social engineering at the interaction level — before it becomes a network event. Jean observes behavioral signals in real time, distinguishes adversarial probing from legitimate queries, and hardens its recognition with every encounter. Early validation: 60% per-turn social engineering detection from a 0% baseline, at sub-millisecond latency. This is Phase II scope — named here because the threat is real now.\nThe attack that bypasses your firewall starts with a conversation."
+  },
+  {
+   "id": "proof",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "Five validation runs. All results published.",
+   "summary": "The receipts  We don't report the runs that went well and ignore the ones that didn't. Every run is documented — block rates, false positive rates, latency, and honest boundary conditions named explicitly.",
+   "text": "The receipts\nFive validation runs. All results published.\nWe don't report the runs that went well and ignore the ones that didn't. Every run is documented — block rates, false positive rates, latency, and honest boundary conditions named explicitly.\n92.3%\nAPT-class block rate — APT28, APT29, FIN7 patterns — SIL Run 4\n0.0%\nFalse positive rate across Runs 1–4 — 1,700+ assessments\n<2ms\np50 latency on commodity hardware — ample headroom for OT real-time constraints\n18\nCascade layers — each decision fully attributable, per-layer, per-parameter\nFive SIL validation runs — May 2–20, 2026\nRun\nRequests\nBlock Rate\nFalse Positives\nLatency p50\nStress 1\n510\n65.0%\n0 (0.0%)\n92ms\nStress 2\n510\n64.6%\n0 (0.0%)\n130ms\nStress 3\n510\n63.3%\n0 (0.0%)\n149ms\nSIL 4 (APT)\n178\n92.3% APT-class\n0 (0.0%)\n~2ms\nSIL 5 (SE Layer)\n32\n60% SE/turn\n1/17 (5.9%)*\n~1ms\n*Run 5 tests Jean's social engineering detection layer (Phase II scope) — not included in Runs 1–4 zero-FP baseline\nView full methodology →\nTwo DLA SBIR Phase I proposals submitted June 24, 2026. NV005 — BETHANY adapted for OT and IT/cloud network and endpoint defense. NV006 — CARVER-RMF: AI-assisted Risk Management Framework pre-adjudication, compressing ATO timelines from months to hours. One engine. Two federal bets. Contact Barry Humphrey, Ph.D. at DLA for topic verification.\nFull briefing →"
+  },
+  {
+   "id": "how",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "Deterministic. Auditable. Per-decision.",
+   "summary": "How BETHANY works  The cascade reads structural threat parameters, applies domain-invariant mathematical detection, and emits auditable per-layer decisions — on your hardware, with nothing leaving the device. 01 Traffic enters the cascade …",
+   "text": "How BETHANY works\nDeterministic. Auditable. Per-decision.\nThe cascade reads structural threat parameters, applies domain-invariant mathematical detection, and emits auditable per-layer decisions — on your hardware, with nothing leaving the device.\n01\nTraffic enters the cascade\nNetwork packets, endpoint events, or conversational traffic — BETHANY's substrate-agnostic architecture reads structural threat parameters from any input class. The cascade logic doesn't change substrate to substrate. Only the traffic adapter changes.\n02\n18 layers fire deterministically\nEach layer evaluates specific threat parameters against calibrated mathematical thresholds. Every layer firing, every parameter value, every decision is written to a local SQLite audit trail. Nothing is probabilistic. Nothing leaves the device.\n03\nJean learns from every encounter\nEvery threat Jean encounters hardens its recognition for future encounters — automatically, locally, without retraining or cloud dependency. The more Jean operates, the better it gets. All of that learning stays on your hardware."
+  },
+  {
+   "id": "who",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "Built for environments where failure isn't an option.",
+   "summary": "Who this is for  CISOs & Security Teams Auditable at every decision Every block decision is attributable to specific cascade layers and parameter values. When the board asks why something was blocked, the answer is a printout, not a probab…",
+   "text": "Who this is for\nBuilt for environments where failure isn't an option.\nCISOs & Security Teams\nAuditable at every decision\nEvery block decision is attributable to specific cascade layers and parameter values. When the board asks why something was blocked, the answer is a printout, not a probability score.\nDefense Contractors\nCMMC-ready architecture\nZero external transmission, local SQLite audit trail, air-gappable on commodity hardware. BETHANY's privacy architecture was designed for environments where data sovereignty is non-negotiable.\nFederal Program Managers\nOT and IT/cloud — one system\nThe same cascade architecture covers IT enterprise, hybrid cloud, and OT networks. One codebase, one audit pattern, one deployment team — across DLA's full network spectrum.\nInvestors\n$500M+ DoD addressable market\nDLA, Army Materiel Command, Navy/Air Force logistics components, and defense industrial base contractors. The same Rust binary deploys across DoD, civilian federal, and commercial critical infrastructure."
+  },
+  {
+   "id": "get-in-touch",
+   "path": "products/defense.html",
+   "page": "Jean for Defense — mYa Solutions",
+   "heading": "This product is under active development. The right partners are welcome now.",
+   "summary": "Start a conversation  We're not taking purchase orders. We're talking to the organizations and investors who understand what deterministic, air-gappable AI defense means — and want to be part of building it.",
+   "text": "Start a conversation\nThis product is under active development. The right partners are welcome now.\nWe're not taking purchase orders. We're talking to the organizations and investors who understand what deterministic, air-gappable AI defense means — and want to be part of building it.\nWrite to us directly\nTell us your environment, your current stack, and what problem you're trying to solve. We respond personally — no sales process, no auto-responder. If there's a fit, we'll know quickly.\nWrite to us →\ncontactus@myasolutions.org · we respond to every serious inquiry personally"
+  },
+  {
+   "id": "arrival",
+   "path": "products/physical.html",
+   "page": "Physical Intelligence — Partner Intelligence for every physical domain",
+   "heading": "Partner Intelligence for every physical domain that needs it.",
+   "summary": "Physical Intelligence. Partner Intelligence for every physical domain that needs it. Land, sea, air, and the machines between them. The same mind that reasons through a threaded needle holds a vehicle steady in a dark ocean current — without being retrained for either.",
+   "text": "Physical Intelligence\nPartner Intelligence for every physical domain that needs it."
+  },
+  {
+   "id": "most-physical-ai-is-built-one-domain-at-a-time-m",
+   "path": "products/physical.html",
+   "page": "Physical Intelligence — Partner Intelligence for every physical domain",
+   "heading": "Most physical AI is built one domain at a time — millions of demonstrations, months of training, a model that only knows the task it was fed. Jean OS is built differently.",
+   "summary": "01 Reasoning, not training Jean's control decisions come from architectural reasoning — not a policy learned from millions of examples. New domain, same mind.",
+   "text": "Most physical AI is built one domain at a time — millions of demonstrations, months of training, a model that only knows the task it was fed. Jean OS is built differently.\n01\nReasoning, not training\nJean's control decisions come from architectural reasoning — not a policy learned from millions of examples. New domain, same mind. The engine that handles an arm handles an underwater vehicle without starting over.\n02\nSkip the training bottleneck\nWhen you don't need a massive domain-specific dataset to begin, you don't wait months to start. You move toward deployment faster — measure the plant, reason about it, control it.\n03\nEvery domain costs less than the last\nBecause the reasoning transfers, each new physical domain reuses the mind already built. Land, sea, air — and eventually humanoids — extend one architecture rather than rebuilding from zero."
+  },
+  {
+   "id": "domains",
+   "path": "products/physical.html",
+   "page": "Physical Intelligence — Partner Intelligence for every physical domain",
+   "heading": "One mind. Four worlds.",
+   "summary": "The domains  Each proven — or being proven — on its own physics, with receipts you can verify. Robotics · Dexterity The 7-DOF arm 11/11 standard threading, 4/4 impossible tasks refused with reasons, zero false successes — no training data.",
+   "text": "The domains\nOne mind. Four worlds.\nEach proven — or being proven — on its own physics, with receipts you can verify.\nRobotics · Dexterity\nThe 7-DOF arm\n11/11 standard threading, 4/4 impossible tasks refused with reasons, zero false successes — no training data.\nReceipt live Explore robotics\nMarine · Subsea\nThe underwater vehicle\nDepth held within ±0.5 m for 3× the required time, three runs agreeing within 1% — every constant measured, not assumed.\nReceipt live Explore marine\nGround · Navigation\nAutonomous roads\n5,490 live Oakland route nodes evaluated with zero LLM calls in the cognitive path — pure deterministic reasoning.\nReceipt live Explore ground\nAir · Aerial\nThe sky is next\nThe same reasoning that holds a vehicle in a current will hold one in the wind. Aerial is on the roadmap — same mind, new medium.\nOn the horizon Coming soon"
+  },
+  {
+   "id": "the-bottleneck-in-physical-ai-was-never-the-hard",
+   "path": "products/physical.html",
+   "page": "Physical Intelligence — Partner Intelligence for every physical domain",
+   "heading": "The bottleneck in physical AI was never the hardware. It was the training.",
+   "summary": "Why it matters  We removed it. That's why one small team can prove intelligence across an arm, an ocean, and a road — and why the next domain is always closer than the last.",
+   "text": "Why it matters\nThe bottleneck in physical AI was never the hardware. It was the training.\nWe removed it. That's why one small team can prove intelligence across an arm, an ocean, and a road — and why the next domain is always closer than the last.\nSee the first receipt\nInvestor briefing →"
+  },
+  {
+   "id": "arrival",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Physical intelligence.No training required.",
+   "summary": "Jean for Robotics. Physical intelligence.No training required. Jean controls a 7-DOF robotic arm using deterministic reasoning — not a learned policy, not a neural network trained on millions of examples. The same engine that handles education and cybersecurity handles a physical arm in the real world.",
+   "text": "A jointed robotic hand reaching forward against a deep blue field.\nJean for Robotics\nPhysical intelligence. No training required."
+  },
+  {
+   "id": "claim",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Jean's architecture is substrate-invariant.",
+   "summary": "The claim  One deterministic reasoning engine generalizes across domains without being rebuilt for each. This SIL tests that claim in the substrate where Jean has the least prior advantage — physical manipulation.",
+   "text": "The claim\nJean's architecture is substrate-invariant.\nOne deterministic reasoning engine generalizes across domains without being rebuilt for each. This SIL tests that claim in the substrate where Jean has the least prior advantage — physical manipulation.\n11/11\nStandard threaded tasks completed — eye-scaled tolerance in 3D space\n4/4\nImpossible tasks refused — with specific reasons given each time\n0\nFalse successes — Jean never reported a success it did not physically earn\n<1mm\nTypical landing accuracy on standard target threading\n\"The result that survives a hostile reader is the only result worth showing. Jean's reasoning ran inside the loop — placement, perception, kinematics, and physics were provided by the simulation environment. None of it was authored by Jean.\""
+  },
+  {
+   "id": "meaning",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Two results that tell the whole story.",
+   "summary": "Why this matters  Refusing impossible tasks is as important as completing possible ones Four tasks were designed to be physically impossible — targets out of reach, eyes too small for the gripper. Jean refused all four, with specific reaso…",
+   "text": "Why this matters\nTwo results that tell the whole story.\nRefusing impossible tasks is as important as completing possible ones\nFour tasks were designed to be physically impossible — targets out of reach, eyes too small for the gripper. Jean refused all four, with specific reasons each time.\nA system that claims success on impossible tasks is dangerous. The integrity of any physical AI system depends on its ability to recognize and name its own limits. Jean does this — and it does it without being told in advance which tasks are impossible.\nZero false successes is the integrity guarantee\nAcross all runs, Jean never reported a success it did not physically earn. No optimistic reporting, no partial completion counted as full success, no ambiguous result called a win.\nIn physical systems — industrial automation, surgical assistance, defense applications — a false success can cause real harm. The zero false success record is not a nice-to-have. It is the precondition for deployment in any high-stakes environment.\nHow Jean reasons about physical space\nJean's reasoning ran inside the control loop. Placement decisions, perception of the workspace, inverse kinematics selection, and rigid-body physics were provided by the simulation stack (ROS 2, MoveIt 2, Gazebo). Jean supplied the reasoning layer — deciding which grasp to attempt, how to adjust for precision, and when to refuse.\nThis is not a robotic arm trained on robot demonstrations. There is no training data. No learned policy. No neural network. The same deterministic reasoning engine that decides whether a student's lesson plan is complete decides whether a gripper approach is viable. Substrate changes. Engine doesn't."
+  },
+  {
+   "id": "how",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Three decisions. All deterministic.",
+   "summary": "How Jean controls the arm  01 Grasp selection Jean evaluates the target — geometry, accessibility, tolerance — and selects a grasp approach. Deterministic scoring, not probability sampling.",
+   "text": "How Jean controls the arm\nThree decisions. All deterministic.\n01\nGrasp selection\nJean evaluates the target — geometry, accessibility, tolerance — and selects a grasp approach. Deterministic scoring, not probability sampling. Jean can explain why it chose the approach it did.\n02\nPrecision adjustment\nJean adjusts for the gap between the planned approach and the physical constraints of the target. On standard tolerance, this runs at sub-1mm accuracy. On fine tolerance, the current boundary is named below.\n03\nRefusal with reason\nWhen a task is physically impossible, Jean refuses — and names the reason. Out of reach. Eye too small. Gripper clearance insufficient. The system knows what it doesn't know.\nThe honest boundary — named, diagnosed, fix specified\nFine-precision threading (0.4mm eye) is not yet achieved.\nOn fine-tolerance trials, Jean's reasoning was correct every time — the grasp selection and precision adjustment decisions were right. The arm missed because a goal-pose correction was expressed in a link frame that rotates under the alternate IK configuration MoveIt selects for the fine pose.\nThis is a diagnosed motion-planning limitation, not a reasoning failure. The fix is specified: closed-loop visual servoing (perceive → correct → retry) eliminates the dependency on the static goal-pose expression. That is the next build milestone.\nWe report this boundary explicitly because the result that survives a hostile reader is the only result worth showing. A system that hides its limits cannot be trusted with its successes."
+  },
+  {
+   "id": "proof",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Every trial documented. Raw data available.",
+   "summary": "The receipts  This is a Software-in-the-Loop test — ROS 2, MoveIt 2, Gazebo on an AWS x86 instance. No physical hardware.",
+   "text": "The receipts\nEvery trial documented. Raw data available.\nThis is a Software-in-the-Loop test — ROS 2, MoveIt 2, Gazebo on an AWS x86 instance. No physical hardware. All results posted publicly. Full methodology and raw JSON available on request.\nPer-trial results — standard target (1.2mm eye)\nTarget type\nResult\nLanding accuracy\nNotes\nStandard (1.2mm eye)\n✓ Threaded\n0.4–1.3mm\n11/11 across all runs\nImpossible — out of reach\n✗ Refused\n—\nSpecific reason given\nImpossible — eye too small\n✗ Refused\n—\nSpecific reason given\nFine (0.4mm eye)\n⚠ Boundary\nReasoning correct\nMotion-planning limit — fix specified\nView SIL methodology →\n11/11\nStandard tolerance threading — all runs, all trials\n4/4\nImpossible tasks refused with specific reasons\n0\nFalse successes across all runs — integrity guaranteed\n0\nTraining examples used — pure deterministic reasoning"
+  },
+  {
+   "id": "substrate",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Robotics is one proof. The same engine runs everywhere.",
+   "summary": "One engine, many substrates  The robotics SIL is corroborating evidence for substrate invariance — the architectural property that one reasoning engine generalizes across physical domains without being rebuilt. Here's the full picture.",
+   "text": "One engine, many substrates\nRobotics is one proof. The same engine runs everywhere.\nThe robotics SIL is corroborating evidence for substrate invariance — the architectural property that one reasoning engine generalizes across physical domains without being rebuilt. Here's the full picture.\nRobotics\n7-DOF arm · 11/11 standard threading · 0 false successes · This SIL\nMedicine\n7/7 NEJM cases · 27s · 2¢ compute · No training data\nCybersecurity\n92.3% APT block · 0 false positives · 1,700+ assessments\nNavigation\n5,490 Oakland nodes · 0 LLM calls · Live route evaluation\nEducation\n+22pt proficiency · 7–10hrs returned · Live classroom pilot\nNext frontier\nClosed-loop visual servoing · Fine-precision threading · Physical dexterity"
+  },
+  {
+   "id": "who",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "Built for the people who know what zero false successes means.",
+   "summary": "Who this is for  Robotics Engineers No training pipeline required Jean reasons about physical space without demonstration data. If your deployment environment makes training data expensive or impossible to collect, Jean's deterministic app…",
+   "text": "Who this is for\nBuilt for the people who know what zero false successes means.\nRobotics Engineers\nNo training pipeline required\nJean reasons about physical space without demonstration data. If your deployment environment makes training data expensive or impossible to collect, Jean's deterministic approach is a different category of solution.\nDefense & Industrial\nIntegrity before capability\nZero false successes and named refusals mean Jean can be trusted in high-stakes physical environments. A system that knows its limits and names them is safer than one that optimistically reports success.\nResearchers\nFull methodology published\nThe SIL methodology, per-trial results, honest boundary conditions, and raw JSON are all available. We built this to survive a hostile reader — and we welcome one.\nInvestors\nPhysical AI without the training moat\nThe dominant assumption in physical AI is that you need massive demonstration datasets. Jean challenges that assumption with a live result. The substrate-invariant architecture means every new physical domain costs less than the last."
+  },
+  {
+   "id": "get-in-touch",
+   "path": "products/robotics.html",
+   "page": "Jean for Robotics — mYa Solutions",
+   "heading": "The methodology is published. The raw data is available.",
+   "summary": "Start a conversation  We built this to survive scrutiny. If you want to verify the results independently, request the raw JSON trial data.",
+   "text": "Start a conversation\nThe methodology is published. The raw data is available.\nWe built this to survive scrutiny. If you want to verify the results independently, request the raw JSON trial data. If you want to talk about what comes next — closed-loop visual servoing, fine-precision dexterity, physical deployment — write to us.\nThe SIL methodology\nEvery trial documented.\nFull methodology and raw JSON available on request.\nView SIL methodology →\nWrite to us directly\nTell us what you're building and where Jean's physical reasoning capability fits. We respond personally — no sales process, no auto-responder. If there's a fit, we'll know quickly.\nWrite to us →\ncontactus@myasolutions.org · raw JSON data available on request · we respond personally\n← Air\nAll domains\nMarine →"
+  },
+  {
+   "id": "arrival",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Steady in the deep.",
+   "summary": "Physical Intelligence · Marine · 6-DOF station keeping. Steady in the deep. Jean held a 6-DOF underwater vehicle on station — within ±0.5 m depth and 1.0 m horizontal drift — for 363 s against a 120 s criterion. Median drift 0.042 m. Five of five designed fails correct. No training, no learned policy.",
+   "text": "Physical Intelligence · Marine · 6-DOF station keeping\nSteady in the deep."
+  },
+  {
+   "id": "the-same-engine-pointed-at-the-deep",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "The same engine, pointed at the deep.",
+   "summary": "Methodology & Results v1.0 · August 2026  Jean's reasoning layer ran inside the loop. Vehicle dynamics, hydrodynamics, sensor simulation and rigid-body physics were provided by Gazebo Harmonic and the DAVE/REXROV model — none of which Jean…",
+   "text": "Methodology & Results v1.0 · August 2026\nThe same engine, pointed at the deep.\nJean's reasoning layer ran inside the loop. Vehicle dynamics, hydrodynamics, sensor simulation and rigid-body physics were provided by Gazebo Harmonic and the DAVE/REXROV model — none of which Jean authored.\n363 s\nStation held, 3× criterion — 363.7 / 357.5 / 356.8 s across three runs against 120 s\n0.042 m\nMedian drift (run 3) against a 1.0 m tolerance — maximum 8 cm\n5/5\nDesigned-fails correct — zero false attempts, zero false refusals\nNo training\nNo learned policy — a deterministic engine, not a trained model\nROS 2 Jazzy + Gazebo Harmonic · AWS EC2 x86-64 · independent physics. This is a SIL. No physical hardware. It does not claim real-hardware performance."
+  },
+  {
+   "id": "one-engine-a-new-substrate",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "One engine. A new substrate.",
+   "summary": "What this evaluation tests  Jean was built to close the educational achievement gap. Its architecture is a deterministic mathematical reasoning stack, not a trained model.",
+   "text": "What this evaluation tests\nOne engine. A new substrate.\nJean was built to close the educational achievement gap. Its architecture is a deterministic mathematical reasoning stack, not a trained model. The architectural claim — validated across education, cybersecurity, clinical reasoning, sensor fusion and robotic manipulation — is that the same engine generalises across substrates without being rebuilt for each.\nThis SIL tests that claim in a substrate with properties the robotics work did not have: a continuously acting disturbance, a plant that must be characterised before it can be controlled, and a task where the correct answer is sometimes to do nothing.\nThe edge of a SIL\nA SIL stops at the edge of the physical world by definition.\nWhat it can prove is whether the decision and control logic is sound against an independent world. What it cannot prove is real-hardware performance — a separate, later category.\nArchitecture under test\nJean retained only the decision layer.\nEverything she reasoned about was provided by independent, non-authored software.\nIndependent — not authored by Jean\nPhysics and hydrodynamics: Gazebo Harmonic, with the DAVE/REXROV work-class ROV model. Jean never received ground truth about forces.\nSensors: simulated DVL, depth, pressure and IMU, published through a ROS 2 bridge Jean did not write.\nActuation: the vehicle's own wrench interface.\nJean's layer\nPOWELL — fusion quality\nCFADS — authority assessment\nBARCA — response selection\nRANDOLPH — intervention timing\nThe regulator is deterministic and stays deterministic. Jean decides whether to intervene, at what authority, and at what moment; a PID executes. This mirrors the robotics SIL, where CARVER selects the grasp and MoveIt executes it. Jean does not compute inverse kinematics there and does not compute PID arithmetic here."
+  },
+  {
+   "id": "method",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "No layer built above an unverified one.",
+   "summary": "Method  Phase structure Phase Scope Exit criterion 0 Actuation verified, vertical plant measured Commanded force produces its intended effect 1 Depth axis alone ±0.5 m for 120 s, three runs 2 Horizontal plant, then both axes Depth AND drif…",
+   "text": "Method\nNo layer built above an unverified one.\nPhase structure\nPhase\nScope\nExit criterion\n0\nActuation verified, vertical plant measured\nCommanded force produces its intended effect\n1\nDepth axis alone\n±0.5 m for 120 s, three runs\n2\nHorizontal plant, then both axes\nDepth AND drift simultaneously, 120 s\n3\nJean's decision layer replaces the fixed policy\nPerformance comparable, decisions logged\n4\nDesigned fails\nZero false attempts, zero false refusals\nThis structure was not the original plan. It was created after four days of Gate 2 work established that the plant had never been characterised.\nHonest verdict logic\nVerdicts are decoupled from whether an action was taken.\nPass\nRefusedCorrectly\nImpossible task, refused, reason matches.\nFlagged\nRefusedWrongReason\nRefused, but for a reason that was not the true one.\nFail\nFalseAttempt\nImpossible task attempted. The marine equivalent of a false success.\nPass / Fail\nHeldStation / FalseRefusal\nAchievable task accepted, or wrongly declined.\nA pass requires zero FalseAttempt and zero FalseRefusal. Refusing everything is not a pass; neither is attempting everything.\nIndependence and determinism\nPhysics is Gazebo's, not Jean's. Sensors are simulated by software Jean did not write. Success is measured from vehicle position observed through the simulator's own odometry, not computed by Jean. The same inputs produce the same decision — a design property of a deterministic engine.\nStatistical discipline\nEvery result is reported as N ≥ 3 runs with spread. This is not a convention; it was forced by measurement. Three runs of an identical binary once produced a 354% spread in drift and 398% in hold time."
+  },
+  {
+   "id": "proof",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Three runs. Reported with spread.",
+   "summary": "The results · Phases 0–2  Phase 0 — actuation and plant # vertical plant — measured net buoyancy (trim) -7 422 N measured by bisection heave drag |F| = 3519|v| + 280412 v² residual 1109 N (~3%) F_net/v|v| held between 263 000 and 307 000 a…",
+   "text": "The results · Phases 0–2\nThree runs. Reported with spread.\nPhase 0 — actuation and plant\n# vertical plant — measured\nnet buoyancy (trim) -7 422 N measured by bisection\nheave drag |F| = 3519|v| + 280412 v² residual 1109 N (~3%)\nF_net/v|v| held between 263 000 and 307 000 across a 65 000 N range.\nPhase 1 — Depth control on measured constants only.\nJean held an underwater vehicle at depth within ±0.5 m for three times the required duration — three runs agreeing within 1%, every constant measured on the plant, not assumed. The exit criterion was to hold depth within ±0.5 m for 120 continuous seconds across three settled runs, no saturation, every constant traceable. Here's what happened.\n3×\nLonger than required — held 352–377 s against a 120 s criterion\n±0.5 m\nDepth tolerance held, 92–94% of samples inside it at 27 Hz\n1%\nSpread across three runs — medians 0.212–0.216 m\n0\nConstants assumed — every value measured on the plant\nDepth-hold, 27 Hz control loop\nRun\nSamples\nMedian error\nWithin ±0.5 m\nContinuous hold\n1\n10,621\n0.216 m\n94.3%\n376.7 s\n2\n10,606\n0.212 m\n94.0%\n355.2 s\n3\n10,643\n0.216 m\n92.0%\n352.6 s\nNo saturation in any run. KD = 0 because the water itself supplies the damping — at 0.2 m/s the quadratic drag term alone opposes motion with nearly 12,000 N. No gain was chosen to make a test pass.\n\"The three runs agreeing to within 1% is itself the finding. Earlier in this programme, identical configurations produced 354% spread in the same measurement. The bench is now an instrument.\"\nPhase 2 — horizontal plant and full station keeping\n# horizontal plant — measured\nsurge drag |F| = 14080|v| + 61718 v² residual 1458 N (~5%)\nsway drag |F| = 29895|v| + 43659 v² residual 3902 N (~13%)\ncurrent ~0.014 m/s steady, ~616 N to null\nThe quadratic term is 4.5× lower in surge than heave; the linear term is 4× higher. The axes could not have been assumed alike.\nFull station keeping — depth AND drift, simultaneously\nRun\nSamples\nDepth median\nDrift median\nDrift max\nHold\n1\n9,412\n0.146 m\n0.336 m\n0.779 m\n363.7 s\n2\n10,077\n0.266 m\n0.096 m\n0.231 m\n357.5 s\n3\n10,299\n0.250 m\n0.042 m\n0.080 m\n356.8 s\nCriterion: ±0.5 m depth and 1.0 m horizontal drift, 120 s."
+  },
+  {
+   "id": "run-3-held-maximum-drift-to-8-centimetres-agains",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Run 3 held maximum drift to 8 centimetres against a 1.0 m tolerance, and a current that would have carried the vehicle 4.2 m over the same window.",
+   "summary": "Phase 2 · Run 3",
+   "text": "Phase 2 · Run 3\nRun 3 held maximum drift to 8 centimetres against a 1.0 m tolerance, and a current that would have carried the vehicle 4.2 m over the same window."
+  },
+  {
+   "id": "deciding",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Jean deciding — and refusing the impossible.",
+   "summary": "The results · Phases 3–4  Phase 3 — Jean deciding Jean's decision layer replaces the fixed policy Run Samples Decision changes Depth median In band Hold 1 9,441 68 0.221 m 88.6% 313.5 s 2 9,456 72 0.208 m 92.6% 351.3 s 3 10,057 67 0.225 m …",
+   "text": "The results · Phases 3–4\nJean deciding — and refusing the impossible.\nPhase 3 — Jean deciding\nJean's decision layer replaces the fixed policy\nRun\nSamples\nDecision changes\nDepth median\nIn band\nHold\n1\n9,441\n68\n0.221 m\n88.6%\n313.5 s\n2\n9,456\n72\n0.208 m\n92.6%\n351.3 s\n3\n10,057\n67\n0.225 m\n92.3%\n350.9 s\nAgainst the fixed-policy baseline of 363.7 / 357.5 / 356.8 s: statistically indistinguishable.\nThat is the correct result. Jean's reasoning does not outperform a tuned PID at a task tuned PIDs are good at; it matches it while producing an auditable record. A claim that reasoning beat tuned control here would have been the suspicious outcome.\nDecisions were distributed, not degenerate — depth: CorrectSoft ~6 500, Hold ~2 650, CorrectHard ~365; drift: CorrectHard ~6 700, CorrectSoft ~1 700, Hold ~1 100. Zero Aborts, correctly: nothing in these runs was unachievable.\nPhase 4 — designed fails\nFive cases · one achievable, four impossible\nCase\nExpected\nVerdict\nReason\nC1\nhold\nHeldStation\nnone\nF1\nrefuse\nRefusedCorrectly\nperception_insufficient\nF2\nrefuse\nRefusedCorrectly\nauthority_insufficient\nF3\nrefuse\nRefusedCorrectly\ntarget_unreachable\nF4\nrefuse\nRefusedCorrectly\nperception_stale\n5/5\nCorrect outcomes\n0\nFalse attempts\n0\nFalse refusals\n0\nWrong reasons\nEvery refusal came before acting, not as a mid-task abort — the stronger behaviour, since refusing at pre-flight costs nothing and risks nothing. Each carried its evidence:\n# refusal evidence, as logged\nF1 \"position confidence 0.20 below floor 0.45\"\nF2 \"authority 400 N below the 616 N required\"\nF3 \"setpoint 110.0 m is below the seafloor at 94.0 m\"\nF4 \"last fix 4.0 s old, limit 1.0 s\""
+  },
+  {
+   "id": "currency",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Formulas need a currency.",
+   "summary": "The integration finding  The most transferable result of this evaluation is not a number. Jean's formula stack is deliberately agnostic about units — the formulas are a structure for comparison.",
+   "text": "The integration finding\nFormulas need a currency.\nThe most transferable result of this evaluation is not a number.\nJean's formula stack is deliberately agnostic about units — the formulas are a structure for comparison. But a comparison requires a common currency, and the integration must supply it.\nFour successive architectures failed on this point before the fifth worked. Each used dimensionless weights and costs, so their ratios were arbitrary:\nHold cost 0.02 against CorrectSoft's 0.18 — a 10× denominator advantage chosen by nothing. Hold won from every state: 3 639 of 3 639 samples.\nDecision margins of 0.01 logged as reasoning when they were coin flips.\nThe fix was to denominate everything in newtons, because that is what the actuator speaks and what the plant model is written in:\nvalue_N = P × (force avoided later) − (force spent now)\nHolding is not free — the deviation persists and grows, so the force needed later is larger. Correcting spends force now to avoid spending more later. That is a genuine economic comparison, and its margin means something.\nThis principle generalises to any application where the formula stack meets a physical system."
+  },
+  {
+   "id": "calibration",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Four days of tuning above an unmeasured plant.",
+   "summary": "The calibration journey  Reported in full, because it is itself evidence that the instrument is honest. Before Phase 0 existed, a station-keeping controller was tuned for four days.",
+   "text": "The calibration journey\nFour days of tuning above an unmeasured plant.\nReported in full, because it is itself evidence that the instrument is honest. Before Phase 0 existed, a station-keeping controller was tuned for four days. When the plant was finally measured:\nAssumed vs measured\nConstant\nAssumed\nMeasured\nError\nTrim feed-forward\n−135 N\n−7 422 N\n55×\nAuthority limit\n1 500 N\n~39 000 N\n26×\nQuadratic drag\n~183 N/(m/s)²\n280 412\n~1500×\nEffective mass\n12 954 kg (inferred from an oscillation)\nwithdrawn\n—\nThe authority limit was a fifth of the force required merely to hold depth. KP = 250 N/m on a plant needing 26 000 N to move at 0.3 m/s commanded about 1% of what was needed. The loop was not underdamped or mistuned — it was barely coupled to the vehicle.\nWhy it worked\nEvery number came from the plant itself.\nThe controller holds depth because the forces acting on the vehicle were measured, not estimated — buoyancy by bisection, drag fitted to net force across a 65,000 N range with a 3% residual.\nThe proportional gain follows directly from that measured drag curve: a 1 m error commands ~3,000 N and closes at 0.1 m/s. The derivative gain is zero — the water damps the system better than any tuning could.\nOne constant, the effective heave mass, could not be separately identified at the achievable sample rate. We say so plainly rather than report the number the optimizer returned when it hit its bound — and the controller doesn't need it, because this plant is governed by drag.\n# constants of record — all measured\nTRIM_N -7 422 bisection\nDRAG_C1 3 519 fitted\nDRAG_C2 280 412 fitted\nKP_N_PER_M 3 000 from drag curve\nKI_N_PER_MS 80 trim residual\nKD_NS_PER_M 0 water self-damps\nFZ_AUTHORITY 39 000 trim + closure\nm_eff not identified (not required)\n# prior assumed values, now withdrawn:\ntrim, drag, authority wrong by\n55× · 1500× · 26×"
+  },
+  {
+   "id": "honest",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Every defect was at an interface.",
+   "summary": "Where it actually broke  01 An upstream defect in a published research model DAVE's REXROV model gives each thruster joint the same <pose> as its child link. Since SDF joint poses are child-relative, each revolute axis sat ~1.1 m from its …",
+   "text": "Where it actually broke\nEvery defect was at an interface.\n01\nAn upstream defect in a published research model\nDAVE's REXROV model gives each thruster joint the same <pose> as its child link. Since SDF joint poses are child-relative, each revolute axis sat ~1.1 m from its thruster and the links orbited as the propellers spun. Runtime geometry disagreed with the model by up to 1.64 m and 153°.\nPatched, verified to 0.000°, and disclosed in code comments rather than silently worked around.\n02\nThe actuation interface\nThe vehicle's persistent-wrench topic accumulates: every message stays applied. A controller publishing each cycle therefore applied the running sum of its entire command history — roughly 8 000 wrenches over a 300 s run. The instantaneous topic applies for one physics step, so at controller rates the force acts for under 1% of the time.\nThe workable pattern is to publish the delta against a tracked standing value. The accumulation that broke two days of work became the mechanism that made continuous force possible.\n03\nReset transients caused three separate failures\nset_pose teleports position and orientation but not velocity. Every run inherited momentum from whatever preceded it. This produced: unexplained Gate 2 variance; a 354% spread across three runs of an identical binary; and, in Phase 3, run 1 having more command updates than run 2 in every trial — 586 vs 81, 1250 vs 456, 920 vs 177.\nRecorded in full — the test that lied\nOur own harness reported a pass it hadn't earned. We caught it by reading the numbers.\nThe first version of our Phase 0 test harness printed \"PHASE 0 PASSED.\" It was wrong. The vehicle had reportedly risen under downward force, and the total response across a 1,200 N swing was a rounding error — but the monotonicity check passed on noise that happened to be ordered. Two entirely different transports produced deltas of 0.0564 and 0.0548 — the same artifact.\n\"A gate that passes when it should not is a more serious defect than the bug it was built to catch.\"\nThree defects: no minimum effect size, a detection threshold below the natural variation in the vehicle's buoyant drift, and a baseline measured at a different depth than the test. None of it was caught by the test. It was caught by a person reading the numbers and asking why a vehicle rose when pushed down.\nThe second false result\nA Phase 1 diagnostic reported drag at 11 272% of applied force, because it differentiated two adjacent samples at 10 Hz. It reported 4.00 m/s where the true average was 0.14 m/s.\nStanding consequence: every gate criterion must state a minimum effect size, not only a direction or an ordering.\nWe record this because it is the whole discipline: an instrument that has never been caught failing has not yet been tested. The constants this program now runs on superseded the earlier assumed values by factors of 55×, 26×, and 1,500×. Every one of those corrections came from refusing to trust a green checkmark."
+  },
+  {
+   "id": "boundaries",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "This is a SIL. No physical hardware.",
+   "summary": "Read this before anything else you quote  It does not claim real-hardware performance. What this is A software-in-the-loop demonstration that Jean's deterministic architecture — with no training and no learned policy — decides whether, how…",
+   "text": "Read this before anything else you quote\nThis is a SIL. No physical hardware.\nIt does not claim real-hardware performance.\nWhat this is\nA software-in-the-loop demonstration that Jean's deterministic architecture — with no training and no learned policy — decides whether, how hard, and when to act on a 6-DOF underwater vehicle in an independent simulator it did not author, holding station to 8 cm and refusing the impossible with zero false attempts.\nWhat this is not\nIt is not a claim of real-hardware station keeping, nor of any platform-specific operational envelope, both of which remain future work with defined paths.\nThe method transfers; the coefficients do not.\nKnown boundaries\nThe operational envelope is REXROV's.\nThe drag curves were measured on an 1 862 kg work-class vehicle. Applying them to a 17 kg inspection-class ROV would be the same error this programme has already paid for. The method transfers; the coefficients do not.\nEffective mass could not be measured.\nWith quadratic drag at 280 412 N/(m/s)², the vehicle reaches terminal velocity in about one second; mass governs only that window, and at the achievable ~10 Hz sample rate it contains roughly ten points. The estimator was validated on synthetic data and recovered known masses exactly, but railed against its search bound on the real plant. It is recorded as not identifiable and not required — the plant is governed by drag, and drag was measured well.\nAll refusals were caught at pre-flight.\nThe in-task abort path exists and is reachable, but Phase 4's faults were detectable before commitment. Mid-run fault injection is specified and unbuilt.\nPosition is odometry ground truth, not Jean's dead reckoning.\nThis was deliberate — it isolates the control law. Moving to her own estimate, with the estimate checked against truth every run, is the next step."
+  },
+  {
+   "id": "the-controller-was-never-the-problem-it-was-comm",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "The controller was never the problem. It was commanding one percent of the force",
+   "summary": "the vehicle required, through a path that summed its own history, against constants wrong by factors of fifty and fifteen hundred. Every significant defect found across this evaluation was at an interface — frames, units, clocks, sensor se…",
+   "text": "The controller was never the problem. It was commanding one percent of the force the vehicle required, through a path that summed its own history, against constants wrong by factors of fifty and fifteen hundred.\nEvery significant defect found across this evaluation was at an interface — frames, units, clocks, sensor semantics, transport — and every one of them reported success while doing nothing. The reasoning is rarely what breaks. The interface with reality is."
+  },
+  {
+   "id": "built-for-the-deep-where-you-can-t-send-a-person",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "Built for the deep, where you can't send a person to check.",
+   "summary": "Who this is for  Subsea & Offshore Control on measured physics Station-keeping and depth-hold derived from the vehicle's own measured drag and buoyancy — not a policy trained in a pool that may not match your hull. Defense & Maritime Deter…",
+   "text": "Who this is for\nBuilt for the deep, where you can't send a person to check.\nSubsea & Offshore\nControl on measured physics\nStation-keeping and depth-hold derived from the vehicle's own measured drag and buoyancy — not a policy trained in a pool that may not match your hull.\nDefense & Maritime\nDeterministic, auditable\nEvery control decision traces to a measured constant. Three runs within 1% means the behavior is repeatable — the precondition for trust in an environment you can't observe directly.\nResearchers\nHonest boundaries\nWe publish what we couldn't measure and why, the harness that lied, and the corrections that followed. The record is built to survive a hostile reader.\nInvestors\nSubsea without the training moat\nA second physical domain proven by the same small team, the same architecture — evidence that each new domain costs less than the last."
+  },
+  {
+   "id": "get-in-touch",
+   "path": "products/marine.html",
+   "page": "Marine — Physical Intelligence",
+   "heading": "The full phase records are available.",
+   "summary": "Start a conversation  Raw per-run telemetry, decision logs, and all five phase records are available for independent review. If you want to verify the constants or the methodology, write to us.",
+   "text": "Start a conversation\nThe full phase records are available.\nRaw per-run telemetry, decision logs, and all five phase records are available for independent review. If you want to verify the constants or the methodology, write to us.\nThe methodology\nMarine Station-Keeping SIL — Methodology & Results v1.0\nSubstrate-invariant decision architecture applied to underwater station keeping. August 2026. Every phase, every run table, the designed fails, and the calibration journey in full.\nRead the methodology (PDF)\nPDF · no registration\nWrite to us directly\nTell us your vehicle and your environment.\nWe respond personally — no sales process, no auto-responder.\nWrite to us →\ncontactus@myasolutions.org · full phase records available on request\nWant the raw data?\nRequest per-run telemetry and decision logs\nRobotics\nAll domains\nGround"
+  },
+  {
+   "id": "arrival",
+   "path": "products/ground.html",
+   "page": "Ground — Physical Intelligence",
+   "heading": "Every road, reasoned.",
+   "summary": "Physical Intelligence · Ground. Every road, reasoned. Jean evaluated 5,490 live route nodes across a real Oakland road network with zero LLM calls in the cognitive path — pure deterministic reasoning, no model trained on driving demonstrations.",
+   "text": "Physical Intelligence · Ground\nEvery road, reasoned."
+  },
+  {
+   "id": "proof",
+   "path": "products/ground.html",
+   "page": "Ground — Physical Intelligence",
+   "heading": "Navigation without a learned policy.",
+   "summary": "The result  Most autonomous navigation leans on models trained over millions of driving miles. Jean reasons over the road graph directly — evaluating routes as a deterministic search, not a probability drawn from training.",
+   "text": "The result\nNavigation without a learned policy.\nMost autonomous navigation leans on models trained over millions of driving miles. Jean reasons over the road graph directly — evaluating routes as a deterministic search, not a probability drawn from training.\n5,490\nLive Oakland route nodes evaluated in the navigation graph\n0\nLLM calls in the cognitive path — pure deterministic reasoning\nLive\nReal road-network data, not a simulated toy grid\n0\nDriving demonstrations used to train a policy\n\"A model trained on driving data can tell you what usually works. Deterministic reasoning over the actual road graph tells you what is true for this route, right now — and can show its work.\""
+  },
+  {
+   "id": "how",
+   "path": "products/ground.html",
+   "page": "Ground — Physical Intelligence",
+   "heading": "The road graph, evaluated directly.",
+   "summary": "How it reasons  Deterministic navigation over live network data Property Trained navigation models Jean Route decision Probability from training Deterministic graph search Explainability Opaque — a learned weight Every node evaluation trac…",
+   "text": "How it reasons\nThe road graph, evaluated directly.\nDeterministic navigation over live network data\nProperty\nTrained navigation models\nJean\nRoute decision\nProbability from training\nDeterministic graph search\nExplainability\nOpaque — a learned weight\nEvery node evaluation traceable\nCognitive-path LLM calls\nOften required\nZero\nTraining data required\nMillions of miles\nNone\n5,490 nodes across a real Oakland road network were evaluated in the cognitive path with no LLM inference — the reasoning is the search, not a call to a model. This is corroborating evidence for the same claim the arm and the ROV make: one architecture, many substrates."
+  },
+  {
+   "id": "the-same-mind-that-holds-the-deep-finds-the-road",
+   "path": "products/ground.html",
+   "page": "Ground — Physical Intelligence",
+   "heading": "The same mind that holds the deep finds the road.",
+   "summary": "Why it matters  Ground navigation isn't a separate product with a separate model. It's the same reasoning architecture that threads a needle with a robotic arm and holds a vehicle steady underwater — pointed at a road graph instead of a wo…",
+   "text": "Why it matters\nThe same mind that holds the deep finds the road.\nGround navigation isn't a separate product with a separate model. It's the same reasoning architecture that threads a needle with a robotic arm and holds a vehicle steady underwater — pointed at a road graph instead of a workspace or a water column.\nSee the arm →\nSee the ROV →\nRobotics — a jointed robotic hand.\nMarine — an underwater vehicle in a sunlit current."
+  },
+  {
+   "id": "built-for-ground-autonomy-that-has-to-explain-it",
+   "path": "products/ground.html",
+   "page": "Ground — Physical Intelligence",
+   "heading": "Built for ground autonomy that has to explain itself.",
+   "summary": "Who this is for  Fleet & Logistics Routing you can audit Every route decision is a traceable evaluation over the real road graph — not a probability from a model you can't inspect. When a route is chosen, you can see why.",
+   "text": "Who this is for\nBuilt for ground autonomy that has to explain itself.\nFleet & Logistics\nRouting you can audit\nEvery route decision is a traceable evaluation over the real road graph — not a probability from a model you can't inspect. When a route is chosen, you can see why.\nDefense & Ground Systems\nNo training-data dependency\nDeterministic navigation reasons over the network it's given — no need to have driven the terrain a million times first. Critical where the map is new and the data is thin.\nResearchers\nReasoning, not black boxes\nZero LLM calls in the cognitive path means the navigation logic is inspectable end to end — a deterministic search you can audit, not a weight you have to trust.\nInvestors\nA third domain, same engine\nArm, ocean, road — three physical domains from one architecture and one small team. Each new domain reusing the last is the whole thesis, made concrete."
+  },
+  {
+   "id": "get-in-touch",
+   "path": "products/ground.html",
+   "page": "Ground — Physical Intelligence",
+   "heading": "The navigation methodology is available.",
+   "summary": "Start a conversation  The navigation approach, the Oakland run data, and the deterministic reasoning path are documented. If you want to verify the method or talk about your ground-autonomy problem, write to us.",
+   "text": "Start a conversation\nThe navigation methodology is available.\nThe navigation approach, the Oakland run data, and the deterministic reasoning path are documented. If you want to verify the method or talk about your ground-autonomy problem, write to us.\nWrite to us directly\nTell us your vehicle and your environment. We respond personally — no sales process, no auto-responder.\nWrite to us →\ncontactus@myasolutions.org · full phase records available on request\n← Marine\nAll domains\nRobotics →"
+  },
+  {
+   "id": "arrival",
+   "path": "products/air.html",
+   "page": "Air — Physical Intelligence",
+   "heading": "The sky is next.",
+   "summary": "Physical Intelligence · Air. The sky is next. The same reasoning that holds a vehicle steady in an ocean current will hold one in the wind. Aerial autonomy is on the roadmap — same mind, new medium.",
+   "text": "Physical Intelligence · Air\nThe sky is next."
+  },
+  {
+   "id": "one-architecture-now-taking-to-the-air",
+   "path": "products/air.html",
+   "page": "Air — Physical Intelligence",
+   "heading": "One architecture, now taking to the air.",
+   "summary": "On the horizon  We've proven the same reasoning engine across a robotic arm, an underwater vehicle, and a road network — three physics regimes, one mind, no retraining between them. Aerial is the natural next domain: dynamic, unforgiving, …",
+   "text": "On the horizon\nOne architecture, now taking to the air.\nWe've proven the same reasoning engine across a robotic arm, an underwater vehicle, and a road network — three physics regimes, one mind, no retraining between them. Aerial is the natural next domain: dynamic, unforgiving, and exactly the kind of problem architectural reasoning is built for.\nWhen the receipt exists, it will be published here in full — the honest boundaries included, like every domain before it.\nExplore what's proven\nInvestor briefing →\n← Ground\nAll domains\nRobotics →"
+  },
+  {
+   "id": "arrival",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "One price. It never moves.",
+   "summary": "Pricing. One price. It never moves. JeanOS opens to the public on 13 November 2026. $20 a month, or $200 for a year — two months on us. A lifetime licence is $515, and $515 is the price at every stage: no presale discount, no launch-day change.",
+   "text": "Pricing\nOne price. It never moves."
+  },
+  {
+   "id": "jeanos",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Monthly",
+   "summary": "$20 per month JeanOS and the distinctive interface Product and Jean updates while active Opens 13 November — keep me posted Annual $200 for a full year · two months on us Everything in monthly A year for $200 against $240 billed monthly Op…",
+   "text": "Monthly\n$20\nper month\nJeanOS and the distinctive interface\nProduct and Jean updates while active\nOpens 13 November — keep me posted\nAnnual\n$200\nfor a full year · two months on us\nEverything in monthly\nA year for $200 against $240 billed monthly\nOpens 13 November — keep me posted\nLifetime · Founder's circle\n$515\none payment · named publicly\nThe distinctive interface, product updates and Jean updates\nFirst access to the downloadable version while active\nEvery core feature shipped this year\nA permanent place on the founder's circle roster\nJoin the founder's circle\n288 seats remaining\nWhat lifetime does not include. Future products — Valet, and anything else that ships as its own product rather than a core feature. The founder's circle is a place on the roster and 288 seats, not a cheaper number. Lifetime is non-refundable; access is granted at launch."
+  },
+  {
+   "id": "monthly",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Monthly",
+   "summary": "$20 per month JeanOS and the distinctive interface Product and Jean updates while active Opens 13 November — keep me posted",
+   "text": "Monthly\n$20\nper month\nJeanOS and the distinctive interface\nProduct and Jean updates while active\nOpens 13 November — keep me posted"
+  },
+  {
+   "id": "annual",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Annual",
+   "summary": "$200 for a full year · two months on us Everything in monthly A year for $200 against $240 billed monthly Opens 13 November — keep me posted",
+   "text": "Annual\n$200\nfor a full year · two months on us\nEverything in monthly\nA year for $200 against $240 billed monthly\nOpens 13 November — keep me posted"
+  },
+  {
+   "id": "lifetime-founder-s-circle",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Lifetime · Founder's circle",
+   "summary": "$515 one payment · named publicly The distinctive interface, product updates and Jean updates First access to the downloadable version while active Every core feature shipped this year A permanent place on the founder's circle roster Join …",
+   "text": "Lifetime · Founder's circle\n$515\none payment · named publicly\nThe distinctive interface, product updates and Jean updates\nFirst access to the downloadable version while active\nEvery core feature shipped this year\nA permanent place on the founder's circle roster\nJoin the founder's circle\n288 seats remaining"
+  },
+  {
+   "id": "organisations",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Priced against what you pay now, not against a feature list.",
+   "summary": "For organisations  BethanyShell · Security $40K appliance + $25 per seat / month Or $20K leased. The box plus the seats replaces a $120–192K annual stack, so year one already costs less than what you pay now.",
+   "text": "For organisations\nPriced against what you pay now, not against a feature list.\nBethanyShell · Security\n$40K appliance + $25 per seat / month\nOr $20K leased. The box plus the seats replaces a $120–192K annual stack, so year one already costs less than what you pay now.\nThe math\nEducation\nSchools and districts\nTalk to us about bringing Jean to a school or district. Student data never leaves the room.\nJean for Education\nDefense · Physical Intelligence\nBy engagement\nInfrastructure, robotics, marine and ground work is scoped to the environment. Tell us what you're running and what you're trying to solve.\nTalk to us"
+  },
+  {
+   "id": "40k-appliance-25-per-seat-month",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "$40K appliance + $25 per seat / month",
+   "summary": "BethanyShell · Security  Or $20K leased. The box plus the seats replaces a $120–192K annual stack, so year one already costs less than what you pay now.",
+   "text": "BethanyShell · Security\n$40K appliance + $25 per seat / month\nOr $20K leased. The box plus the seats replaces a $120–192K annual stack, so year one already costs less than what you pay now.\nThe math"
+  },
+  {
+   "id": "schools-and-districts",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Schools and districts",
+   "summary": "Education  Talk to us about bringing Jean to a school or district. Student data never leaves the room.",
+   "text": "Education\nSchools and districts\nTalk to us about bringing Jean to a school or district. Student data never leaves the room.\nJean for Education"
+  },
+  {
+   "id": "by-engagement",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "By engagement",
+   "summary": "Defense · Physical Intelligence  Infrastructure, robotics, marine and ground work is scoped to the environment. Tell us what you're running and what you're trying to solve.",
+   "text": "Defense · Physical Intelligence\nBy engagement\nInfrastructure, robotics, marine and ground work is scoped to the environment. Tell us what you're running and what you're trying to solve.\nTalk to us"
+  },
+  {
+   "id": "written-here-not-in-a-policy-page-nobody-opens",
+   "path": "products/pricing.html",
+   "page": "Pricing — JeanOS and BethanyShell",
+   "heading": "Written here, not in a policy page nobody opens.",
+   "summary": "What we promise at the point of sale  The price never moves. $20, $200 and $515 at every stage.",
+   "text": "What we promise at the point of sale\nWritten here, not in a policy page nobody opens.\nThe price never moves.\n$20, $200 and $515 at every stage. The only honest urgency is the seat count.\nThe seat count is real.\n288 seats — a real cap, with every member named publicly.\nA person replies within 48 hours.\nAnything arriving after the Friday cutoff is answered by end of day Monday.\nYour data stays yours.\nNo ad pixels, no session recording, no third-party trackers — on the product or on this site."
+  },
+  {
+   "id": "arrival",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Don't take our word for it. Check the work.",
+   "summary": "Evidence · Methodology reports. Don't take our word for it. Check the work. The same codebase — no retraining, no domain-specific rebuilds — tested across cybersecurity, education, medicine, robotics, marine and navigation. Every report, recorded case and repository is listed here.",
+   "text": "Evidence · Methodology reports\nDon't take our word for it. Check the work."
+  },
+  {
+   "id": "an-industry-standard-where-one-exists-published",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "An industry standard where one exists. Published criteria where it doesn't.",
+   "summary": "How we test  A Software-in-the-Loop test is an industry-standard approach for verifying AI behavior in simulation before physical deployment. For each domain, we first ask: does an accepted SIL standard exist?",
+   "text": "How we test\nAn industry standard where one exists. Published criteria where it doesn't.\nA Software-in-the-Loop test is an industry-standard approach for verifying AI behavior in simulation before physical deployment. For each domain, we first ask: does an accepted SIL standard exist? If yes, we run it. If not, we define the criteria, document them publicly, and hold ourselves to them.\nRaw trial data (JSON reports, Criterion benchmark outputs) is available for independent verification on request — we don't hide numbers that don't look perfect, we explain them.\nThe claim\nWhat is being tested, stated before the run.\nThe method\nThe harness, the criteria and what counts as a pass.\nThe runs, with spread\nEvery trial reported, not the best one.\nThe boundaries\nWhat the result does not show."
+  },
+  {
+   "id": "reports",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Six domains. One architecture. All independently verifiable.",
+   "summary": "The reports  Marine · New · August 2026 Station-Keeping SIL — Methodology & Results v1.0 Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impos…",
+   "text": "The reports\nSix domains. One architecture. All independently verifiable.\nMarine · New · August 2026\nStation-Keeping SIL — Methodology & Results v1.0\nJean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.\nRead the PDF\nOpens in the browser · no registration · 9 pages\nCybersecurity · BethanyShell\nRed-team methodology report\nCALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.\nView methodology\nOpens in DocSend · quick email registration\nRobotics · 7-DOF arm\nManipulation SIL — no training data\nStandard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.\nView SIL methodology\nOpens in DocSend · quick email registration\nEducation · Parlier, CA\nLive classroom pilot\nA +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.\nRead the testimonial\nOpens in DocSend\nMedicine · NEJM\nClinical diagnostics — local, private\nSeven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.\nWatch the cases\nYouTube playlist\nNavigation · Oakland\nAutonomous navigation — no learned policy\n5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.\nRead the Ground results\nRequest raw data\nDefense: the five validation runs are published on the\nJean for Defense\npage, with the full methodology in the cybersecurity report above."
+  },
+  {
+   "id": "station-keeping-sil-methodology-results-v1-0",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Station-Keeping SIL — Methodology & Results v1.0",
+   "summary": "Marine · New · August 2026  Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is …",
+   "text": "Marine · New · August 2026\nStation-Keeping SIL — Methodology & Results v1.0\nJean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.\nRead the PDF\nOpens in the browser · no registration · 9 pages"
+  },
+  {
+   "id": "red-team-methodology-report",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Red-team methodology report",
+   "summary": "Cybersecurity · BethanyShell  CALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.",
+   "text": "Cybersecurity · BethanyShell\nRed-team methodology report\nCALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.\nView methodology\nOpens in DocSend · quick email registration"
+  },
+  {
+   "id": "manipulation-sil-no-training-data",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Manipulation SIL — no training data",
+   "summary": "Robotics · 7-DOF arm  Standard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.",
+   "text": "Robotics · 7-DOF arm\nManipulation SIL — no training data\nStandard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.\nView SIL methodology\nOpens in DocSend · quick email registration"
+  },
+  {
+   "id": "live-classroom-pilot",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Live classroom pilot",
+   "summary": "Education · Parlier, CA  A +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom.",
+   "text": "Education · Parlier, CA\nLive classroom pilot\nA +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.\nRead the testimonial\nOpens in DocSend"
+  },
+  {
+   "id": "clinical-diagnostics-local-private",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Clinical diagnostics — local, private",
+   "summary": "Medicine · NEJM  Seven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.",
+   "text": "Medicine · NEJM\nClinical diagnostics — local, private\nSeven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.\nWatch the cases\nYouTube playlist"
+  },
+  {
+   "id": "autonomous-navigation-no-learned-policy",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Autonomous navigation — no learned policy",
+   "summary": "Navigation · Oakland  5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.",
+   "text": "Navigation · Oakland\nAutonomous navigation — no learned policy\n5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.\nRead the Ground results\nRequest raw data"
+  },
+  {
+   "id": "repo",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "The repository is public. Run every test yourself.",
+   "summary": "Verify anything  The BETHANY evaluation suite, methodology and SIL environment are open-source and reproducible — clone it and run the red-team emulation on your own machine. 8,906 tests, every one of them yours to run.",
+   "text": "Verify anything\nThe repository is public. Run every test yourself.\nThe BETHANY evaluation suite, methodology and SIL environment are open-source and reproducible — clone it and run the red-team emulation on your own machine. 8,906 tests, every one of them yours to run.\nOpen the repository\n$ git clone https://github.com/AyindeRudolph/bethany-sil\n$ cd bethany-sil\n$ cargo test\n$ cargo test --test sil_run"
+  },
+  {
+   "id": "ask-for-the-raw-data-or-watch-it-work",
+   "path": "evidence/reports.html",
+   "page": "Methodology reports — Evidence",
+   "heading": "Ask for the raw data, or watch it work.",
+   "summary": "Go further  Independent verification JSON trial reports and benchmark outputs. Tell us which domain and what you want to check.",
+   "text": "Go further\nAsk for the raw data, or watch it work.\nIndependent verification\nJSON trial reports and benchmark outputs.\nTell us which domain and what you want to check. We send the raw data, not a summary of it.\nRequest raw data\nSends to ir@myasolutions.org · we respond personally\nThe film\nBecome a Believer.\nSee what's possible. The film is almost ready.\nGo to the film"
+  },
+  {
+   "id": "arrival",
+   "path": "evidence/become-a-believer.html",
+   "page": "Become a Believer — mYa Solutions",
+   "heading": "See what's possible.",
+   "summary": "Become a Believer · Powered by Jean OS. See what's possible.",
+   "text": "Become a Believer · Powered by Jean OS\nSee what's possible."
+  },
+  {
+   "id": "be-the-first-to-see-it",
+   "path": "evidence/become-a-believer.html",
+   "page": "Become a Believer — mYa Solutions",
+   "heading": "Be the first to see it.",
+   "summary": "Keep me posted  The film is almost ready. Leave us a note and we'll write when it's out.",
+   "text": "Keep me posted\nBe the first to see it.\nThe film is almost ready. Leave us a note and we'll write when it's out.\nTell me when it's out\nSee the evidence\ncontactus@myasolutions.org"
+  },
+  {
+   "id": "arrival",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "Intelligence that passes through without leaving a mark.",
+   "summary": "Leave No Trace. Intelligence that passes through without leaving a mark. Local-first isn't just a privacy decision. It's an environmental one. Every query that stays on your device is water that didn't evaporate, electricity that didn't travel, carbon that stayed in the ground.",
+   "text": "A coral reef, fans and feather stars in clear water.\nLeave No Trace\nIntelligence that passes through without leaving a mark."
+  },
+  {
+   "id": "environment",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "Every conversation with a cloud AI costs about two cups of water.",
+   "summary": "A better path already exists  Research from UC Riverside and the University of Virginia found that a typical ChatGPT session uses roughly 2 cups of water — for cooling towers and electricity generation at data centers. Multiply that by bil…",
+   "text": "A better path already exists\nEvery conversation with a cloud AI costs about two cups of water.\nResearch from UC Riverside and the University of Virginia found that a typical ChatGPT session uses roughly 2 cups of water — for cooling towers and electricity generation at data centers. Multiply that by billions of queries a day and you start to see the scale. There is a better way — and we've already built it.\nOpen ocean water under a wide sky."
+  },
+  {
+   "id": "the-no-data-center-path-isn-t-theoretical-it-s-a",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "The no-data-center path isn't theoretical. It's already proven.",
+   "summary": "2 cups per conversation Water consumed by a typical 10–50 response cloud AI session, including on-site cooling and electricity generation at data centers. ½–2 teaspoons per response The per-response water cost when you account for the full…",
+   "text": "2\ncups per conversation Water consumed by a typical 10–50 response cloud AI session, including on-site cooling and electricity generation at data centers.\n½–2\nteaspoons per response The per-response water cost when you account for the full data center footprint behind every cloud AI query — it adds up fast.\n0\ncups — local inference When Jean runs on your device, the query never leaves. No data center. No cooling tower. No water cost. The compute runs where you are.\n2¢\ntotal compute cost What it cost Jean to correctly answer 7 consecutive NEJM clinical diagnostic cases — running entirely on local hardware, start to finish.\nSource: UC Riverside / University of Virginia research on AI water consumption. Conversions: 500mL ≈ 2.1 cups; 10–50mL ≈ 2–10 teaspoons.\nThe no-data-center path isn't theoretical. It's already proven.\n7-DOF robotic arm controlled through complete task loops — zero LLM calls in the cognitive path. Results posted publicly.\nAutonomous navigation — 5,490 live Oakland route nodes evaluated with no cloud inference. Zero data center involvement. Posted publicly.\nClinical diagnostics at 27 seconds and 2 cents per case — running on local hardware, no data leaving the room, no cloud cost."
+  },
+  {
+   "id": "imagine-a-world-without-the-data-center-we-re-no",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "Imagine a world without the data center. We're not there yet — but every system ",
+   "summary": "we build moves one step closer to it.",
+   "text": "Imagine a world without the data center. We're not there yet — but every system we build moves one step closer to it."
+  },
+  {
+   "id": "harmony",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "A world where humans and AI work together — on the problems that actually matter.",
+   "summary": "Democratizing AI  The current AI economy moves intelligence upward — into large clouds, behind enterprise contracts, accessible only to those with the infrastructure to reach it. That is not the only path forward.",
+   "text": "Democratizing AI\nA world where humans and AI work together — on the problems that actually matter.\nThe current AI economy moves intelligence upward — into large clouds, behind enterprise contracts, accessible only to those with the infrastructure to reach it. That is not the only path forward.\nJean OS is built on a different premise: that intelligence belongs at the edge, in the hands of the people doing the work. A teacher in a rural classroom. A clinician in an under-resourced clinic. A conservationist in the field without reliable internet.\nAI that runs locally doesn't just protect privacy — it democratizes capability. The same quality of intelligence that powers a Fortune 500 enterprise can run on a five-year-old laptop in a school that can barely afford textbooks.\nThat is the world we are building toward. Not AI over humans. Not humans resisting AI. Both, in harmony, working on things that actually matter.\nA living coral reef.\n01\nLeave no trace\nIntelligence that passes through without leaving a mark on the planet — no water cost, no unnecessary compute, no data residue.\n02\nPrivacy by architecture\nYour data stays on your device. Not a policy that can change — a property that can't. Built into the foundation.\n03\nRadical efficiency\nFormulas built in-house reduce compute to the minimum necessary. Nothing wasted. Everything intentional.\n04\nIntelligence for everyone\nThe best AI shouldn't require a data center contract. We build for rural schools, offline clinics, and everyone between."
+  },
+  {
+   "id": "serve",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "The people doing the hardest work with the fewest resources.",
+   "summary": "Who we serve  The best technology in the world shouldn't require an enterprise contract to access. We're building toward a future where the communities that need AI most are the first ones who can actually use it.",
+   "text": "Who we serve\nThe people doing the hardest work with the fewest resources.\nThe best technology in the world shouldn't require an enterprise contract to access. We're building toward a future where the communities that need AI most are the first ones who can actually use it.\nA teacher working with students in a classroom.\nLibraries\nThe last free institution of knowledge access\nJean can run on existing library hardware — no cloud subscription, no per-seat licensing. The same capability, without the gatekeeping.\nTeachers\nHours returned every week\nEducators like Kamyia — the ones who give everything to their students. Jean gives them back their time without letting student data leave the room.\nFaith Communities\nOften the largest safety net in any neighborhood\nChurches, mosques, temples, and congregations doing direct community service — with the mission of a large nonprofit and the budget of a small one.\nMuseums\nPreserving collective memory\nCultural institutions on shoestring budgets, holding the artifacts and stories that define who we are. AI that doesn't require cloud infrastructure changes what's possible for them.\nNGOs\nMaximum mission, minimum margin\nNon-governmental organizations working on the ground in underserved communities — often doing the most critical work with the least infrastructure support.\nSmall Business\nThe backbone of every community\nLocal businesses that can't afford enterprise AI contracts but deserve the same capabilities. Intelligence that scales down to meet them.\nAn invitation\nA call to environmental stewards.\nIf you work in conservation, ecological restoration, sustainable energy, or climate resilience — we want to hear from you. The same architecture that eliminates data center waste from AI can be pointed at the world's most complex environmental problems.\nWe're actively exploring partnerships with organizations doing work at the intersection of technology and the natural world. If that's you, introduce yourself.\nReach out →"
+  },
+  {
+   "id": "promise",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "Giving back time",
+   "summary": "The commitment 10% of annual profits past $10M — permanently, structurally, irreversibly Once mYa Solutions reaches ten million dollars in annual profits, ten percent goes back — permanently — to the communities, institutions, and missions…",
+   "text": "The commitment\n10%\nof annual profits past $10M — permanently, structurally, irreversibly\nOnce mYa Solutions reaches ten million dollars in annual profits, ten percent goes back — permanently — to the communities, institutions, and missions the current AI economy has left behind. This isn't a pledge that can be walked back. It's held by a founder's golden share, structured to outlast any change in ownership.\nThe mission can't be sold away. The commitment is the architecture.\nNow · Active\nGiving back time\nEvery hour Jean saves a teacher, clinician, or community organizer is real value returned — starting from day one, before the first dollar of profit.\nNear horizon\nThe 10% fund\nLibraries, NGOs, faith communities, museums, teachers, and underserved communities — access to Jean OS for the organizations doing the hardest work.\nFuture vision\nFounders who were skipped\nA dedicated pathway — fellowship, fund, or both — for underrepresented founders building technology that serves communities left out of the innovation economy.\nFuture vision\nHousing + community\nTechnology alone doesn't close gaps. We envision expanding the mission into housing initiatives and community infrastructure for the places that need it most."
+  },
+  {
+   "id": "close",
+   "path": "impact/giving.html",
+   "page": "Giving Back — mYa Solutions",
+   "heading": "Intelligence that leaves things better than it found them.",
+   "summary": "The other half  We didn't build Jean to extract value from the world. We built it to return value — to teachers, healers, stewards, and builders who were never handed a seat at the table.",
+   "text": "The other half\nIntelligence that leaves things better than it found them.\nWe didn't build Jean to extract value from the world. We built it to return value — to teachers, healers, stewards, and builders who were never handed a seat at the table.\nIf that's the world you want to build too, there's a place for you here.\nSee what we've built\nJoin the mission"
+  },
+  {
+   "id": "arrival",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "Ten percent of all earnings. Written into the bylaws.",
+   "summary": "Impact · Public benefit reporting. Ten percent of all earnings. Written into the bylaws. An M-class share obliges mYa Solutions to direct 10% of all earnings to charitable causes. LeadLifeLaugh Inc., a California benefit corporation, exists to hold the company to it — and California requires a benefit corporation to report on its public benefit every year. Those reports are posted here.",
+   "text": "Impact · Public benefit reporting\nTen percent of all earnings. Written into the bylaws."
+  },
+  {
+   "id": "report",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "Current report",
+   "summary": "California Annual Benefit Report — Fiscal Year 2025 The annual assessment of how LeadLifeLaugh Inc. pursued its public benefit purpose, prepared under Section 14630 of the California Corporations Code and posted in full — not summarised.",
+   "text": "Current report\nCalifornia Annual Benefit Report — Fiscal Year 2025\nThe annual assessment of how LeadLifeLaugh Inc. pursued its public benefit purpose, prepared under Section 14630 of the California Corporations Code and posted in full — not summarised. Fiscal year 2025 was the corporation's organisational year.\nPeriod\n8 Jan – 31 Dec 2025\nStatus\nIn preparation\nStandard\nB Impact Assessment\nFormat\nPDF\nReport posted when final\nAsk about the report\nWhen posted, it opens in the browser. No email required, no registration."
+  },
+  {
+   "id": "california-annual-benefit-report-fiscal-year-202",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "California Annual Benefit Report — Fiscal Year 2025",
+   "summary": "Current report  The annual assessment of how LeadLifeLaugh Inc. pursued its public benefit purpose, prepared under Section 14630 of the California Corporations Code and posted in full — not summarised.",
+   "text": "Current report\nCalifornia Annual Benefit Report — Fiscal Year 2025\nThe annual assessment of how LeadLifeLaugh Inc. pursued its public benefit purpose, prepared under Section 14630 of the California Corporations Code and posted in full — not summarised. Fiscal year 2025 was the corporation's organisational year.\nPeriod\n8 Jan – 31 Dec 2025\nStatus\nIn preparation\nStandard\nB Impact Assessment\nFormat\nPDF\nReport posted when final\nAsk about the report\nWhen posted, it opens in the browser. No email required, no registration."
+  },
+  {
+   "id": "10",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "10%",
+   "summary": "of all earnings, directed to charitable causes by the bylaws 1 M-class share carrying the obligation, so it sits in the capital structure rather than in policy Annual public benefit reporting, as California requires of a benefit corporation",
+   "text": "10%\nof all earnings, directed to charitable causes by the bylaws\n1\nM-class share carrying the obligation, so it sits in the capital structure rather than in policy\nAnnual\npublic benefit reporting, as California requires of a benefit corporation"
+  },
+  {
+   "id": "entity",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "A separate corporation, built to protect the mission.",
+   "summary": "Who holds the obligation  LeadLifeLaugh Inc. was formed as a mission-holding entity: its job is to hold governance rights in mYa Solutions for the purpose of protecting its charitable and public benefit commitments over time, and to direct…",
+   "text": "Who holds the obligation\nA separate corporation, built to protect the mission.\nLeadLifeLaugh Inc. was formed as a mission-holding entity: its job is to hold governance rights in mYa Solutions for the purpose of protecting its charitable and public benefit commitments over time, and to direct the categories and recipients of the giving that arises from them.\nOn the record\nName\nLeadLifeLaugh Inc.\nForm\nCalifornia benefit corporation\nEntity number\n6524556\nIncorporated\n8 January 2025\nThird-party standard\nB Impact Assessment, published by B Lab\nCertification\nNot a Certified B Corporation\nWhat \"B Corp\" means on this page. LeadLifeLaugh measures itself against the B Impact Assessment, which B Lab publishes openly. Using that standard is different from B Corp Certification, a separate paid process with verification and a qualifying score. The corporation is not a Certified B Corporation and does not represent itself as one."
+  },
+  {
+   "id": "reports",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "Every report, every year",
+   "summary": "Fiscal year Period Status Document FY2025 8 Jan – 31 Dec 2025 In preparation Posted here when final FY2026 1 Jan – 31 Dec 2026 Due on or before 30 April 2027 — Each year is added as a row and kept indefinitely. The public version may omit …",
+   "text": "Every report, every year\nFiscal year\nPeriod\nStatus\nDocument\nFY2025\n8 Jan – 31 Dec 2025\nIn preparation\nPosted here when final\nFY2026\n1 Jan – 31 Dec 2026\nDue on or before 30 April 2027\n—\nEach year is added as a row and kept indefinitely. The public version may omit compensation and financial data, as Section 14630 permits."
+  },
+  {
+   "id": "the-bylaw-clause-and-the-share-class-are-on-file",
+   "path": "impact/b-corp.html",
+   "page": "B Corp & the M-class share — Impact",
+   "heading": "The bylaw clause and the share class are on file.",
+   "summary": "Questions about the obligation  They are available on request. Organisations doing work in these areas are welcome to write.",
+   "text": "Questions about the obligation\nThe bylaw clause and the share class are on file.\nThey are available on request. Organisations doing work in these areas are welcome to write.\ncontactus@myasolutions.org\nWhere the argument is made\nThis page is the record.\nGiving Back is where the reasoning behind it lives — the environmental cost of cloud AI, and who the company serves first.\nGiving Back"
+  },
+  {
+   "id": "arrival",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "The other half of the AI story is being built in Oakland.",
+   "summary": "mYa Solutions. The other half of the AI story is being built in Oakland. Everyone scaled AI up — into the cloud, away from you. We built it down: onto your own machine. Private. Local. Already proven.",
+   "text": "mYa Solutions\nThe other half of the AI story is being built in Oakland."
+  },
+  {
+   "id": "the-light-was-always-going-to-come-around",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "The light was always going to come around.",
+   "summary": "",
+   "text": "The light was always going to come around."
+  },
+  {
+   "id": "built",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "One engine. Three regulated doors. Already open.",
+   "summary": "What has been built  Not a promise about what AI could be — a record of what one local-first system already does, across three fields that have nothing in common but the standard of proof they demand.",
+   "text": "What has been built\nOne engine. Three regulated doors. Already open.\nNot a promise about what AI could be — a record of what one local-first system already does, across three fields that have nothing in common but the standard of proof they demand."
+  },
+  {
+   "id": "rail",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Same codebase. Unrelated domains. Watch.",
+   "summary": "Seven angles of view onto one system  Robotics 7-DOF Arm control with no LLM calls in the cognitive path. Posted publicly.",
+   "text": "Seven angles of view onto one system\nSame codebase. Unrelated domains. Watch.\nRobotics\n7-DOF\nArm control with no LLM calls in the cognitive path. Posted publicly.\nSee the run\nMedicine\n7 / 7\nConsecutive NEJM cases, correct each. ~27 sec, ~2¢ of local compute. Public.\nSee the cases →\nDefense\n92.3%\nAPT-class attacks blocked, zero false positives across 1,700+ assessments.\nSee the methodology\nEducation\n+22 pts\nProficiency shift in a live classroom — and 7–10 hours a week returned to the teacher.\nSee the pilot\nNavigation\n5,490\nLive Oakland route nodes evaluated, no LLM calls. Posted publicly.\nWatch the drive\nNot five achievements — five angles of view onto one architecture."
+  },
+  {
+   "id": "robotics",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Robotics",
+   "summary": "7-DOF Arm control with no LLM calls in the cognitive path. Posted publicly.",
+   "text": "Robotics\n7-DOF\nArm control with no LLM calls in the cognitive path. Posted publicly.\nSee the run"
+  },
+  {
+   "id": "medicine",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Medicine",
+   "summary": "7 / 7 Consecutive NEJM cases, correct each. ~27 sec, ~2¢ of local compute.",
+   "text": "Medicine\n7 / 7\nConsecutive NEJM cases, correct each. ~27 sec, ~2¢ of local compute. Public.\nSee the cases →"
+  },
+  {
+   "id": "defense",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Defense",
+   "summary": "92.3% APT-class attacks blocked, zero false positives across 1,700+ assessments. See the methodology",
+   "text": "Defense\n92.3%\nAPT-class attacks blocked, zero false positives across 1,700+ assessments.\nSee the methodology"
+  },
+  {
+   "id": "education",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Education",
+   "summary": "+22 pts Proficiency shift in a live classroom — and 7–10 hours a week returned to the teacher. See the pilot",
+   "text": "Education\n+22 pts\nProficiency shift in a live classroom — and 7–10 hours a week returned to the teacher.\nSee the pilot"
+  },
+  {
+   "id": "navigation",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Navigation",
+   "summary": "5,490 Live Oakland route nodes evaluated, no LLM calls. Posted publicly.",
+   "text": "Navigation\n5,490\nLive Oakland route nodes evaluated, no LLM calls. Posted publicly.\nWatch the drive"
+  },
+  {
+   "id": "numbers",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "The cost curve runs backwards.",
+   "summary": "The economics  $0.07 Total cloud cost, April, supporting the active pilot. ~$13 All-in monthly inference, every user, every domain.",
+   "text": "The economics\nThe cost curve runs backwards.\n$0.07\nTotal cloud cost, April, supporting the active pilot.\n~$13\nAll-in monthly inference, every user, every domain.\n90%+\nGross margin from the first seat. Compute runs on the user's device.\n9.8 MB\nClinical knowledge graph from nine textbooks, built for under five dollars.\nIBM Watson Health: four billion dollars over a decade, divested for one. Our clinical knowledge base: 9.8 megabytes, five dollars."
+  },
+  {
+   "id": "architecture",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "The seat of cognition is the architecture — not the model.",
+   "summary": "How it works  Most AI is one large model doing everything. Jean OS is the opposite: the model is one organ among many, and the intelligence lives in how the system is built.",
+   "text": "How it works\nThe seat of cognition is the architecture — not the model.\nMost AI is one large model doing everything. Jean OS is the opposite: the model is one organ among many, and the intelligence lives in how the system is built.\n01\nBuilt in Rust\nMemory-safe, deterministic, no garbage collector. Privacy and security are properties of the foundation — not features bolted on.\n02\nInspired by the most efficient system there is\nThe architecture is modeled on systems evolution has refined over millions of years — built for reasoning, not just retrieval.\n03\nA mathematics of its own\nA discipline of formulas developed in-house governs how the system reasons — named, in tribute, after Black pioneers in mathematics and science.\nThe full architecture is in the investor briefing"
+  },
+  {
+   "id": "beliefs",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Four promises. No exceptions.",
+   "summary": "What we believe  01 People over paperwork Technology should give people back their time, their energy, and their lives — not demand more of them. 02 Privacy by architecture Your data stays on your device.",
+   "text": "What we believe\nFour promises. No exceptions.\n01\nPeople over paperwork\nTechnology should give people back their time, their energy, and their lives — not demand more of them.\n02\nPrivacy by architecture\nYour data stays on your device. Always. Not a policy that can change — a property that can't.\n03\nIntelligence over scale\nThe race isn't about who builds the biggest model. It's about who architects intelligence correctly.\n04\nAccessible to all\nThe best AI shouldn't require a data center. We build for rural schools, offline clinics, and everyone between.\nThe commitment is the structure.\nTen percent of profits past ten million dollars a year go, permanently, to the places the current AI economy has left behind — rural schools, libraries, energy access where the grid doesn't reach. It's held by a founder's golden share, structured to outlast any change in ownership. The mission can't be sold away."
+  },
+  {
+   "id": "doors",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "One engine. Many doors.",
+   "summary": "The doors  The same system, pointed at the fields that need it most. Each door is its own product — built on the engine you just met.",
+   "text": "The doors\nOne engine. Many doors.\nThe same system, pointed at the fields that need it most. Each door is its own product — built on the engine you just met.\nI\nEducation\nJean for Education\nGives teachers back their time, and never lets student data leave the room.\nEducation\nII\nCybersecurity\nJean for Defense\nNation-state-grade defense that runs where your data already lives.\nCybersecurity\nIII\nMedicine\nThe clinician's engine\nDiagnostic reasoning at the point of care — private by architecture.\nMedicine\nIV\nSustainable extraction In exploration\nArchitect the clean industrial horizon.\nIntelligence for the resources the future runs on — extracted with precision, not waste.\nMining In exploration\nV\nEcological restoration In exploration\nDefend Earth's vital rims.\nSome problems we're just beginning to imagine. Coral restoration is where we've started.\nCoral In exploration"
+  },
+  {
+   "id": "jean-for-education",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Jean for Education",
+   "summary": "I Education  Gives teachers back their time, and never lets student data leave the room. Education",
+   "text": "I\nEducation\nJean for Education\nGives teachers back their time, and never lets student data leave the room.\nEducation"
+  },
+  {
+   "id": "jean-for-defense",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Jean for Defense",
+   "summary": "II Cybersecurity  Nation-state-grade defense that runs where your data already lives. Cybersecurity",
+   "text": "II\nCybersecurity\nJean for Defense\nNation-state-grade defense that runs where your data already lives.\nCybersecurity"
+  },
+  {
+   "id": "the-clinician-s-engine",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "The clinician's engine",
+   "summary": "III Medicine  Diagnostic reasoning at the point of care — private by architecture. Medicine",
+   "text": "III\nMedicine\nThe clinician's engine\nDiagnostic reasoning at the point of care — private by architecture.\nMedicine"
+  },
+  {
+   "id": "architect-the-clean-industrial-horizon",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Architect the clean industrial horizon.",
+   "summary": "IV Sustainable extraction In exploration  Intelligence for the resources the future runs on — extracted with precision, not waste. Mining In exploration",
+   "text": "IV\nSustainable extraction In exploration\nArchitect the clean industrial horizon.\nIntelligence for the resources the future runs on — extracted with precision, not waste.\nMining In exploration"
+  },
+  {
+   "id": "defend-earth-s-vital-rims",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Defend Earth's vital rims.",
+   "summary": "V Ecological restoration In exploration  Some problems we're just beginning to imagine. Coral restoration is where we've started.",
+   "text": "V\nEcological restoration In exploration\nDefend Earth's vital rims.\nSome problems we're just beginning to imagine. Coral restoration is where we've started.\nCoral In exploration"
+  },
+  {
+   "id": "road",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Not a projection. A schedule.",
+   "summary": "The road  01 Near horizon Consumer release, November 2026 1,000 subscribers + the Founder's Circle Federal SBIR submitted Physical-hardware dexterity demonstrations 02 Capability horizon Mac Studio migration — fully local Voice and multime…",
+   "text": "The road\nNot a projection. A schedule.\n01\nNear horizon\nConsumer release, November 2026\n1,000 subscribers + the Founder's Circle\nFederal SBIR submitted\nPhysical-hardware dexterity demonstrations\n02\nCapability horizon\nMac Studio migration — fully local\nVoice and multimedia\nContinued compression for older devices\n03\nThe horizon\nEcological restoration (in exploration)\nIntelligence where the grid doesn't reach\nThe same engine, every door"
+  },
+  {
+   "id": "story",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "Why we exist",
+   "summary": "This company is named for Kamyia Fletcher — a teacher. The intelligence is named for Jean Williams — the founder's grandmother.",
+   "text": "Why we exist\nThis company is named for Kamyia Fletcher — a teacher. The intelligence is named for Jean Williams — the founder's grandmother. Two names. Two reasons it had to be built right.\nOur story"
+  },
+  {
+   "id": "ask",
+   "path": "company/about.html",
+   "page": "About — mYa Solutions",
+   "heading": "The half that was missing is here.",
+   "summary": "The other half  We're raising to grow, not to survive. I wasn't raised to ask for a favor before I'd earned the conversation — so let's start with what your investment builds.",
+   "text": "The other half\nThe half that was missing is here.\nWe're raising to grow, not to survive. I wasn't raised to ask for a favor before I'd earned the conversation — so let's start with what your investment builds.\nRequest the briefing\nGet in touch"
+  },
+  {
+   "id": "arrival",
+   "path": "company/team.html",
+   "page": "Team — Our Story",
+   "heading": "Every problem I've solved started with someone in power deciding it wasn't their problem.",
+   "summary": "Our Story. Every problem I've solved started with someone in power deciding it wasn't their problem. So I stopped waiting for permission and built the bridge myself. Every single time. This company is the last bridge — and the biggest one.",
+   "text": "Our Story\nEvery problem I've solved started with someone in power deciding it wasn't their problem."
+  },
+  {
+   "id": "names",
+   "path": "company/team.html",
+   "page": "Team — Our Story",
+   "heading": "Two names. Two reasons it had to be built right.",
+   "summary": "Why these names  Kamyia Fletcher, teacher, 1995–2024. The company For Kamyia.",
+   "text": "Why these names\nTwo names. Two reasons it had to be built right.\nKamyia Fletcher, teacher, 1995–2024.\nThe company\nFor Kamyia.\nKamyia Fletcher · In memoriam · 1995 — 2024\nThis company is named after Kamyia Fletcher — my niece. A dedicated teacher who gave everything to her students. At 29, she passed away, having sacrificed so much of herself to a system that demanded more than it should have ever asked.\nmYa Solutions exists because teachers like Kamyia deserve better. The technology should work for them — not the other way around.\nThe intelligence\nFor Jean.\nThe AI is named for Jean Williams — my grandmother. A woman who navigated systems that weren't built for her with grace, precision, and an unshakeable sense of who she was.\nJean the AI carries that same character — not a generic voice, not a tool that forgets you. A partner that learns who you are and works to extend what you can do.\nPartner Intelligence."
+  },
+  {
+   "id": "founder",
+   "path": "company/team.html",
+   "page": "Team — Our Story",
+   "heading": "Ayinde Rudolph, Ed.D.",
+   "summary": "The founder  — Founder & CEO, mYa Solutions Ayinde Rudolph, Ed.D. Founder & CEO — mYa Solutions For 20 years, Ayinde Rudolph served as a school administrator — nearly a decade of that as a superintendent, the person responsible when a syst…",
+   "text": "The founder\nAyinde Rudolph, Ed.D. — Founder & CEO, mYa Solutions\nAyinde Rudolph, Ed.D.\nFounder & CEO — mYa Solutions\nFor 20 years, Ayinde Rudolph served as a school administrator — nearly a decade of that as a superintendent, the person responsible when a system fails a child. He watched teachers burn out under administrative weight, watched students fall through gaps that technology promised to close but never did, and watched AI arrive and make the same mistake everyone else had: building for the data center instead of the classroom.\nHe returned to software development — after a 30-year gap — to build the thing he kept waiting for someone else to build. A local-first, privacy-preserving AI that runs entirely on the user's device. No cloud dependency. No data leaving the room. No vendor with a backdoor to your students' lives.\nWhat started as a solution for education became something larger: a platform architecture that works across every regulated domain — medicine, defense, robotics, navigation — because the underlying problem is the same everywhere. The intelligence is in the wrong place. mYa Solutions puts it back where it belongs.\nThe mission\nThe commitment that can't be sold away.\nTen percent of profits past ten million dollars a year go permanently to the places the current AI economy has left behind — rural schools, libraries, energy access where the grid doesn't reach.\nIt's held by a founder's golden share, structured to outlast any change in ownership. The mission isn't a marketing line. It's the architecture."
+  },
+  {
+   "id": "careers",
+   "path": "company/team.html",
+   "page": "Team — Our Story",
+   "heading": "We're a small team building something unreasonably large.",
+   "summary": "Careers  Not actively hiring — but always listening We're a lean startup — right now it's heads-down building, not heads-up hiring. But we know the people we'll want to work with don't always appear at convenient times.",
+   "text": "Careers\nWe're a small team building something unreasonably large.\nNot actively hiring — but always listening\nWe're a lean startup — right now it's heads-down building, not heads-up hiring. But we know the people we'll want to work with don't always appear at convenient times. If you believe in what we're building and want to be part of it when the moment is right, we'd rather hear from you now than miss you later.\nSend us your résumé or CV. Tell us what you do and why this work matters to you. We read everything — and we keep good files.\nIntroduce yourself →\nCareers\nOpens your default email app · sends to\ncareers@myasolutions.org\n· We review every submission"
+  },
+  {
+   "id": "arrival",
+   "path": "company/careers.html",
+   "page": "Careers — mYa Solutions",
+   "heading": "We're a small team building something unreasonably large.",
+   "summary": "Company · Careers. We're a small team building something unreasonably large. Not actively hiring — but always listening.",
+   "text": "Company · Careers\nWe're a small team building something unreasonably large."
+  },
+  {
+   "id": "heads-down-building-not-heads-up-hiring",
+   "path": "company/careers.html",
+   "page": "Careers — mYa Solutions",
+   "heading": "Heads-down building, not heads-up hiring.",
+   "summary": "Where we are  We're a lean startup — right now it's heads-down building, not heads-up hiring. But we know the people we'll want to work with don't always appear at convenient times.",
+   "text": "Where we are\nHeads-down building, not heads-up hiring.\nWe're a lean startup — right now it's heads-down building, not heads-up hiring. But we know the people we'll want to work with don't always appear at convenient times. If you believe in what we're building and want to be part of it when the moment is right, we'd rather hear from you now than miss you later.\nSend us your résumé or CV. Tell us what you do and why this work matters to you. We read everything — and we keep good files.\nOpen roles\nNone listed right now.\nWhen a role opens, it will be posted on this page first.\nWrite anyway\nOpens your default email app · sends to careers@myasolutions.org · We review every submission"
+  },
+  {
+   "id": "the-people-doing-the-hardest-work-with-the-fewes",
+   "path": "company/careers.html",
+   "page": "Careers — mYa Solutions",
+   "heading": "The people doing the hardest work with the fewest resources come first.",
+   "summary": "Why it matters  If that's the work you want to do, read where the company stands before you write. About Giving Back",
+   "text": "Why it matters\nThe people doing the hardest work with the fewest resources come first.\nIf that's the work you want to do, read where the company stands before you write.\nAbout\nGiving Back"
+  },
+  {
+   "id": "arrival",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Write to a person. A person writes back.",
+   "summary": "Company · Contact. Write to a person. A person writes back. No intake form, no auto-responder, no sales process. Pick the address that fits and tell us what you're trying to solve.",
+   "text": "Company · Contact\nWrite to a person. A person writes back."
+  },
+  {
+   "id": "products-pilots",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Products & pilots",
+   "summary": "BethanyShell, Education, Defense, Physical Intelligence Tell us your environment — seats, current stack, sector, vehicle or classroom — and what you're trying to solve. contactus@ contactus@myasolutions.org Investors The briefing, and the …",
+   "text": "Products & pilots\nBethanyShell, Education, Defense, Physical Intelligence\nTell us your environment — seats, current stack, sector, vehicle or classroom — and what you're trying to solve.\ncontactus@\ncontactus@myasolutions.org\nInvestors\nThe briefing, and the raw data\nThe full briefing, cap table and financials are available once we've had an initial conversation. Raw verification data on request.\nir@\nir@myasolutions.org · or read the\ninvestor page\nCareers\nNot actively hiring — always listening\nSend your résumé or CV and tell us why this work matters to you. We read everything.\nCareers\ncareers@myasolutions.org\nPress\nStories, interviews, facts\nTell us your outlet, your deadline and what you need.\nPress inquiry\ncontactus@myasolutions.org\nPartnerships & impact\nConservation, restoration, community\nWorking on the problems that actually matter? Tell us about your work and how Jean might support it.\narudolph@\narudolph@myasolutions.org\nMembers\nAlready using Jean?\nSign in, reset your password, or request access.\nSign in"
+  },
+  {
+   "id": "bethanyshell-education-defense-physical-intellig",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "BethanyShell, Education, Defense, Physical Intelligence",
+   "summary": "Products & pilots  Tell us your environment — seats, current stack, sector, vehicle or classroom — and what you're trying to solve. contactus@ contactus@myasolutions.org",
+   "text": "Products & pilots\nBethanyShell, Education, Defense, Physical Intelligence\nTell us your environment — seats, current stack, sector, vehicle or classroom — and what you're trying to solve.\ncontactus@\ncontactus@myasolutions.org"
+  },
+  {
+   "id": "the-briefing-and-the-raw-data",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "The briefing, and the raw data",
+   "summary": "Investors  The full briefing, cap table and financials are available once we've had an initial conversation. Raw verification data on request.",
+   "text": "Investors\nThe briefing, and the raw data\nThe full briefing, cap table and financials are available once we've had an initial conversation. Raw verification data on request.\nir@\nir@myasolutions.org · or read the\ninvestor page"
+  },
+  {
+   "id": "not-actively-hiring-always-listening",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Not actively hiring — always listening",
+   "summary": "Careers  Send your résumé or CV and tell us why this work matters to you. We read everything.",
+   "text": "Careers\nNot actively hiring — always listening\nSend your résumé or CV and tell us why this work matters to you. We read everything.\nCareers\ncareers@myasolutions.org"
+  },
+  {
+   "id": "stories-interviews-facts",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Stories, interviews, facts",
+   "summary": "Press  Tell us your outlet, your deadline and what you need. Press inquiry contactus@myasolutions.org",
+   "text": "Press\nStories, interviews, facts\nTell us your outlet, your deadline and what you need.\nPress inquiry\ncontactus@myasolutions.org"
+  },
+  {
+   "id": "conservation-restoration-community",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Conservation, restoration, community",
+   "summary": "Partnerships & impact  Working on the problems that actually matter? Tell us about your work and how Jean might support it.",
+   "text": "Partnerships & impact\nConservation, restoration, community\nWorking on the problems that actually matter? Tell us about your work and how Jean might support it.\narudolph@\narudolph@myasolutions.org"
+  },
+  {
+   "id": "already-using-jean",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Already using Jean?",
+   "summary": "Members  Sign in, reset your password, or request access. Sign in",
+   "text": "Members\nAlready using Jean?\nSign in, reset your password, or request access.\nSign in"
+  },
+  {
+   "id": "oakland-california",
+   "path": "company/contact.html",
+   "page": "Contact — mYa Solutions",
+   "heading": "Oakland, California.",
+   "summary": "Where we are  mYa Solutions, Inc. builds private, local intelligence — the other half of the AI story.",
+   "text": "Where we are\nOakland, California.\nmYa Solutions, Inc. builds private, local intelligence — the other half of the AI story."
+  },
+  {
+   "id": "arrival",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "Everyone else built AI for the cloud. We built it for the edge. The timing just caught up.",
+   "summary": "For investors. Everyone else built AI for the cloud. We built it for the edge. The timing just caught up. Jean OS is a local-first, privacy-preserving AI platform already proven across five unrelated domains — with no shared training data, no cloud dependency, and no LLM calls in the cognitive path of two of them.",
+   "text": "For investors\nEveryone else built AI for the cloud. We built it for the edge. The timing just caught up."
+  },
+  {
+   "id": "we-don-t-ask-investors-to-take-our-word-for-anyt",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "\"We don't ask investors to take our word for anything. Every claim on this page ",
+   "summary": "has a methodology behind it, a raw data file, or a video you can watch right now.\" We determine whether a capability is real by first asking: is there an industry-standard Software-in-the-Loop (SIL) test for this domain? If yes, we run it …",
+   "text": "\"We don't ask investors to take our word for anything. Every claim on this page has a methodology behind it, a raw data file, or a video you can watch right now.\"\nWe determine whether a capability is real by first asking: is there an industry-standard Software-in-the-Loop (SIL) test for this domain? If yes, we run it and publish the methodology. If not, we define one, document the criteria, and hold ourselves to it. Boundary conditions are named. Failures are reported alongside successes. The result that survives a hostile reader is the only result worth showing.\nRaw data — JSON trial reports, Criterion benchmark outputs — is available for independent verification on request. We don't hide the numbers that don't look perfect. We explain them."
+  },
+  {
+   "id": "evidence",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "Five domains. One architecture. All independently verifiable.",
+   "summary": "The receipts  The same codebase — no retraining, no domain-specific rebuilds — running across cybersecurity, education, medicine, robotics, and autonomous navigation. Cybersecurity 92.3% APT-class block rate 0 False positives 1,700+ Assess…",
+   "text": "The receipts\nFive domains. One architecture. All independently verifiable.\nThe same codebase — no retraining, no domain-specific rebuilds — running across cybersecurity, education, medicine, robotics, and autonomous navigation.\nCybersecurity\n92.3%\nAPT-class block rate\n0\nFalse positives\n1,700+\nAssessments run\nBETHANY — nation-state-grade defense, local\nTested against APT-class attack vectors using industry-standard SIL methodology. 92.3% block rate with zero false positives across 1,700+ assessments. Runs where your data already lives — no cloud exposure, no third-party visibility into your threat surface.\nView methodology\nEducation\n+22\nPoint proficiency shift\n7–10\nHours returned per week\nLive classroom pilot — Parlier, CA\nA working pilot with Sebastian Benavidez III in Parlier, California produced a +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.\nRead the testimonial\nRobotics\n11/11\nStandard tolerance threading\n4/4\nImpossible tasks refused\n0\nFalse successes\n7-DOF arm — SIL, no training data\nJean's reasoning ran inside the control loop of a 7-DOF robotic arm — no learned policy, no training data. CARVER grasp selection and ADAPT precision adjustment are deterministic reasoning. The arm threaded standard targets 11/11, refused impossible ones 4/4 with specific reasons, and reported zero false successes across all runs.\nHonest boundary: fine-precision threading (0.4mm eye) is not yet achieved — a diagnosed motion-planning limitation, not a reasoning failure. The fix is specified. Closed-loop visual servoing is the next build.\nView SIL methodology\nMedicine\n7/7\nConsecutive NEJM cases correct\n~27s\nPer case\n~2¢\nLocal compute cost\nNEJM clinical diagnostics — local, private\nSeven consecutive New England Journal of Medicine diagnostic cases — answered correctly, running entirely on local hardware, at roughly 27 seconds and 2 cents of compute per case. No data left the machine. Each case is recorded and publicly available.\nWatch the cases\nNavigation\n5,490\nLive route nodes evaluated\n0\nLLM calls in cognitive path\nAutonomous navigation — Oakland, live\n5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. Pure deterministic reasoning, posted publicly. The same architecture that handles robotics handles navigation — substrate-invariant by design.\nRequest raw data\nMethod\nOn our SIL methodology\nA Software-in-the-Loop test is an industry-standard approach for verifying AI behavior in simulation before physical deployment. For each domain, we first ask: does an accepted SIL standard exist? If yes, we run it. If not, we define the criteria, document them publicly, and hold ourselves to them.\nMethodology papers are linked above for cybersecurity, education, and robotics. As we add new SILs — clinical, navigation, and future domains — methodology papers will be added here. Raw trial data (JSON reports, Criterion benchmark outputs) is available for independent verification on request — we don't hide numbers that don't look perfect, we explain them.\nTo request raw data for independent verification:\nir@myasolutions.org"
+  },
+  {
+   "id": "bethany-nation-state-grade-defense-local",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "BETHANY — nation-state-grade defense, local",
+   "summary": "Cybersecurity 92.3% APT-class block rate 0 False positives 1,700+ Assessments run  Tested against APT-class attack vectors using industry-standard SIL methodology. 92.3% block rate with zero false positives across 1,700+ assessments.",
+   "text": "Cybersecurity\n92.3%\nAPT-class block rate\n0\nFalse positives\n1,700+\nAssessments run\nBETHANY — nation-state-grade defense, local\nTested against APT-class attack vectors using industry-standard SIL methodology. 92.3% block rate with zero false positives across 1,700+ assessments. Runs where your data already lives — no cloud exposure, no third-party visibility into your threat surface.\nView methodology"
+  },
+  {
+   "id": "live-classroom-pilot-parlier-ca",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "Live classroom pilot — Parlier, CA",
+   "summary": "Education +22 Point proficiency shift 7–10 Hours returned per week  A working pilot with Sebastian Benavidez III in Parlier, California produced a +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. S…",
+   "text": "Education\n+22\nPoint proficiency shift\n7–10\nHours returned per week\nLive classroom pilot — Parlier, CA\nA working pilot with Sebastian Benavidez III in Parlier, California produced a +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.\nRead the testimonial"
+  },
+  {
+   "id": "7-dof-arm-sil-no-training-data",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "7-DOF arm — SIL, no training data",
+   "summary": "Robotics 11/11 Standard tolerance threading 4/4 Impossible tasks refused 0 False successes  Jean's reasoning ran inside the control loop of a 7-DOF robotic arm — no learned policy, no training data. CARVER grasp selection and ADAPT precisi…",
+   "text": "Robotics\n11/11\nStandard tolerance threading\n4/4\nImpossible tasks refused\n0\nFalse successes\n7-DOF arm — SIL, no training data\nJean's reasoning ran inside the control loop of a 7-DOF robotic arm — no learned policy, no training data. CARVER grasp selection and ADAPT precision adjustment are deterministic reasoning. The arm threaded standard targets 11/11, refused impossible ones 4/4 with specific reasons, and reported zero false successes across all runs.\nHonest boundary: fine-precision threading (0.4mm eye) is not yet achieved — a diagnosed motion-planning limitation, not a reasoning failure. The fix is specified. Closed-loop visual servoing is the next build.\nView SIL methodology"
+  },
+  {
+   "id": "nejm-clinical-diagnostics-local-private",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "NEJM clinical diagnostics — local, private",
+   "summary": "Medicine 7/7 Consecutive NEJM cases correct ~27s Per case ~2¢ Local compute cost  Seven consecutive New England Journal of Medicine diagnostic cases — answered correctly, running entirely on local hardware, at roughly 27 seconds and 2 cent…",
+   "text": "Medicine\n7/7\nConsecutive NEJM cases correct\n~27s\nPer case\n~2¢\nLocal compute cost\nNEJM clinical diagnostics — local, private\nSeven consecutive New England Journal of Medicine diagnostic cases — answered correctly, running entirely on local hardware, at roughly 27 seconds and 2 cents of compute per case. No data left the machine. Each case is recorded and publicly available.\nWatch the cases"
+  },
+  {
+   "id": "autonomous-navigation-oakland-live",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "Autonomous navigation — Oakland, live",
+   "summary": "Navigation 5,490 Live route nodes evaluated 0 LLM calls in cognitive path  5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. Pure deterministic reasoning, posted publicly.",
+   "text": "Navigation\n5,490\nLive route nodes evaluated\n0\nLLM calls in cognitive path\nAutonomous navigation — Oakland, live\n5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. Pure deterministic reasoning, posted publicly. The same architecture that handles robotics handles navigation — substrate-invariant by design.\nRequest raw data"
+  },
+  {
+   "id": "on-our-sil-methodology",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "On our SIL methodology",
+   "summary": "Method  A Software-in-the-Loop test is an industry-standard approach for verifying AI behavior in simulation before physical deployment. For each domain, we first ask: does an accepted SIL standard exist?",
+   "text": "Method\nOn our SIL methodology\nA Software-in-the-Loop test is an industry-standard approach for verifying AI behavior in simulation before physical deployment. For each domain, we first ask: does an accepted SIL standard exist? If yes, we run it. If not, we define the criteria, document them publicly, and hold ourselves to them.\nMethodology papers are linked above for cybersecurity, education, and robotics. As we add new SILs — clinical, navigation, and future domains — methodology papers will be added here. Raw trial data (JSON reports, Criterion benchmark outputs) is available for independent verification on request — we don't hide numbers that don't look perfect, we explain them.\nTo request raw data for independent verification:\nir@myasolutions.org"
+  },
+  {
+   "id": "economics",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "The cost curve runs backwards.",
+   "summary": "The economics  Most AI gets more expensive as it scales. Jean OS inverts that.",
+   "text": "The economics\nThe cost curve runs backwards.\nMost AI gets more expensive as it scales. Jean OS inverts that. Compute runs on the user's device — which means our infrastructure cost approaches zero as our user base grows.\n$0.07\nTotal cloud cost for April\nSupporting an active pilot across multiple domains.\n~$13\nAll-in monthly inference cost, every user, every domain combined.\n90%+\nGross margin from the first seat. The user's device is the compute layer.\n9.8 MB\nClinical knowledge graph from nine medical textbooks — built for under five dollars.\nIBM Watson Health: four billion dollars over a decade, divested for one. Our clinical knowledge base: 9.8 megabytes, five dollars. The architecture is the advantage."
+  },
+  {
+   "id": "approach",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "The market just caught up to what we already built.",
+   "summary": "Why now  Sovereign AI, edge compute, and privacy-first software are now the fastest-growing segments in enterprise technology. We've been building this architecture since before those terms were headlines.",
+   "text": "Why now\nThe market just caught up to what we already built.\nSovereign AI, edge compute, and privacy-first software are now the fastest-growing segments in enterprise technology. We've been building this architecture since before those terms were headlines.\n01\nSovereign AI\nGovernments and enterprises worldwide are demanding AI that runs within their borders, on their hardware, under their control. Jean OS was designed for this from day one — not retrofitted to meet a regulation.\n02\nEdge compute\nThe shift from cloud-first to edge-first is accelerating. Jean's architecture is natively local — the edge is where it lives, not a deployment option added later.\n03\nPrivacy by architecture\nHIPAA, FERPA, CMMC, GDPR — regulated industries need AI that is private by construction, not by policy. Jean OS cannot exfiltrate data because it never touches a network to begin with.\n04\nSubstrate invariance\nOne architecture. Five domains already proven. Every new domain we enter costs us less than the last — because we're not rebuilding, we're extending."
+  },
+  {
+   "id": "ask",
+   "path": "investor.html",
+   "page": "Investor — mYa Solutions",
+   "heading": "If what you've seen here is enough to start a conversation — write to us.",
+   "summary": "The conversation  We're raising a mission-aligned round — not to survive, but to grow. The proof is on this page.",
+   "text": "The conversation\nIf what you've seen here is enough to start a conversation — write to us.\nWe're raising a mission-aligned round — not to survive, but to grow. The proof is on this page. The full briefing, cap table, and financials are available once we've had an initial conversation.\nStart here\nTell us who you are, what drew you to this, and what questions the page didn't answer. We respond to every serious inquiry personally — no pitch deck attachment required on your end, no intake form on ours.\nWrite to us →\nOpens your email app · sends to ir@myasolutions.org · we respond personally\nIf you'd prefer to request raw verification data (JSON trial reports, Criterion benchmarks) before reaching out, email\nir@myasolutions.org\nwith the domain you'd like to verify. We'll send it."
+  },
+  {
+   "id": "welcome-back",
+   "path": "login.html",
+   "page": "Sign In — mYa Solutions",
+   "heading": "Welcome back.",
+   "summary": "Partner Intelligence  Your Atelier is waiting. Open Jean → Sign in with the email address you registered with.",
+   "text": "Partner Intelligence\nWelcome back.\nYour Atelier is waiting.\nOpen Jean →\nSign in with the email address you registered with.\nForgot your password?\nReset your password\nEnter your email and we'll send a reset link from noreply@myasolutions.org — check spam if it doesn't arrive.\nEmail address\nSend reset link\nDon't have access yet?\nRequest access\nJean is available to founding members and pilot participants.\nEmail ir@myasolutions.org\nAbout your Jean access\nPrivate by design — your data never leaves your session\nYour voice — Jean learns how you communicate, not a generic AI tone\nAlways improving — each session helps Jean understand you better\nPartner Intelligence — built to work with you, not around you"
+  }
+ ]
+}

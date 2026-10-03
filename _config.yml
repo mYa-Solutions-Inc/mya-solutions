@@ -1,0 +1,9 @@
+# FILE / ROOT:  _config.yml  (mYa Solutions website)
+# DESCRIPTION:  GitHub Pages settings. Keeps the service code, tools and CI out
+#               of the published site. Files starting with "_" (the template,
+#               the archive) are already left out by default.
+exclude:
+  - services
+  - tools
+  - .github
+  - README.md
