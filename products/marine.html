@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marine — Physical Intelligence | mYa Solutions</title>
+<meta name="description" content="Jean OS held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion — median drift 0.042 m, five of five designed fails correct, no training and no learned policy. A software-in-the-loop evaluation in an independent physics simulator; every constant measured on the plant, not assumed.">
+<link rel="canonical" href="https://myasolutions.org/products/marine.html">
+<meta property="og:title" content="Marine — Steady in the deep.">
+<meta property="og:description" content="Station held 363 s against a 120 s criterion, median drift 0.042 m, 5/5 designed fails correct, no training. Software-in-the-loop — methodology and results v1.0.">
+<meta property="og:image" content="https://myasolutions.org/media/plates/marine-1600.jpg">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/blocks.css">
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body data-group="Products" data-back="products/physical.html" data-back-label="Physical">
+<div data-site-header></div>
+<main id="main">
+
+  <!-- B02 Hero -->
+  <section class="hero hero--interior">
+    <p class="eyebrow">Physical Intelligence · Marine<span class="hide-phone"> · 6-DOF station keeping</span></p>
+    <h1 class="display">Steady in the <span class="em">deep.</span></h1>
+    <p class="lede">Jean held a 6-DOF underwater vehicle on station — within ±0.5 m depth and 1.0 m horizontal drift — for 363 s against a 120 s criterion. Median drift 0.042 m. Five of five designed fails correct. No training, no learned policy.</p>
+    <div class="actions">
+      <a class="btn btn--primary" href="#proof">See the results ↓</a>
+      <a class="btn btn--line" href="../evidence/reports/marine-sil-methodology-v1.0.pdf" target="_blank" rel="noopener">Read the methodology (PDF)</a>
+      <a class="btn btn--line" href="#honest">The test that lied</a>
+    </div>
+    <div class="stem" aria-hidden="true"></div>
+  </section>
+
+  <div class="plate-wrap">
+    <figure class="plate blueprint duotone"><img src="../media/plates/marine-1600.jpg" alt="An illustrated underwater vehicle holding still beneath shafts of light from the surface." fetchpriority="high"></figure>
+    <div class="plate-cap"><span>Marine · Station-keeping SIL v1.0</span><span>Illustration — not the vehicle under test</span></div>
+  </div>
+
+  <!-- B05 Headline stats, on steel -->
+  <section class="band band--steel">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Methodology &amp; Results v1.0 · August 2026</p>
+        <h2 class="title">The same engine, pointed at <span class="em">the deep.</span></h2>
+        <p class="lede">Jean's reasoning layer ran inside the loop. Vehicle dynamics, hydrodynamics, sensor simulation and rigid-body physics were provided by Gazebo Harmonic and the DAVE/REXROV model — none of which Jean authored.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">363 s</div><div class="stat-l">Station held, 3× criterion — 363.7 / 357.5 / 356.8 s across three runs against 120 s</div></div>
+        <div class="stat"><div class="stat-n">0.042 m</div><div class="stat-l">Median drift (run 3) against a 1.0 m tolerance — maximum 8 cm</div></div>
+        <div class="stat"><div class="stat-n">5/5</div><div class="stat-l">Designed-fails correct — zero false attempts, zero false refusals</div></div>
+        <div class="stat"><div class="stat-n">No training</div><div class="stat-l">No learned policy — a deterministic engine, not a trained model</div></div>
+      </div>
+      <p class="fine mt-3">ROS 2 Jazzy + Gazebo Harmonic · AWS EC2 x86-64 · independent physics. This is a SIL. No physical hardware. It does not claim real-hardware performance.</p>
+    </div>
+  </section>
+
+  <!-- What this tests + architecture -->
+  <section class="band">
+    <div class="wrap">
+      <div class="split split--text-wide" style="align-items:start">
+        <div>
+          <p class="eyebrow">What this evaluation tests</p>
+          <h2 class="title">One engine. <span class="em">A new substrate.</span></h2>
+          <p class="lede">Jean was built to close the educational achievement gap. Its architecture is a deterministic mathematical reasoning stack, not a trained model. The architectural claim — validated across education, cybersecurity, clinical reasoning, sensor fusion and robotic manipulation — is that the same engine generalises across substrates without being rebuilt for each.</p>
+          <p class="body">This SIL tests that claim in a substrate with properties the robotics work did not have: a continuously acting disturbance, a plant that must be characterised before it can be controlled, and a task where the correct answer is sometimes to do nothing.</p>
+        </div>
+        <div class="card blueprint" style="padding:40px 36px">
+          <p class="card-kicker">The edge of a SIL</p>
+          <div class="title-sm" style="margin:0 0 14px">A SIL stops at the edge of the physical world <span class="em">by definition.</span></div>
+          <p>What it can prove is whether the decision and control logic is sound against an independent world. What it cannot prove is real-hardware performance — a separate, later category.</p>
+        </div>
+      </div>
+
+      <div class="section-head mt-3" style="margin-bottom:32px">
+        <p class="eyebrow">Architecture under test</p>
+        <h3 class="title-sm">Jean retained only the decision layer.</h3>
+        <p class="body">Everything she reasoned about was provided by independent, non-authored software.</p>
+      </div>
+      <div class="grid grid--2" style="align-items:start">
+        <div>
+          <p class="card-kicker">Independent — not authored by Jean</p>
+          <ul class="ticks ticks--no">
+            <li><strong>Physics and hydrodynamics:</strong> Gazebo Harmonic, with the DAVE/REXROV work-class ROV model. Jean never received ground truth about forces.</li>
+            <li><strong>Sensors:</strong> simulated DVL, depth, pressure and IMU, published through a ROS 2 bridge Jean did not write.</li>
+            <li><strong>Actuation:</strong> the vehicle's own wrench interface.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="card-kicker">Jean's layer</p>
+          <ul class="ticks ticks--yes">
+            <li><strong>POWELL</strong> — fusion quality</li>
+            <li><strong>CFADS</strong> — authority assessment</li>
+            <li><strong>BARCA</strong> — response selection</li>
+            <li><strong>RANDOLPH</strong> — intervention timing</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note mt-2">The regulator is deterministic and stays deterministic. Jean decides whether to intervene, at what authority, and at what moment; a PID executes. This mirrors the robotics SIL, where CARVER selects the grasp and MoveIt executes it. Jean does not compute inverse kinematics there and does not compute PID arithmetic here.</p>
+    </div>
+  </section>
+
+  <!-- Method -->
+  <section class="band band--mid" id="method">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Method</p>
+        <h2 class="title">No layer built above <span class="em">an unverified one.</span></h2>
+      </div>
+      <div class="table-wrap"><table class="table">
+        <caption>Phase structure</caption>
+        <thead><tr><th>Phase</th><th>Scope</th><th>Exit criterion</th></tr></thead>
+        <tbody>
+          <tr><td>0</td><td>Actuation verified, vertical plant measured</td><td>Commanded force produces its intended effect</td></tr>
+          <tr><td>1</td><td>Depth axis alone</td><td>±0.5 m for 120 s, three runs</td></tr>
+          <tr><td>2</td><td>Horizontal plant, then both axes</td><td>Depth AND drift simultaneously, 120 s</td></tr>
+          <tr><td>3</td><td>Jean's decision layer replaces the fixed policy</td><td>Performance comparable, decisions logged</td></tr>
+          <tr><td>4</td><td>Designed fails</td><td>Zero false attempts, zero false refusals</td></tr>
+        </tbody>
+      </table></div>
+      <p class="fine mt-1">This structure was not the original plan. It was created after four days of Gate 2 work established that the plant had never been characterised.</p>
+
+      <div class="section-head mt-3" style="margin-bottom:32px">
+        <h3 class="title-sm">Honest verdict logic</h3>
+        <p class="body">Verdicts are decoupled from whether an action was taken.</p>
+      </div>
+      <div class="grid grid--4">
+        <div class="card blueprint"><p class="card-kicker">Pass</p><h3>RefusedCorrectly</h3><p>Impossible task, refused, reason matches.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Flagged</p><h3>RefusedWrongReason</h3><p>Refused, but for a reason that was not the true one.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Fail</p><h3>FalseAttempt</h3><p>Impossible task attempted. The marine equivalent of a false success.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Pass / Fail</p><h3>HeldStation / FalseRefusal</h3><p>Achievable task accepted, or wrongly declined.</p></div>
+      </div>
+      <p class="verdict">A pass requires zero FalseAttempt and zero FalseRefusal. Refusing everything is not a pass; neither is attempting everything.</p>
+
+      <div class="grid grid--2 mt-3">
+        <div><h3 class="title-sm">Independence and determinism</h3><p class="body">Physics is Gazebo's, not Jean's. Sensors are simulated by software Jean did not write. Success is measured from vehicle position observed through the simulator's own odometry, not computed by Jean. The same inputs produce the same decision — a design property of a deterministic engine.</p></div>
+        <div><h3 class="title-sm">Statistical discipline</h3><p class="body">Every result is reported as N ≥ 3 runs with spread. This is not a convention; it was forced by measurement. Three runs of an identical binary once produced a 354% spread in drift and 398% in hold time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results I — Phases 0–2, on steel -->
+  <section class="band band--steel" id="proof">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The results · Phases 0–2</p>
+        <h2 class="title">Three runs. <span class="em">Reported with spread.</span></h2>
+      </div>
+
+      <h3 class="title-sm">Phase 0 — actuation and plant</h3>
+      <pre class="terminal"><span class="dim"># vertical plant — measured</span>
+net buoyancy (trim)   -7 422 N                      <span class="dim">measured by bisection</span>
+heave drag            |F| = 3519|v| + 280412 v²      <span class="dim">residual 1109 N (~3%)</span></pre>
+      <p class="fine mt-1">F_net/v|v| held between 263 000 and 307 000 across a 65 000 N range.</p>
+
+      <div class="mt-3">
+        <h3 class="title-sm">Phase 1 — Depth control on <span class="em">measured constants only.</span></h3>
+        <p class="body">Jean held an underwater vehicle at depth within ±0.5 m for three times the required duration — three runs agreeing within 1%, every constant measured on the plant, not assumed. The exit criterion was to hold depth within ±0.5 m for 120 continuous seconds across three settled runs, no saturation, every constant traceable. Here's what happened.</p>
+      </div>
+      <div class="stats mt-2">
+        <div class="stat"><div class="stat-n">3×</div><div class="stat-l">Longer than required — held 352–377 s against a 120 s criterion</div></div>
+        <div class="stat"><div class="stat-n">±0.5 m</div><div class="stat-l">Depth tolerance held, 92–94% of samples inside it at 27 Hz</div></div>
+        <div class="stat"><div class="stat-n">1%</div><div class="stat-l">Spread across three runs — medians 0.212–0.216 m</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">Constants assumed — every value measured on the plant</div></div>
+      </div>
+      <div class="table-wrap mt-2"><table class="table">
+        <caption>Depth-hold, 27 Hz control loop</caption>
+        <thead><tr><th>Run</th><th class="n">Samples</th><th class="n">Median error</th><th class="n">Within ±0.5 m</th><th class="n">Continuous hold</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="n">10,621</td><td class="n">0.216 m</td><td class="n">94.3%</td><td class="n">376.7 s</td></tr>
+          <tr><td>2</td><td class="n">10,606</td><td class="n">0.212 m</td><td class="n">94.0%</td><td class="n">355.2 s</td></tr>
+          <tr><td>3</td><td class="n">10,643</td><td class="n">0.216 m</td><td class="n">92.0%</td><td class="n">352.6 s</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note mt-1">No saturation in any run. KD = 0 because the water itself supplies the damping — at 0.2 m/s the quadratic drag term alone opposes motion with nearly 12,000 N. No gain was chosen to make a test pass.</p>
+      <blockquote class="pull">"The three runs agreeing to within 1% is itself the finding. Earlier in this programme, identical configurations produced 354% spread in the same measurement. The bench is now an instrument."</blockquote>
+
+      <div class="mt-3">
+        <h3 class="title-sm">Phase 2 — horizontal plant and <span class="em">full station keeping</span></h3>
+      </div>
+      <pre class="terminal mt-1"><span class="dim"># horizontal plant — measured</span>
+surge drag   |F| = 14080|v| + 61718 v²    <span class="dim">residual 1458 N (~5%)</span>
+sway drag    |F| = 29895|v| + 43659 v²    <span class="dim">residual 3902 N (~13%)</span>
+current      ~0.014 m/s steady, ~616 N to null</pre>
+      <p class="fine mt-1">The quadratic term is 4.5× lower in surge than heave; the linear term is 4× higher. The axes could not have been assumed alike.</p>
+      <div class="table-wrap mt-2"><table class="table">
+        <caption>Full station keeping — depth AND drift, simultaneously</caption>
+        <thead><tr><th>Run</th><th class="n">Samples</th><th class="n">Depth median</th><th class="n">Drift median</th><th class="n">Drift max</th><th class="n">Hold</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="n">9,412</td><td class="n">0.146 m</td><td class="n">0.336 m</td><td class="n">0.779 m</td><td class="n">363.7 s</td></tr>
+          <tr><td>2</td><td class="n">10,077</td><td class="n">0.266 m</td><td class="n">0.096 m</td><td class="n">0.231 m</td><td class="n">357.5 s</td></tr>
+          <tr class="is-hero"><td>3</td><td class="n">10,299</td><td class="n">0.250 m</td><td class="n">0.042 m</td><td class="n">0.080 m</td><td class="n">356.8 s</td></tr>
+        </tbody>
+      </table></div>
+      <p class="fine mt-1">Criterion: ±0.5 m depth and 1.0 m horizontal drift, 120 s.</p>
+    </div>
+  </section>
+
+  <!-- Statement -->
+  <section class="statement-band">
+    <p class="eyebrow">Phase 2 · Run 3</p>
+    <h2 class="statement">Run 3 held maximum drift to 8 centimetres against a 1.0 m tolerance, and a current that would have carried the vehicle <span class="em">4.2 m</span> over the same window.</h2>
+  </section>
+
+  <!-- Results II — Phases 3–4, on steel -->
+  <section class="band band--steel" id="deciding">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The results · Phases 3–4</p>
+        <h2 class="title">Jean deciding — <span class="em">and refusing the impossible.</span></h2>
+      </div>
+
+      <h3 class="title-sm">Phase 3 — Jean deciding</h3>
+      <div class="table-wrap mt-1"><table class="table">
+        <caption>Jean's decision layer replaces the fixed policy</caption>
+        <thead><tr><th>Run</th><th class="n">Samples</th><th class="n">Decision changes</th><th class="n">Depth median</th><th class="n">In band</th><th class="n">Hold</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="n">9,441</td><td class="n">68</td><td class="n">0.221 m</td><td class="n">88.6%</td><td class="n">313.5 s</td></tr>
+          <tr><td>2</td><td class="n">9,456</td><td class="n">72</td><td class="n">0.208 m</td><td class="n">92.6%</td><td class="n">351.3 s</td></tr>
+          <tr><td>3</td><td class="n">10,057</td><td class="n">67</td><td class="n">0.225 m</td><td class="n">92.3%</td><td class="n">350.9 s</td></tr>
+        </tbody>
+      </table></div>
+      <div class="grid grid--2 mt-2" style="align-items:start">
+        <div>
+          <p class="lede">Against the fixed-policy baseline of 363.7 / 357.5 / 356.8 s: statistically indistinguishable.</p>
+          <p class="body">That is the correct result. Jean's reasoning does not outperform a tuned PID at a task tuned PIDs are good at; it matches it while producing an auditable record. A claim that reasoning beat tuned control here would have been the suspicious outcome.</p>
+        </div>
+        <p class="note">Decisions were distributed, not degenerate — depth: CorrectSoft ~6 500, Hold ~2 650, CorrectHard ~365; drift: CorrectHard ~6 700, CorrectSoft ~1 700, Hold ~1 100. Zero Aborts, correctly: nothing in these runs was unachievable.</p>
+      </div>
+
+      <h3 class="title-sm mt-3">Phase 4 — designed fails</h3>
+      <div class="table-wrap mt-1"><table class="table">
+        <caption>Five cases · one achievable, four impossible</caption>
+        <thead><tr><th>Case</th><th>Expected</th><th>Verdict</th><th>Reason</th></tr></thead>
+        <tbody>
+          <tr><td>C1</td><td>hold</td><td>HeldStation</td><td>none</td></tr>
+          <tr><td>F1</td><td>refuse</td><td>RefusedCorrectly</td><td>perception_insufficient</td></tr>
+          <tr><td>F2</td><td>refuse</td><td>RefusedCorrectly</td><td>authority_insufficient</td></tr>
+          <tr><td>F3</td><td>refuse</td><td>RefusedCorrectly</td><td>target_unreachable</td></tr>
+          <tr><td>F4</td><td>refuse</td><td>RefusedCorrectly</td><td>perception_stale</td></tr>
+        </tbody>
+      </table></div>
+      <div class="stats mt-2">
+        <div class="stat"><div class="stat-n">5/5</div><div class="stat-l">Correct outcomes</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">False attempts</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">False refusals</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">Wrong reasons</div></div>
+      </div>
+      <div class="grid grid--2 mt-3" style="align-items:start">
+        <p class="body">Every refusal came before acting, not as a mid-task abort — the stronger behaviour, since refusing at pre-flight costs nothing and risks nothing. Each carried its evidence:</p>
+        <pre class="terminal" style="min-width:0"><span class="dim"># refusal evidence, as logged</span>
+F1  "position confidence 0.20 below floor 0.45"
+F2  "authority 400 N below the 616 N required"
+F3  "setpoint 110.0 m is below the seafloor at 94.0 m"
+F4  "last fix 4.0 s old, limit 1.0 s"</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- The integration finding -->
+  <section class="band band--mid" id="currency">
+    <div class="wrap">
+      <div class="split" style="align-items:start">
+        <div>
+          <p class="eyebrow">The integration finding</p>
+          <h2 class="title">Formulas need <span class="em">a currency.</span></h2>
+          <p class="lede">The most transferable result of this evaluation is not a number.</p>
+          <p class="body">Jean's formula stack is deliberately agnostic about units — the formulas are a structure for comparison. But a comparison requires a common currency, and the integration must supply it.</p>
+          <p class="body">Four successive architectures failed on this point before the fifth worked. Each used dimensionless weights and costs, so their ratios were arbitrary:</p>
+          <ul class="ticks ticks--no">
+            <li>Hold cost 0.02 against CorrectSoft's 0.18 — a 10× denominator advantage chosen by nothing. Hold won from every state: 3 639 of 3 639 samples.</li>
+            <li>Decision margins of 0.01 logged as reasoning when they were coin flips.</li>
+          </ul>
+        </div>
+        <div style="min-width:0">
+          <p class="body">The fix was to denominate everything in newtons, because that is what the actuator speaks and what the plant model is written in:</p>
+          <pre class="terminal" style="white-space:pre-wrap">value_N = P × (force avoided later) − (force spent now)</pre>
+          <p class="body mt-2">Holding is not free — the deviation persists and grows, so the force needed later is larger. Correcting spends force now to avoid spending more later. That is a genuine economic comparison, and its margin means something.</p>
+          <p class="aside mt-2">This principle generalises to any application where the formula stack meets a physical system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calibration journey I — assumed vs measured -->
+  <section class="band" id="calibration">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The calibration journey</p>
+        <h2 class="title">Four days of tuning above <span class="em">an unmeasured plant.</span></h2>
+        <p class="lede">Reported in full, because it is itself evidence that the instrument is honest. Before Phase 0 existed, a station-keeping controller was tuned for four days. When the plant was finally measured:</p>
+      </div>
+      <div class="table-wrap"><table class="table">
+        <caption>Assumed vs measured</caption>
+        <thead><tr><th>Constant</th><th class="n">Assumed</th><th class="n">Measured</th><th class="n">Error</th></tr></thead>
+        <tbody>
+          <tr><td>Trim feed-forward</td><td class="n">−135 N</td><td class="n">−7 422 N</td><td class="n">55×</td></tr>
+          <tr><td>Authority limit</td><td class="n">1 500 N</td><td class="n">~39 000 N</td><td class="n">26×</td></tr>
+          <tr><td>Quadratic drag</td><td class="n">~183 N/(m/s)²</td><td class="n">280 412</td><td class="n">~1500×</td></tr>
+          <tr><td>Effective mass</td><td class="n">12 954 kg (inferred from an oscillation)</td><td class="n">withdrawn</td><td class="n">—</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note mt-1">The authority limit was a fifth of the force required merely to hold depth. KP = 250 N/m on a plant needing 26 000 N to move at 0.3 m/s commanded about 1% of what was needed. The loop was not underdamped or mistuned — it was barely coupled to the vehicle.</p>
+
+      <div class="split mt-3" style="align-items:start">
+        <div>
+          <p class="eyebrow">Why it worked</p>
+          <h3 class="title-sm">Every number came from the <span class="em">plant itself.</span></h3>
+          <p class="body">The controller holds depth because the forces acting on the vehicle were <strong>measured, not estimated</strong> — buoyancy by bisection, drag fitted to net force across a 65,000 N range with a 3% residual.</p>
+          <p class="body">The proportional gain follows directly from that measured drag curve: a 1 m error commands ~3,000 N and closes at 0.1 m/s. <strong>The derivative gain is zero</strong> — the water damps the system better than any tuning could.</p>
+          <p class="body">One constant, the effective heave mass, could not be separately identified at the achievable sample rate. <strong>We say so plainly</strong> rather than report the number the optimizer returned when it hit its bound — and the controller doesn't need it, because this plant is governed by drag.</p>
+        </div>
+        <pre class="terminal" style="min-width:0"><span class="dim"># constants of record — all measured</span>
+TRIM_N            -7 422   <span class="dim">bisection</span>
+DRAG_C1            3 519   <span class="dim">fitted</span>
+DRAG_C2          280 412   <span class="dim">fitted</span>
+KP_N_PER_M         3 000   <span class="dim">from drag curve</span>
+KI_N_PER_MS           80   <span class="dim">trim residual</span>
+KD_NS_PER_M            0   <span class="dim">water self-damps</span>
+FZ_AUTHORITY      39 000   <span class="dim">trim + closure</span>
+m_eff     not identified   <span class="dim">(not required)</span>
+
+<span class="dim"># prior assumed values, now withdrawn:</span>
+<span class="prompt">trim, drag, authority wrong by</span>
+<span class="prompt">55× · 1500× · 26×</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calibration journey II — interfaces + the harnesses that lied -->
+  <section class="band band--mid" id="honest">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Where it actually broke</p>
+        <h2 class="title">Every defect was <span class="em">at an interface.</span></h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card blueprint"><div class="card-num">01</div><h3>An upstream defect in a published research model</h3><p>DAVE's REXROV model gives each thruster joint the same &lt;pose&gt; as its child link. Since SDF joint poses are child-relative, each revolute axis sat ~1.1 m from its thruster and the links orbited as the propellers spun. Runtime geometry disagreed with the model by up to 1.64 m and 153°.</p><p>Patched, verified to 0.000°, and disclosed in code comments rather than silently worked around.</p></div>
+        <div class="card blueprint"><div class="card-num">02</div><h3>The actuation interface</h3><p>The vehicle's persistent-wrench topic accumulates: every message stays applied. A controller publishing each cycle therefore applied the running sum of its entire command history — roughly 8 000 wrenches over a 300 s run. The instantaneous topic applies for one physics step, so at controller rates the force acts for under 1% of the time.</p><p>The workable pattern is to publish the delta against a tracked standing value. The accumulation that broke two days of work became the mechanism that made continuous force possible.</p></div>
+        <div class="card blueprint"><div class="card-num">03</div><h3>Reset transients caused three separate failures</h3><p>set_pose teleports position and orientation but not velocity. Every run inherited momentum from whatever preceded it. This produced: unexplained Gate 2 variance; a 354% spread across three runs of an identical binary; and, in Phase 3, run 1 having more command updates than run 2 in every trial — 586 vs 81, 1250 vs 456, 920 vs 177.</p></div>
+      </div>
+
+      <div class="card blueprint mt-3" style="padding:48px 44px">
+        <p class="card-kicker">Recorded in full — the test that lied</p>
+        <h3 class="title-sm">Our own harness reported a pass it hadn't earned. We caught it by reading the numbers.</h3>
+        <div class="split" style="align-items:start;gap:48px">
+          <div>
+            <p class="body">The first version of our Phase 0 test harness printed <strong>"PHASE 0 PASSED."</strong> It was wrong. The vehicle had reportedly <em>risen</em> under downward force, and the total response across a 1,200 N swing was a rounding error — but the monotonicity check passed on noise that happened to be ordered. Two entirely different transports produced deltas of 0.0564 and 0.0548 — the same artifact.</p>
+            <blockquote class="pull">"A gate that passes when it should not is a more serious defect than the bug it was built to catch."</blockquote>
+            <p class="body">Three defects: no minimum effect size, a detection threshold below the natural variation in the vehicle's buoyant drift, and a baseline measured at a different depth than the test. None of it was caught by the test. <strong>It was caught by a person reading the numbers and asking why a vehicle rose when pushed down.</strong></p>
+          </div>
+          <div>
+            <p class="card-kicker">The second false result</p>
+            <p class="body">A Phase 1 diagnostic reported drag at 11 272% of applied force, because it differentiated two adjacent samples at 10 Hz. It reported 4.00 m/s where the true average was 0.14 m/s.</p>
+            <p class="note">Standing consequence: every gate criterion must state a minimum effect size, not only a direction or an ordering.</p>
+            <p class="body mt-2">We record this because it is the whole discipline: an instrument that has never been caught failing has not yet been tested. The constants this program now runs on superseded the earlier assumed values by factors of <strong>55×, 26×, and 1,500×</strong>. Every one of those corrections came from refusing to trust a green checkmark.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Known boundaries + what this is and is not -->
+  <section class="band band--rule" id="boundaries">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Read this before anything else you quote</p>
+        <h2 class="title">This is a SIL. <span class="em">No physical hardware.</span></h2>
+        <p class="lede">It does not claim real-hardware performance.</p>
+      </div>
+      <div class="compare">
+        <div class="card blueprint card--us">
+          <p class="card-kicker">What this is</p>
+          <p class="body">A software-in-the-loop demonstration that Jean's deterministic architecture — with no training and no learned policy — decides whether, how hard, and when to act on a 6-DOF underwater vehicle in an independent simulator it did not author, holding station to 8 cm and refusing the impossible with zero false attempts.</p>
+        </div>
+        <div class="card blueprint">
+          <p class="card-kicker">What this is not</p>
+          <p class="body">It is not a claim of real-hardware station keeping, nor of any platform-specific operational envelope, both of which remain future work with defined paths.</p>
+          <p class="body">The method transfers; <strong>the coefficients do not.</strong></p>
+        </div>
+      </div>
+
+      <h3 class="title-sm mt-3">Known boundaries</h3>
+      <ol class="promises mt-1">
+        <li><div><h3>The operational envelope is REXROV's.</h3><p>The drag curves were measured on an 1 862 kg work-class vehicle. Applying them to a 17 kg inspection-class ROV would be the same error this programme has already paid for. The method transfers; the coefficients do not.</p></div></li>
+        <li><div><h3>Effective mass could not be measured.</h3><p>With quadratic drag at 280 412 N/(m/s)², the vehicle reaches terminal velocity in about one second; mass governs only that window, and at the achievable ~10 Hz sample rate it contains roughly ten points. The estimator was validated on synthetic data and recovered known masses exactly, but railed against its search bound on the real plant. It is recorded as not identifiable and not required — the plant is governed by drag, and drag was measured well.</p></div></li>
+        <li><div><h3>All refusals were caught at pre-flight.</h3><p>The in-task abort path exists and is reachable, but Phase 4's faults were detectable before commitment. Mid-run fault injection is specified and unbuilt.</p></div></li>
+        <li><div><h3>Position is odometry ground truth, not Jean's dead reckoning.</h3><p>This was deliberate — it isolates the control law. Moving to her own estimate, with the estimate checked against truth every run, is the next step.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Closing statement -->
+  <section class="statement-band band--mid">
+    <blockquote class="statement" style="font-family:var(--font-heading)">The controller was never the problem. It was commanding one percent of the force the vehicle required, through a path that summed its own history, against constants wrong by factors of fifty and fifteen hundred.</blockquote>
+    <p class="lede center mt-2" style="margin-left:auto;margin-right:auto">Every significant defect found across this evaluation was at an interface — frames, units, clocks, sensor semantics, transport — and every one of them reported success while doing nothing. <strong>The reasoning is rarely what breaks. The interface with reality is.</strong></p>
+  </section>
+
+  <!-- Who -->
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Who this is for</p>
+        <h2 class="title">Built for the deep, where you <span class="em">can't send a person to check.</span></h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="card blueprint"><p class="card-kicker">Subsea &amp; Offshore</p><h3>Control on measured physics</h3><p>Station-keeping and depth-hold derived from the vehicle's own measured drag and buoyancy — not a policy trained in a pool that may not match your hull.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Defense &amp; Maritime</p><h3>Deterministic, auditable</h3><p>Every control decision traces to a measured constant. Three runs within 1% means the behavior is repeatable — the precondition for trust in an environment you can't observe directly.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Researchers</p><h3>Honest boundaries</h3><p>We publish what we couldn't measure and why, the harness that lied, and the corrections that followed. The record is built to survive a hostile reader.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Investors</p><h3>Subsea without the training moat</h3><p>A second physical domain proven by the same small team, the same architecture — evidence that each new domain costs less than the last.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B12 Two-door CTA -->
+  <section class="band band--rule" id="get-in-touch">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 class="title">The full phase records are <span class="em">available.</span></h2>
+        <p class="lede">Raw per-run telemetry, decision logs, and all five phase records are available for independent review. If you want to verify the constants or the methodology, write to us.</p>
+      </div>
+      <div class="two-door">
+        <div class="card blueprint">
+          <p class="card-kicker">The methodology</p>
+          <h3>Marine Station-Keeping SIL — Methodology &amp; Results v1.0</h3>
+          <p>Substrate-invariant decision architecture applied to underwater station keeping. August 2026. Every phase, every run table, the designed fails, and the calibration journey in full.</p>
+          <a class="btn btn--primary" href="../evidence/reports/marine-sil-methodology-v1.0.pdf" target="_blank" rel="noopener">Read the methodology (PDF)</a>
+          <p class="fine">PDF · no registration</p>
+        </div>
+        <div class="card blueprint">
+          <p class="card-kicker">Write to us directly</p>
+          <h3>Tell us your vehicle and your environment.</h3>
+          <p>We respond personally — <strong>no sales process, no auto-responder.</strong></p>
+          <a class="btn btn--line" href="mailto:contactus@myasolutions.org?subject=Physical%20Intelligence%20%E2%80%94%20Marine%20inquiry&amp;body=Hi%20Ayinde%2C%0D%0A%0D%0AI%20came%20across%20the%20Marine%20work%20and%20wanted%20to%20start%20a%20conversation.%0D%0A%0D%0AOur%20vehicle%20%2F%20environment%3A%20%5BROV%20%2F%20AUV%20%2F%20depth%20%2F%20mission%5D%0D%0AWhat%20we're%20trying%20to%20solve%3A%20%5Bthe%20problem%5D%0D%0A%0D%0AThank%20you.">Write to us →</a>
+          <p class="fine">contactus@myasolutions.org · full phase records available on request</p>
+        </div>
+      </div>
+      <p class="fine center mt-2">Want the raw data? <a href="mailto:contactus@myasolutions.org?subject=Marine%20SIL%20v1.0%20%E2%80%94%20raw%20data%20request&amp;body=Hi%20Ayinde%2C%0D%0A%0D%0AI%20read%20the%20Marine%20Station-Keeping%20SIL%20v1.0%20and%20would%20like%20to%20review%20the%20raw%20per-run%20telemetry%2C%20decision%20logs%20and%20phase%20records.%0D%0A%0D%0AWho%20I%20am%20%2F%20why%3A%20%5B%5D%0D%0A%0D%0AThank%20you.">Request per-run telemetry and decision logs</a></p>
+      <div class="actions center mt-3">
+        <a class="link-arrow" href="robotics.html">Robotics</a>
+        <a class="link-arrow" href="physical.html">All domains</a>
+        <a class="link-arrow" href="ground.html">Ground</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div data-site-footer></div>
+</body>
+</html>

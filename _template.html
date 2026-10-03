@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  _template.html — copy this to start a page.
+
+  1. Copy into its group folder (products/, evidence/, impact/, company/).
+  2. Set <title>, description, canonical, and on <body>: data-group (which menu
+     lights up) and data-back / data-back-label (the "← Back" pill).
+  3. Fix the "../" in the three stylesheet links and the script if the page
+     sits at the root instead of in a folder.
+  4. Stack blocks from below in order. Alternate tones; keep --steel for
+     evidence (numbers, run tables, terminal output).
+  5. Add one line to NAV and FOOTER in assets/js/site.js.
+
+  No page needs its own <style>. If a block is missing, add it to
+  assets/css/blocks.css so every page can use it.
+
+  This file doubles as the live block library: open it in a browser.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Block library — mYa Solutions</title>
+<meta name="description" content="">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/blocks.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-group="" data-back="index.html" data-back-label="Home">
+<div data-site-header></div>
+<main id="main">
+
+  <!-- B02 Page hero (light, centred). Optional .hero-logo image above the eyebrow. -->
+  <section class="hero hero--interior">
+    <p class="eyebrow">Group · Page</p>
+    <h1 class="display">One line stating the claim, <span class="em">with emphasis.</span></h1>
+    <p class="lede">The sub. One or two sentences, never more.</p>
+    <div class="actions">
+      <a class="btn btn--primary" href="#">Primary action</a>
+      <a class="btn btn--line" href="#">Secondary</a>
+    </div>
+    <div class="stem" aria-hidden="true"></div>
+  </section>
+
+  <!-- B01 Plate — every photograph is a framed duotone plate -->
+  <div class="plate-wrap">
+    <figure class="plate blueprint duotone"><img src="media/plates/marine-1600.jpg" alt="Describe the image"></figure>
+    <div class="plate-cap"><span>Plate · Caption</span><span>Right caption</span></div>
+  </div>
+
+  <!-- B04 Section shell — tones: (none)=light · band--mid · band--steel · band--ink. band--rule adds a top rule. -->
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Kicker</p>
+        <h2 class="title">Headline, <span class="em">emphasis.</span></h2>
+        <p class="lede">Lede paragraph.</p>
+      </div>
+      <p class="body">Body copy at a readable measure.</p>
+    </div>
+  </section>
+
+  <!-- B05 Stat grid — on steel. Set style="--cols:3" for three. -->
+  <section class="band band--steel">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">Evidence</p><h2 class="title">Numbers on steel.</h2></div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">92.3%</div><div class="stat-l">Caption</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">Caption</div></div>
+        <div class="stat"><div class="stat-n">~1.07ns</div><div class="stat-l">Caption</div></div>
+        <div class="stat"><div class="stat-n">8,906</div><div class="stat-l">Caption</div></div>
+      </div>
+      <p class="fine mt-2">Methodology footnote.</p>
+    </div>
+  </section>
+
+  <!-- B06 Numbered grid + verdict -->
+  <section class="band band--mid">
+    <div class="wrap">
+      <div class="grid grid--3">
+        <div class="card blueprint"><div class="card-num">01</div><h3>Title</h3><p>Body.</p></div>
+        <div class="card blueprint"><div class="card-num">02</div><h3>Title</h3><p>Body.</p></div>
+        <div class="card blueprint"><div class="card-num">03</div><h3>Title</h3><p>Body.</p></div>
+      </div>
+      <p class="verdict">The verdict line.</p>
+    </div>
+  </section>
+
+  <!-- B07 Compare pair -->
+  <section class="band">
+    <div class="wrap compare">
+      <div class="card blueprint"><p class="card-kicker">Them</p><h3>Title</h3><div class="price">$120K</div><p class="fine">note</p>
+        <ul class="ticks ticks--no"><li>Item</li><li>Item</li></ul></div>
+      <div class="card blueprint card--us"><p class="card-kicker">Us</p><h3>Title</h3><div class="price">$52.5K</div><p class="fine">note</p>
+        <ul class="ticks ticks--yes"><li>Item</li><li>Item</li></ul></div>
+    </div>
+  </section>
+
+  <!-- B08 Banner statistic -->
+  <section class="band band--steel">
+    <div class="wrap banner-stat">
+      <div><div class="big">1.07ns</div><div class="unit">per check</div></div>
+      <div><h2 class="title-sm">Why it matters.</h2><p class="body">Paragraph.</p></div>
+    </div>
+  </section>
+
+  <!-- B09 Terminal callout -->
+  <section class="band band--steel">
+    <div class="wrap--narrow">
+      <pre class="terminal"><span class="prompt">$</span> git clone https://github.com/…
+<span class="prompt">$</span> cargo test
+<span class="ok">test result: ok.</span></pre>
+    </div>
+  </section>
+
+  <!-- B11 Video frame (placeholder until the film exists) -->
+  <section class="band band--mid">
+    <div class="wrap--narrow">
+      <div class="frame-16x9 blueprint duotone painted"><div class="frame-placeholder" style="color:#fff"><span class="play-glyph"></span><span>The walkthrough is almost ready.</span></div></div>
+    </div>
+  </section>
+
+  <!-- B12 Two-door CTA -->
+  <section class="band band--rule">
+    <div class="wrap">
+      <div class="section-head center"><p class="eyebrow">Next</p><h2 class="title">Take the document, or start a conversation.</h2></div>
+      <div class="two-door">
+        <div class="card blueprint"><p class="card-kicker">Read</p><h3>The methodology</h3><p>Body.</p><a class="btn btn--primary" href="#">Read it</a></div>
+        <div class="card blueprint"><p class="card-kicker">Talk</p><h3>Write to us</h3><p>Body.</p><a class="btn btn--line" href="#">Write to us</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B13 Bridge strip -->
+  <div class="bridge"><p>A line handing the reader to a different audience.</p><a class="btn btn--line" href="#">Go</a></div>
+
+  <!-- B14 Promise list -->
+  <section class="band">
+    <div class="wrap--narrow">
+      <ol class="promises">
+        <li><div><h3>Promise</h3><p>Stated flat.</p></div></li>
+        <li><div><h3>Promise</h3><p>Stated flat.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- B16 Bio -->
+  <section class="band band--mid">
+    <div class="wrap bio">
+      <figure class="plate blueprint duotone"><img src="media/team/ayinde.jpg" alt=""></figure>
+      <div><h2 class="title-sm">Name</h2><p class="role">Role</p><p class="body">Story.</p><blockquote class="pull">Pull quote.</blockquote></div>
+    </div>
+  </section>
+
+  <!-- B17 Run table -->
+  <section class="band band--steel">
+    <div class="wrap">
+      <div class="table-wrap"><table class="table">
+        <caption>Caption</caption>
+        <thead><tr><th>Run</th><th class="n">Median</th><th class="n">Hold</th></tr></thead>
+        <tbody><tr><td>1</td><td class="n">0.216 m</td><td class="n">376.7 s</td></tr></tbody>
+      </table></div>
+    </div>
+  </section>
+
+</main>
+<div data-site-footer></div>
+</body>
+</html>

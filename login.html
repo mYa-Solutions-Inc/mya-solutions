@@ -1,370 +1,137 @@
 <!DOCTYPE html>
-<!--
-  FILE / ROOT:  /site/login.html  (mYa Solutions sign-in launchpad)
-  OWNER:        Ayinde Rudolph, Ed.D. — mYa Solutions (ir@myasolutions.org)
-  CIPHER:       4KAM1431RAN
-  PURPOSE:      Dark cinematic sign-in page matching index.html aesthetic.
-                Routes members to Jean instance. Includes working password
-                reset form via Firebase REST API — no redirect needed.
-  UPDATED:      July 2026 — redesigned to match dark space theme + live reset
--->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sign In — mYa Solutions</title>
 <meta name="description" content="Sign in to access Jean, your personal Partner Intelligence.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --space:#05080f; --space-2:#0a1018; --space-3:#0d1520;
-    --dawn:#f4a259; --dawn-soft:#f6c89a;
-    --sand:#f7f3ec;
-    --ocean:#1d6f8b; --ocean-deep:#0e3d4e;
-    --ink:#16202a; --star:#cfd8e2;
-    --font-display:'Fraunces',Georgia,serif;
-    --font-body:'Inter',system-ui,sans-serif;
-    --glass:rgba(255,255,255,0.04);
-    --glass-border:rgba(255,255,255,0.10);
-    --glass-hover:rgba(255,255,255,0.07);
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:var(--font-body);background:var(--space);color:#fff;
-       -webkit-font-smoothing:antialiased;min-height:100vh}
-
-  /* ── topbar (matches index.html exactly) ─────────────────────────────────── */
-  .topbar{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;
-          justify-content:space-between;padding:18px 36px;
-          background:linear-gradient(180deg,rgba(5,8,15,.85),rgba(5,8,15,0))}
-  .brand{font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;
-         display:flex;align-items:center;gap:10px;text-decoration:none}
-  .brand .glyph{width:17px;height:17px;border-radius:50%;border:1.5px solid #fff;position:relative}
-  .brand .glyph::after{content:"";position:absolute;inset:4px;border-radius:50%;
-                       background:#fff;opacity:.55}
-  .quick{display:flex;gap:24px;align-items:center}
-  .quick a{color:rgba(255,255,255,.82);text-decoration:none;font-size:13.5px;
-           letter-spacing:.01em;transition:color .2s}
-  .quick a:hover{color:#fff}
-  .quick a.active{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
-  .launch{display:flex;align-items:center;gap:10px;border:1px solid rgba(244,162,89,.5);
-          border-radius:100px;padding:7px 16px;background:rgba(244,162,89,.08)}
-  .launch .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-               color:var(--dawn-soft);font-weight:600}
-  .launch .clock{font-family:var(--font-display);font-size:14px;color:#fff;
-                 font-weight:500;font-variant-numeric:tabular-nums}
-
-  /* ── starfield ───────────────────────────────────────────────────────────── */
-  .stars{position:fixed;inset:0;z-index:0;pointer-events:none}
-  .star{position:absolute;background:var(--star);border-radius:50%;
-        animation:tw 4s ease-in-out infinite}
-  @keyframes tw{0%,100%{opacity:.12}50%{opacity:.55}}
-
-  /* ── page layout ─────────────────────────────────────────────────────────── */
-  .page{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;
-        align-items:center;justify-content:center;padding:110px 20px 80px}
-
-  /* ── ambient glow behind card ────────────────────────────────────────────── */
-  .glow{position:fixed;width:600px;height:600px;border-radius:50%;z-index:0;pointer-events:none;
-        background:radial-gradient(circle,rgba(29,111,139,.18) 0%,transparent 70%);
-        top:50%;left:50%;transform:translate(-50%,-50%)}
-
-  /* ── header ──────────────────────────────────────────────────────────────── */
-  .head{text-align:center;margin-bottom:40px;max-width:480px}
-  .eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--dawn-soft);
-           font-weight:600;margin-bottom:18px}
-  .head h1{font-family:var(--font-display);font-weight:500;
-           font-size:clamp(36px,5vw,54px);color:#fff;line-height:1.05;letter-spacing:-.015em}
-  .head p{margin-top:12px;font-family:var(--font-display);font-style:italic;
-          font-size:18px;color:rgba(255,255,255,.7)}
-
-  /* ── card ────────────────────────────────────────────────────────────────── */
-  .card{width:100%;max-width:520px;background:var(--glass);
-        border:1px solid var(--glass-border);border-radius:24px;
-        padding:40px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-
-  /* ── primary CTA ─────────────────────────────────────────────────────────── */
-  .btn{display:block;width:100%;text-align:center;padding:17px 24px;border-radius:100px;
-       font-size:16px;font-weight:600;font-family:var(--font-body);cursor:pointer;
-       transition:transform .15s,box-shadow .2s;text-decoration:none;border:none}
-  .btn:hover{transform:translateY(-1px);text-decoration:none}
-  .btn-dawn{background:var(--dawn);color:#3a2208;
-            box-shadow:0 8px 28px rgba(244,162,89,.3)}
-  .btn-dawn:hover{box-shadow:0 12px 36px rgba(244,162,89,.45)}
-  .btn-ghost{background:transparent;border:1px solid var(--glass-border);color:rgba(255,255,255,.8)}
-  .btn-ghost:hover{background:var(--glass-hover);color:#fff;border-color:rgba(255,255,255,.2)}
-  .btn-ocean{background:var(--ocean);color:#fff;
-             box-shadow:0 8px 24px rgba(29,111,139,.3)}
-  .btn-ocean:hover{box-shadow:0 12px 32px rgba(29,111,139,.45)}
-  .btn-sm{padding:13px 24px;font-size:15px}
-
-  .note{margin-top:12px;font-size:13px;color:rgba(255,255,255,.5);
-        text-align:center;line-height:1.5}
-  .note a{color:rgba(255,255,255,.6)}
-  .note a:hover{color:#fff}
-
-  /* ── divider ─────────────────────────────────────────────────────────────── */
-  .divider{display:flex;align-items:center;gap:14px;margin:28px 0;
-           color:rgba(255,255,255,.3);font-size:11px;letter-spacing:.15em;text-transform:uppercase}
-  .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--glass-border)}
-
-  /* ── section labels ──────────────────────────────────────────────────────── */
-  .section-label{font-family:var(--font-display);font-weight:500;font-size:18px;
-                 color:#fff;margin-bottom:10px}
-  .section-sub{font-size:14px;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:18px}
-
-  /* ── forgot password form ────────────────────────────────────────────────── */
-  .input-wrap{position:relative;margin-bottom:12px}
-  .input-wrap input{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--glass-border);
-                    border-radius:12px;padding:14px 18px;font-size:15px;color:#fff;
-                    font-family:var(--font-body);outline:none;transition:border-color .2s}
-  .input-wrap input::placeholder{color:rgba(255,255,255,.35)}
-  .input-wrap input:focus{border-color:rgba(29,111,139,.7);background:rgba(255,255,255,.08)}
-
-  /* ── feedback states ─────────────────────────────────────────────────────── */
-  .feedback{display:none;border-radius:12px;padding:14px 18px;font-size:14px;
-            line-height:1.5;margin-top:12px}
-  .feedback.success{display:block;background:rgba(29,111,139,.2);
-                    border:1px solid rgba(29,111,139,.4);color:rgba(255,255,255,.9)}
-  .feedback.error{display:block;background:rgba(200,60,60,.15);
-                  border:1px solid rgba(200,60,60,.35);color:rgba(255,200,200,.9)}
-
-  /* ── info block ──────────────────────────────────────────────────────────── */
-  .info{margin-top:28px;background:rgba(29,111,139,.1);border:1px solid rgba(29,111,139,.2);
-        border-radius:16px;padding:24px}
-  .info h3{font-family:var(--font-display);font-weight:500;font-size:16px;
-           color:#fff;margin-bottom:12px;opacity:.9}
-  .info ul{list-style:none}
-  .info li{font-size:13.5px;color:rgba(255,255,255,.65);line-height:1.5;
-           padding:6px 0 6px 20px;position:relative}
-  .info li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;
-                   border-radius:50%;background:var(--dawn);opacity:.8}
-  .info li strong{color:rgba(255,255,255,.9);font-weight:600}
-
-  /* ── footer ──────────────────────────────────────────────────────────────── */
-  .footer{position:relative;z-index:1;background:var(--space-2);
-          color:rgba(255,255,255,.45);padding:40px 36px 30px;margin-top:60px}
-  .footer-inner{max-width:1080px;margin:0 auto;display:flex;
-                justify-content:space-between;flex-wrap:wrap;gap:20px}
-  .f-logo{font-family:var(--font-display);font-weight:600;font-size:17px;color:#fff;
-          display:flex;align-items:center;gap:9px}
-  .f-logo .glyph{width:14px;height:14px;border-radius:50%;border:1.5px solid #fff;position:relative}
-  .f-logo .glyph::after{content:"";position:absolute;inset:3px;border-radius:50%;
-                         background:#fff;opacity:.5}
-  .f-tag{margin-top:8px;font-family:var(--font-display);font-style:italic;
-         font-size:13px;color:rgba(255,255,255,.55)}
-  .f-links{display:flex;flex-direction:column;gap:8px}
-  .f-links a{color:rgba(255,255,255,.5);font-size:13.5px;text-decoration:none;transition:color .2s}
-  .f-links a:hover{color:#fff}
-  .f-bottom{max-width:1080px;margin:28px auto 0;padding-top:20px;
-            border-top:1px solid rgba(255,255,255,.08);font-size:12px;
-            color:rgba(255,255,255,.35)}
-
-  /* ── responsive ──────────────────────────────────────────────────────────── */
-  @media (max-width:600px){
-    .topbar{padding:14px 18px;flex-wrap:wrap;gap:10px}
-    .quick{gap:14px;order:3;width:100%;overflow-x:auto}
-    .quick a{font-size:12.5px;white-space:nowrap}
-    .card{padding:28px 22px}
-    .page{padding:100px 16px 60px}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .star{animation:none}
-  }
-</style>
+<link rel="canonical" href="https://myasolutions.org/login.html">
+<meta property="og:title" content="Sign In — mYa Solutions">
+<meta property="og:description" content="Sign in to access Jean, your personal Partner Intelligence.">
+<meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/blocks.css">
+<script src="assets/js/site.js" defer></script>
 </head>
-<body>
+<body data-back="index.html" data-back-label="Home">
+<div data-site-header></div>
+<main id="main">
 
-  <!-- starfield -->
-  <div class="stars" id="stars" aria-hidden="true"></div>
-  <div class="glow" aria-hidden="true"></div>
-
-  <!-- topbar -->
-  <div class="topbar">
-    <a class="brand" href="index.html"><span class="glyph"></span>mYa Solutions</a>
-    <nav class="quick">
-      <a href="about.html">Our Story</a>
-      <a href="index.html#education">Products</a>
-      <a href="login.html" class="active">Sign In</a>
-    </nav>
-    <div class="launch" title="Commercial launch">
-      <span class="lbl">Launch</span>
-      <span class="clock" id="countdown">—</span>
-    </div>
-  </div>
-
-  <!-- main -->
-  <main class="page">
-
-    <div class="head">
-      <div class="eyebrow">Partner Intelligence</div>
-      <h1>Welcome back.</h1>
-      <p>Your Atelier is waiting.</p>
+  <!-- B18 Auth card on a light band -->
+  <section class="band">
+    <div class="wrap--narrow center">
+      <p class="eyebrow">Partner Intelligence</p>
+      <h1 class="display">Welcome <span class="em">back.</span></h1>
+      <p class="lede">Your Atelier is waiting.</p>
     </div>
 
-    <div class="card">
+    <div class="auth blueprint mt-2">
 
-      <!-- PRIMARY: Open Jean -->
-      <a href="https://jean-ai-41235504052.us-west1.run.app"
-         class="btn btn-dawn" target="_blank" rel="noopener">
-        Open Jean &rarr;
-      </a>
-      <p class="note">Sign in with the email address you registered with.</p>
+      <!-- Primary: open Jean -->
+      <a class="btn btn--primary btn--block" href="https://jean-ai-41235504052.us-west1.run.app" target="_blank" rel="noopener">Open Jean →</a>
+      <p class="fine center mt-1">Sign in with the email address you registered with.</p>
 
       <div class="divider"><span>Forgot your password?</span></div>
 
-      <!-- FORGOT PASSWORD — live form, no redirect needed -->
-      <div class="section-label">Reset your password</div>
-      <p class="section-sub">
-        Enter your email and we'll send a reset link from
-        noreply@myasolutions.org — check spam if it doesn't arrive.
-      </p>
-
-      <div class="input-wrap">
-        <input type="email" id="resetEmail"
-               placeholder="Your email address"
-               autocomplete="email"
-               onkeydown="if(event.key==='Enter')sendReset()">
-      </div>
-      <button class="btn btn-ocean btn-sm" onclick="sendReset()">
-        Send reset link
-      </button>
-      <div class="feedback" id="resetFeedback"></div>
+      <!-- Password reset — live form via Firebase REST, no redirect -->
+      <h2 class="title-sm">Reset your password</h2>
+      <p class="fine">Enter your email and we'll send a reset link from noreply@myasolutions.org — check spam if it doesn't arrive.</p>
+      <form id="resetForm" class="mt-1" novalidate>
+        <div class="field">
+          <label for="resetEmail">Email address</label>
+          <input class="input" type="email" id="resetEmail" name="email" placeholder="Your email address" autocomplete="email" required>
+        </div>
+        <button class="btn btn--line btn--block" type="submit" id="resetBtn">Send reset link</button>
+        <p class="msg" id="resetFeedback" role="status" aria-live="polite"></p>
+      </form>
 
       <div class="divider"><span>Don't have access yet?</span></div>
 
-      <!-- REQUEST ACCESS -->
-      <div class="section-label">Request access</div>
-      <p class="section-sub">
-        Jean is available to founding members and pilot participants.
-      </p>
-      <a href="mailto:ir@myasolutions.org" class="btn btn-ghost btn-sm">
-        Email ir@myasolutions.org
-      </a>
+      <!-- Request access -->
+      <h2 class="title-sm">Request access</h2>
+      <p class="fine">Jean is available to founding members and pilot participants.</p>
+      <a class="btn btn--line btn--block mt-1" href="mailto:ir@myasolutions.org">Email ir@myasolutions.org</a>
 
-      <!-- ABOUT YOUR ACCESS -->
-      <div class="info">
-        <h3>About your Jean access</h3>
-        <ul>
-          <li><strong>Private by design</strong> — your data never leaves your session</li>
-          <li><strong>Your voice</strong> — Jean learns how you communicate, not a generic AI tone</li>
-          <li><strong>Always improving</strong> — each session helps Jean understand you better</li>
-          <li><strong>Partner Intelligence</strong> — built to work with you, not around you</li>
-        </ul>
-      </div>
+      <!-- About your access -->
+      <div class="divider"><span>About your Jean access</span></div>
+      <ul class="ticks ticks--yes mt-0">
+        <li><strong>Private by design</strong> — your data never leaves your session</li>
+        <li><strong>Your voice</strong> — Jean learns how you communicate, not a generic AI tone</li>
+        <li><strong>Always improving</strong> — each session helps Jean understand you better</li>
+        <li><strong>Partner Intelligence</strong> — built to work with you, not around you</li>
+      </ul>
 
     </div>
-  </main>
+  </section>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <div>
-        <div class="f-logo"><span class="glyph"></span>mYa Solutions</div>
-        <div class="f-tag">The other half of the AI story.</div>
-      </div>
-      <div class="f-links">
-        <a href="about.html">Our Story</a>
-        <a href="index.html">Home</a>
-        <a href="login.html">Sign In</a>
-        <a href="mailto:ir@myasolutions.org">Contact</a>
-      </div>
-    </div>
-    <div class="f-bottom">
-      In memoriam: Kamyia Fletcher (1995&ndash;2024)
-      &nbsp;&middot;&nbsp;
-      &copy; 2026 mYa Solutions, Inc.
-      &nbsp;&middot;&nbsp;
-      Oakland, California
-      &nbsp;&middot;&nbsp;
-      ir@myasolutions.org
-    </div>
-  </footer>
+</main>
+<div data-site-footer></div>
 
 <script>
-  /* ── countdown (matches index.html) ──────────────────────────────────────── */
+  /* ── password reset via Firebase REST API (ported from the previous login page) ── */
   (function(){
-    var target = new Date('2026-11-13T09:00:00-08:00').getTime();
-    var el = document.getElementById('countdown');
-    function tick(){
-      var now = Date.now(), d = target - now;
-      if(d <= 0){ el.textContent = 'Live now'; return; }
-      var days = Math.floor(d/86400000);
-      var hrs  = Math.floor((d%86400000)/3600000);
-      var min  = Math.floor((d%3600000)/60000);
-      el.textContent = 'Nov 13 · T-' + days + 'd ' + hrs + 'h ' + min + 'm';
-    }
-    tick(); setInterval(tick, 60000);
-  })();
+    var form = document.getElementById('resetForm');
+    if(!form) return;
 
-  /* ── starfield (matches index.html) ──────────────────────────────────────── */
-  (function(){
-    var sky = document.getElementById('stars'); if(!sky) return;
-    for(var i=0;i<70;i++){
-      var s = document.createElement('span'); s.className = 'star';
-      var z = Math.random()*2+0.5;
-      s.style.width  = z.toFixed(1)+'px';
-      s.style.height = z.toFixed(1)+'px';
-      s.style.left   = (Math.random()*100).toFixed(1)+'%';
-      s.style.top    = (Math.random()*100).toFixed(1)+'%';
-      s.style.animationDelay = (Math.random()*4).toFixed(1)+'s';
-      sky.appendChild(s);
-    }
-  })();
+    async function sendReset(){
+      var input    = document.getElementById('resetEmail');
+      var email    = input.value.trim();
+      var feedback = document.getElementById('resetFeedback');
+      var btn      = document.getElementById('resetBtn');
 
-  /* ── password reset via Firebase REST API ────────────────────────────────── */
-  async function sendReset(){
-    var email    = document.getElementById('resetEmail').value.trim();
-    var feedback = document.getElementById('resetFeedback');
+      feedback.className = 'msg';
+      feedback.textContent = '';
 
-    feedback.className = 'feedback';
-    feedback.textContent = '';
-
-    if(!email || !email.includes('@')){
-      feedback.className = 'feedback error';
-      feedback.textContent = 'Please enter a valid email address.';
-      return;
-    }
-
-    var btn = document.querySelector('.btn-ocean');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-
-    try {
-      var res = await fetch(
-        'https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyBSD28-5nPGzpzF7KYk5am50wTQbYg0mGs',
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ requestType: 'PASSWORD_RESET', email: email })
-        }
-      );
-
-      if(res.ok){
-        feedback.className = 'feedback success';
-        feedback.textContent = 'Reset link sent to ' + email + '. Check your inbox (and spam folder) — it arrives within a minute.';
-        document.getElementById('resetEmail').value = '';
-      } else {
-        var err = await res.json();
-        var msg = err.error && err.error.message;
-        if(msg === 'EMAIL_NOT_FOUND'){
-          feedback.className = 'feedback error';
-          feedback.textContent = 'That email isn\'t in our system. Check the address or contact ir@myasolutions.org.';
-        } else {
-          feedback.className = 'feedback error';
-          feedback.textContent = 'Something went wrong. Try again or email ir@myasolutions.org.';
-        }
+      if(!email || !email.includes('@')){
+        feedback.className = 'msg err';
+        feedback.textContent = 'Please enter a valid email address.';
+        return;
       }
-    } catch(e) {
-      feedback.className = 'feedback error';
-      feedback.textContent = 'Network error. Check your connection and try again.';
+
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        var res = await fetch(
+          'https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyBSD28-5nPGzpzF7KYk5am50wTQbYg0mGs',
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ requestType: 'PASSWORD_RESET', email: email })
+          }
+        );
+
+        if(res.ok){
+          feedback.className = 'msg ok';
+          feedback.textContent = 'Reset link sent to ' + email + '. Check your inbox (and spam folder) — it arrives within a minute.';
+          input.value = '';
+        } else {
+          var err = await res.json();
+          var msg = err.error && err.error.message;
+          if(msg === 'EMAIL_NOT_FOUND'){
+            feedback.className = 'msg err';
+            feedback.textContent = 'That email isn\'t in our system. Check the address or contact ir@myasolutions.org.';
+          } else {
+            feedback.className = 'msg err';
+            feedback.textContent = 'Something went wrong. Try again or email ir@myasolutions.org.';
+          }
+        }
+      } catch(e) {
+        feedback.className = 'msg err';
+        feedback.textContent = 'Network error. Check your connection and try again.';
+      }
+
+      btn.textContent = 'Send reset link';
+      btn.disabled = false;
     }
 
-    btn.textContent = 'Send reset link';
-    btn.disabled = false;
-  }
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      sendReset();
+    });
+  })();
 </script>
-
 </body>
 </html>
