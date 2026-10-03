@@ -1,408 +1,174 @@
 <!DOCTYPE html>
-<!--
-  FILE / ROOT:  /site/index.html  (mYa Solutions front door)
-  OWNER:        Ayinde Rudolph, Ed.D. — mYa Solutions (arudolph@myasolutions.org)
-  CIPHER:       4KAM1431RAN
-  PURPOSE:      Cinematic vertical-scroll front door. One full-screen panel per vertical,
-                each with a vision one-liner + "learn more". Nothing auto-advances.
-                Persistent top quick-links + live Nov 13 2026 launch countdown.
-  MEDIA:        Structured /media/ hierarchy — see media/README.md for full manifest.
-                  media/hero/          ← site-level cinematic openers
-                  media/products/      ← per-product hero clips
-                  media/press/         ← b-roll, press kit assets
-                  media/team/          ← founder story, team videos
-                  media/pilots/        ← Parlier, robotics arm, NEJM demos
-                CSS painted fallbacks render automatically when any file is absent.
-  PATHS:        All nav + learn-more links are relative (.html) for GitHub Pages.
-  UPDATED:      2026-06-15 — structured media hierarchy; fixed nav absolute→relative.
--->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>mYa Solutions — The other half of the AI story</title>
-<meta name="description" content="One engine. Many doors. Private, local intelligence for the world's hardest problems. You're early.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --space:#05080f; --space-2:#0a1018;
-    --dawn:#f4a259; --dawn-soft:#f6c89a;
-    --sand:#f7f3ec; --ink:#16202a; --star:#cfd8e2;
-    --font-display:'Fraunces',Georgia,serif;
-    --font-body:'Inter',system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:var(--font-body);background:var(--space);color:#fff;-webkit-font-smoothing:antialiased}
-
-  /* ---------- persistent top bar ---------- */
-  .topbar{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;
-          padding:18px 36px;background:linear-gradient(180deg,rgba(5,8,15,.7),rgba(5,8,15,0))}
-  .brand{font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;display:flex;align-items:center;gap:10px;text-decoration:none}
-  .nav-logo{height:38px;width:auto;display:block;object-fit:contain;filter:brightness(1.05)}
-  .quick{display:flex;gap:24px;align-items:center}
-  .quick a{color:rgba(255,255,255,.82);text-decoration:none;font-size:13.5px;letter-spacing:.01em;transition:color .2s}
-  .quick a:hover{color:#fff}
-  .quick a.signin{border:1px solid rgba(255,255,255,.4);border-radius:100px;padding:7px 16px;color:#fff;margin-left:6px}
-  .quick a.signin:hover{background:#fff;color:var(--space)}
-  .dd{position:relative}
-  .dd > .dd-trigger{cursor:pointer;display:inline-flex;align-items:center;gap:5px;color:rgba(255,255,255,.82);font-size:13.5px;transition:color .2s}
-  .dd > .dd-trigger::after{content:"\25BE";font-size:9px;opacity:.7;transition:transform .2s}
-  .dd:hover > .dd-trigger{color:#fff}
-  .dd:hover > .dd-trigger::after{transform:rotate(180deg)}
-  .dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);
-           background:rgba(10,16,24,.97);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
-           border:0.5px solid rgba(255,255,255,.12);border-radius:14px;padding:8px;min-width:220px;
-           opacity:0;visibility:hidden;transition:opacity .18s,transform .18s;box-shadow:0 20px 50px rgba(0,0,0,.5)}
-  .dd:hover .dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(4px)}
-  .dd-menu a{display:block;padding:10px 14px;border-radius:9px;font-size:13.5px;color:rgba(255,255,255,.82);white-space:nowrap;transition:background .15s,color .15s}
-  .dd-menu a:hover{background:rgba(123,175,212,.12);color:#fff}
-  .dd-menu .dd-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);padding:10px 14px 4px;font-weight:600}
-  .dd-menu .dd-sub{padding-left:26px;font-size:13px;color:rgba(255,255,255,.65)}
-  .dd-menu .dd-sub .tag{font-size:10px;color:var(--dawn-soft,#f6c89a);margin-left:6px}
-  .dd-menu .dd-divider{height:0.5px;background:rgba(255,255,255,.08);margin:6px 10px}
-  /* launch countdown — live per-second ticker */
-  .launch{display:flex;align-items:center;gap:12px;border:1px solid rgba(244,162,89,.4);border-radius:14px;padding:8px 16px;background:rgba(244,162,89,.07);backdrop-filter:blur(8px)}
-  .launch .lbl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--dawn-soft);font-weight:600;white-space:nowrap}
-  .launch .segments{display:flex;align-items:center;gap:4px}
-  .launch .seg{display:flex;flex-direction:column;align-items:center;min-width:32px}
-  .launch .seg .num{font-family:var(--font-display);font-size:16px;font-weight:500;color:#fff;font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
-  .launch .seg .unit{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,162,89,.75);margin-top:2px;font-weight:500}
-  .launch .sep{font-family:var(--font-display);font-size:15px;color:rgba(244,162,89,.5);margin-bottom:8px;line-height:1}
-  .launch.live .lbl{color:#6ee7b7}
-  .launch.live .seg .num{color:#6ee7b7}
-
-  /* ---------- panel base ---------- */
-  .panel{position:relative;height:100vh;min-height:640px;overflow:hidden;display:flex;align-items:center}
-  .panel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-  .panel .panel-still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-  .panel .media-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-  .panel .scrim{position:absolute;inset:0;z-index:2}
-  .panel .content{position:relative;z-index:3;padding:0 8%;max-width:900px}
-  .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--dawn-soft);font-weight:500;margin-bottom:22px}
-  .line{font-family:var(--font-display);font-weight:500;line-height:1.04;letter-spacing:-.015em;color:#fff;
-        font-size:clamp(40px,7vw,86px)}
-  .panel .sub{margin-top:22px;font-size:18px;line-height:1.6;color:rgba(255,255,255,.82);max-width:520px}
-  .learn{display:inline-flex;align-items:center;gap:10px;margin-top:34px;padding:14px 28px;border-radius:100px;
-          border:1px solid rgba(255,255,255,.45);color:#fff;text-decoration:none;font-size:15px;font-weight:500;
-          transition:background .2s,color .2s,border-color .2s}
-  .learn:hover{background:#fff;color:var(--space);border-color:#fff}
-  .learn .arr{transition:transform .2s}
-  .learn:hover .arr{transform:translateX(4px)}
-
-  /* ---------- opener (Earthrise) ---------- */
-  .opener .scrim{background:linear-gradient(90deg,rgba(5,8,15,.3) 30%,rgba(5,8,15,.55) 70%,rgba(5,8,15,.7) 100%)}
-  .opener .content{margin-left:auto;text-align:left;max-width:620px;padding-right:8%}
-  .opener .line{font-size:clamp(36px,5.2vw,68px)}
-  .opener .early{display:inline-block;margin-top:26px;font-family:var(--font-display);font-style:italic;font-size:22px;color:var(--dawn)}
-  /* painted earthrise fallback until media/hero-earthrise.* exists */
-  .opener .media-bg{background:radial-gradient(120% 90% at 8% 45%,#1b2430 0%,#0a0f17 40%,#05080f 72%)}
-  .opener .media-bg::before{content:"";position:absolute;left:-20%;top:50%;transform:translateY(-50%);width:80vh;height:80vh;border-radius:50%;
-        background:radial-gradient(circle at 80% 50%,#2a3b4d 0%,#0c141d 56%,#060a11 72%);
-        box-shadow:0 0 60px 0 rgba(244,162,89,.15)}
-  .opener .media-bg::after{content:"";position:absolute;left:-20%;top:50%;transform:translateY(-50%);width:80vh;height:80vh;border-radius:50%;
-        background:conic-gradient(from 50deg at 50% 50%,rgba(244,162,89,0) 300deg,rgba(246,200,154,.85) 348deg,rgba(244,162,89,.6) 360deg);
-        -webkit-mask:radial-gradient(circle at 80% 50%,transparent 60%,#000 61%,#000 72%,transparent 73%);
-                mask:radial-gradient(circle at 80% 50%,transparent 60%,#000 61%,#000 72%,transparent 73%)}
-  .stars{position:absolute;inset:0;z-index:2;pointer-events:none}
-  .star{position:absolute;background:var(--star);border-radius:50%;animation:tw 4s ease-in-out infinite}
-  @keyframes tw{0%,100%{opacity:.15}50%{opacity:.7}}
-
-  /* per-vertical painted fallbacks (until real media drops in) + scrims */
-  .p-education .media-bg{background:radial-gradient(120% 100% at 65% 25%,#3a2a1c,#0c0f16)}
-  .p-cyber .media-bg{background:radial-gradient(120% 100% at 60% 30%,#13243a,#070c14)}
-  .p-robotics .media-bg{background:radial-gradient(120% 100% at 70% 30%,#2a2030,#0a0d14)}
-  .p-mining .media-bg{background:radial-gradient(120% 100% at 55% 40%,#3a2a18,#140d08)}
-  .p-coral .media-bg{background:radial-gradient(120% 100% at 60% 30%,#0f3a44,#06141a)}
-  .panel:not(.opener) .scrim{background:linear-gradient(90deg,rgba(5,8,15,.78) 0%,rgba(5,8,15,.45) 55%,rgba(5,8,15,.25) 100%)}
-
-  /* scroll hint on opener */
-  .scrollhint{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.6);
-     font-size:11px;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px;animation:bob 2.4s ease-in-out infinite}
-  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-  .scrollhint .l{width:1px;height:30px;background:linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,0))}
-
-  @media (max-width:820px){
-    .dd-menu{position:static;transform:none;opacity:1;visibility:visible;background:transparent;border:none;box-shadow:none;padding:0;min-width:0}
-    .dd:hover .dd-menu{transform:none}
-    .topbar{padding:14px 18px;flex-wrap:wrap;gap:10px}
-    .quick{gap:14px;order:3;width:100%;overflow-x:auto}
-    .quick a{font-size:12.5px;white-space:nowrap}
-    .opener .content{margin-left:0;padding:0 7%}
-    .panel .content{padding:0 7%}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .star,.scrollhint{animation:none}
-    html{scroll-behavior:auto}
-  }
-
-  /* ===== MOBILE HAMBURGER NAV ===== */
-  .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;
-             width:44px;height:44px;border:none;background:transparent;cursor:pointer;
-             padding:0;z-index:80;margin-left:auto}
-  .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;
-                  transition:transform .3s,opacity .3s;margin:0 auto}
-  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-  .hamburger.open span:nth-child(2){opacity:0}
-  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .mobile-menu{position:fixed;top:0;right:0;bottom:0;width:min(84vw,340px);z-index:75;
-               background:rgba(8,13,21,.98);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
-               border-left:0.5px solid rgba(255,255,255,.1);
-               transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.8,.2,1);
-               padding:92px 28px 40px;overflow-y:auto;display:flex;flex-direction:column;gap:2px}
-  .mobile-menu.open{transform:translateX(0)}
-  .mobile-menu a{display:block;padding:14px 12px;font-size:17px;color:rgba(255,255,255,.85);
-                 text-decoration:none;border-radius:10px;transition:background .15s}
-  .mobile-menu a:hover,.mobile-menu a:active{background:rgba(255,255,255,.06);color:#fff}
-  .mobile-menu .mm-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;
-                         color:rgba(255,255,255,.4);padding:18px 12px 6px;font-weight:600}
-  .mobile-menu .mm-sub{padding-left:26px;font-size:15.5px;color:rgba(255,255,255,.7)}
-  .mobile-menu .mm-sub .tag{font-size:10px;color:var(--dawn-soft,#f6c89a);margin-left:6px}
-  .mobile-menu .mm-divider{height:0.5px;background:rgba(255,255,255,.1);margin:12px 12px}
-  .mobile-menu .mm-signin{margin-top:14px;border:1px solid rgba(255,255,255,.3);text-align:center}
-  .menu-scrim{position:fixed;inset:0;z-index:74;background:rgba(0,0,0,.5);
-              opacity:0;visibility:hidden;transition:opacity .3s}
-  .menu-scrim.open{opacity:1;visibility:visible}
-  @media(max-width:820px){
-    .topbar .quick{display:none!important}
-    .hamburger{display:flex}
-    /* keep countdown/back-home from crowding: shrink or hide on very small */
-    .topbar .launch{transform:scale(.82);transform-origin:right center}
-  }
-  @media(max-width:520px){
-    .topbar .launch{display:none}
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mYa Solutions — Private, local intelligence</title>
+<meta name="description" content="Everyone scaled AI up — into the cloud, away from you. mYa Solutions built the other half: private, local, already proven. Security, education and physical intelligence from one deterministic engine. Oakland, California.">
+<link rel="canonical" href="https://myasolutions.org/">
+<meta property="og:title" content="mYa Solutions — The light was always going to come around.">
+<meta property="og:description" content="Private, local intelligence. One engine, many doors. Nothing leaves the building it was trusted to.">
+<meta property="og:image" content="https://myasolutions.org/media/plates/earthrise-1600.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/blocks.css">
+<script src="assets/js/site.js" defer></script>
 </head>
-<body>
+<body data-home>
+<div data-site-header></div>
 
-  <!-- ===== persistent top bar ===== -->
-  <div class="topbar">
-    <a class="brand" href="#top"><img src="logo.png" alt="mYa Solutions" class="nav-logo"></a>
-    <nav class="quick">
-      <div class="dd">
-        <span class="dd-trigger" role="button" tabindex="0">Products</span>
-        <div class="dd-menu">
-          <a href="bethanyshell.html">BethanyShell</a>
-          <a href="education.html">Education</a>
-          <div class="dd-divider"></div>
-          <div class="dd-label">Physical Intelligence</div>
-          <a href="physical.html" class="dd-sub">Overview</a>
-          <a href="robotics.html" class="dd-sub">Robotics</a>
-          <a href="marine.html" class="dd-sub">Marine</a>
-          <a href="ground.html" class="dd-sub">Ground</a>
-          <a href="air.html" class="dd-sub">Air <span class="tag">soon</span></a>
-        </div>
-      </div>
-      <a href="about.html">About</a>
-      <a href="investor.html">Investor</a>
-      <a href="giving.html">Giving Back</a>
-      <a href="company.html">Company</a>
-      <a href="login.html" class="signin">Sign In</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="menu-scrim" id="menu-scrim"></div>
-    <nav class="mobile-menu" id="mobile-menu">
-      <a href="index.html">Home</a>
-      <div class="mm-label">Products</div>
-      <a href="bethanyshell.html">BethanyShell</a>
-      <a href="education.html">Education</a>
-      <div class="mm-divider"></div>
-      <div class="mm-label">Physical Intelligence</div>
-      <a href="physical.html" class="mm-sub">Overview</a>
-      <a href="robotics.html" class="mm-sub">Robotics</a>
-      <a href="marine.html" class="mm-sub">Marine</a>
-      <a href="ground.html" class="mm-sub">Ground</a>
-      <a href="air.html" class="mm-sub">Air <span class="tag">soon</span></a>
-      <div class="mm-divider"></div>
-      <a href="about.html">About</a>
-      <a href="investor.html">Investor</a>
-      <a href="giving.html">Giving Back</a>
-      <a href="company.html">Company</a>
-      <a href="login.html" class="mm-signin">Sign In</a>
-    </nav>
+<main id="main">
 
-    <div class="launch" id="launch-wrap" title="Commercial launch — Nov 13, 2026">
-      <span class="lbl">Launch</span>
-      <div class="segments">
-        <div class="seg"><span class="num" id="cd-days">—</span><span class="unit">days</span></div>
-        <span class="sep">:</span>
-        <div class="seg"><span class="num" id="cd-hrs">—</span><span class="unit">hrs</span></div>
-        <span class="sep">:</span>
-        <div class="seg"><span class="num" id="cd-min">—</span><span class="unit">min</span></div>
-        <span class="sep">:</span>
-        <div class="seg"><span class="num" id="cd-sec">—</span><span class="unit">sec</span></div>
-      </div>
+  <!-- B02 Hero — Earthrise -->
+  <section class="hero">
+    <p class="eyebrow">Private, local intelligence<span class="hide-phone"> · Oakland, California</span></p>
+    <h1 class="display">The light was always going to come around.</h1>
+    <p class="lede">Everyone scaled AI up — into the cloud, away from you. We built the other half: private, local, already proven.</p>
+    <div class="actions">
+      <a class="btn btn--primary" href="evidence/reports.html">See the evidence</a>
+      <a class="btn btn--line" href="company/contact.html">Talk to us</a>
     </div>
+    <p class="aside">You're early.</p>
+    <div class="stem" aria-hidden="true"></div>
+  </section>
+
+  <div class="plate-wrap">
+    <figure class="plate blueprint duotone">
+      <img src="media/plates/earthrise-1600.jpg" alt="The Earth from orbit, its lit edge turning toward the sun." style="object-position:70% 40%" fetchpriority="high">
+    </figure>
+    <div class="plate-cap"><span>Plate I · Earthrise</span><span>Private, local, already proven</span></div>
   </div>
 
-  <!-- ===== 0 · OPENER (Earthrise) ===== -->
-  <section class="panel opener" id="top">
-    <video autoplay muted playsinline poster="media/hero/earthrise-poster.png" onended="holdPoster(this)" onerror="this.style.display='none'">
-      <source src="media/hero/earthrise.mp4" type="video/mp4">
-    </video>
-    <div class="media-bg" aria-hidden="true"></div>
-    <div class="stars" id="stars" aria-hidden="true"></div>
-    <div class="scrim" aria-hidden="true"></div>
-    <div class="content">
-      <div class="eyebrow">mYa Solutions</div>
-      <h1 class="line">The light was always going to come around.</h1>
-      <p class="sub">Everyone scaled AI up — into the cloud, away from you. We built the other half: private, local, already proven.</p>
-      <span class="early">You're early.</span>
-    </div>
-    <div class="scrollhint"><span>Scroll</span><span class="l"></span></div>
+  <section class="statement-band">
+    <h2 class="statement">One engine. Many doors. Nothing leaves the building it was trusted to.</h2>
   </section>
 
-  <!-- ===== 1 · BETHANYSHELL (flagship — first product) ===== -->
-  <section class="panel p-cyber" id="cyber">
-    <img class="panel-still" src="media/hero/lighthouse-poster.png" alt="" aria-hidden="true"
-         onerror="this.style.display='none'">
-    <div class="media-bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
-    <div class="content">
-      <div class="eyebrow">BethanyShell · Powered by Jean OS · Available now</div>
-      <h2 class="line">Security that never<br>leaves your building.</h2>
-      <p class="sub">Enterprise-grade defense on a box you own — 92.3% APT-class block, zero false positives, roughly one nanosecond per check. At half the price.</p>
-      <a class="learn" href="bethanyshell.html">Learn more <span class="arr">&rarr;</span></a>
-    </div>
-  </section>
+  <!-- B15 Doors — six numbered doors -->
+  <section class="band band--flush-top" aria-label="What we build">
+    <div class="wrap doors">
 
-  <!-- ===== 2 · EDUCATION ===== -->
-  <section class="panel p-education" id="education">
-    <img class="panel-still" src="media/hero/teacher-poster.jpg" alt="" aria-hidden="true"
-         onerror="this.style.display='none'">
-    <div class="media-bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
-    <div class="content">
-      <div class="eyebrow">Education · Marva</div>
-      <h2 class="line">Give every teacher<br>the time to teach.</h2>
-      <p class="sub">A partner that returns the hours and never lets a student's data leave the room.</p>
-      <a class="learn" href="education.html">Learn more <span class="arr">&rarr;</span></a>
-    </div>
-  </section>
+      <article class="door">
+        <div class="door-num">I</div>
+        <div class="door-body">
+          <div class="door-meta"><span class="door-kicker">BethanyShell · Security</span><span class="door-state">Available now</span></div>
+          <h3><a href="products/bethanyshell.html">Security that never leaves your building.</a></h3>
+          <p>Enterprise-grade defense on a box you own — 92.3% APT-class block, zero false positives, roughly one nanosecond per check. At half the price.</p>
+          <div class="door-foot"><a class="link-arrow" href="products/bethanyshell.html">BethanyShell</a><span class="door-state">Available now</span></div>
+        </div>
+        <figure class="plate blueprint duotone"><img src="media/plates/lighthouse-800.jpg" alt="" loading="lazy"></figure>
+      </article>
 
-  <!-- ===== 3 · PHYSICAL INTELLIGENCE (consolidated: robotics, marine, ground, air) ===== -->
-  <section class="panel p-robotics" id="physical">
-    <img class="panel-still" src="media/pilots/robotics-demo-poster.jpg" alt="" aria-hidden="true"
-         onerror="this.style.display='none'">
-    <div class="media-bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
-    <div class="content">
-      <div class="eyebrow">Physical Intelligence · Land · Sea · Air</div>
-      <h2 class="line">Give machines<br>a steady hand.</h2>
-      <p class="sub">One mind across every physical domain — a robotic arm, an underwater vehicle, the open roads. Proven, with receipts you can verify.</p>
-      <a class="learn" href="physical.html">Explore the domains <span class="arr">&rarr;</span></a>
-    </div>
-  </section>
+      <article class="door">
+        <div class="door-num">II</div>
+        <div class="door-body">
+          <div class="door-meta"><span class="door-kicker">Education · Marva</span><span class="door-state">Live pilot</span></div>
+          <h3><a href="products/education.html">Give every teacher the time to teach.</a></h3>
+          <p>A partner that returns the hours and never lets a student's data leave the room.</p>
+          <div class="door-foot"><a class="link-arrow" href="products/education.html">Education</a><span class="door-state">Live pilot</span></div>
+        </div>
+        <figure class="plate blueprint duotone"><img src="media/plates/teacher-800.jpg" alt="" loading="lazy" style="object-position:65% 40%"></figure>
+      </article>
 
-  <!-- ===== 5 · MINING ===== -->
-  <section class="panel p-mining" id="mining">
-    <img class="panel-still" src="media/products/mining-hero-poster.jpg" alt="" aria-hidden="true"
-         onerror="this.style.display='none'">
-    <div class="media-bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
-    <div class="content">
-      <div class="eyebrow">Sustainable Extraction</div>
-      <h2 class="line">Architect the clean<br>industrial horizon.</h2>
-      <p class="sub">Intelligence for the resources the future runs on — extracted with precision, not waste.</p>
-      <a class="learn" href="about.html#mining">Learn more <span class="arr">&rarr;</span></a>
-    </div>
-  </section>
+      <article class="door">
+        <div class="door-num">III</div>
+        <div class="door-body">
+          <div class="door-meta"><span class="door-kicker">Physical Intelligence</span><span class="door-state">Land · sea · ground live</span></div>
+          <h3><a href="products/physical.html">Give machines a steady hand.</a></h3>
+          <p>One mind across every physical domain — a robotic arm, an underwater vehicle, the open roads. Proven, with receipts you can verify.</p>
+          <div class="door-foot"><a class="link-arrow" href="products/physical.html">Physical Intelligence</a><span class="door-state">Live</span></div>
+        </div>
+        <figure class="plate blueprint duotone"><img src="media/plates/robotics-800.jpg" alt="" loading="lazy"></figure>
+      </article>
 
-  <!-- ===== 6 · CORAL / THOUGHT PROJECTS ===== -->
-  <section class="panel p-coral" id="coral">
-    <img class="panel-still" src="media/products/coral-hero-poster.jpg" alt="" aria-hidden="true"
-         onerror="this.style.display='none'">
-    <div class="media-bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
-    <div class="content">
-      <div class="eyebrow">Ecological Restoration · In exploration</div>
-      <h2 class="line">Defend Earth's<br>vital rims.</h2>
-      <p class="sub">Some problems we're just beginning to imagine. Coral restoration is where we've started.</p>
-      <a class="learn" href="about.html#restoration">Learn more <span class="arr">&rarr;</span></a>
+      <article class="door">
+        <div class="door-num">IV</div>
+        <div class="door-body">
+          <div class="door-meta"><span class="door-kicker">Defense</span><span class="door-state">In development</span></div>
+          <h3><a href="products/defense.html">The attack doesn't wait. Neither should your defense.</a></h3>
+          <p>Deterministic response for infrastructure that can't accept a probability — five validation runs, all results published.</p>
+          <div class="door-foot"><a class="link-arrow" href="products/defense.html">Defense</a><span class="door-state">In development</span></div>
+        </div>
+        <figure class="plate blueprint duotone"><img src="media/plates/ground-800.jpg" alt="" loading="lazy"></figure>
+      </article>
+
+      <article class="door">
+        <div class="door-num">V</div>
+        <div class="door-body">
+          <div class="door-meta"><span class="door-kicker">Sustainable extraction</span><span class="door-state">In exploration</span></div>
+          <h3><a href="company/about.html#doors">Architect the clean industrial horizon.</a></h3>
+          <p>Intelligence for the resources the future runs on — extracted with precision, not waste.</p>
+          <div class="door-foot"><a class="link-arrow" href="company/about.html#doors">Mining</a><span class="door-state">In exploration</span></div>
+        </div>
+        <figure class="plate blueprint duotone"><img src="media/plates/mining-800.jpg" alt="" loading="lazy"></figure>
+      </article>
+
+      <article class="door">
+        <div class="door-num">VI</div>
+        <div class="door-body">
+          <div class="door-meta"><span class="door-kicker">Ecological restoration</span><span class="door-state">In exploration</span></div>
+          <h3><a href="company/about.html#doors">Defend Earth's vital rims.</a></h3>
+          <p>Some problems we're just beginning to imagine. Coral restoration is where we've started.</p>
+          <div class="door-foot"><a class="link-arrow" href="company/about.html#doors">Coral</a><span class="door-state">In exploration</span></div>
+        </div>
+        <figure class="plate blueprint duotone"><img src="media/plates/coral-800.jpg" alt="" loading="lazy"></figure>
+      </article>
+
     </div>
   </section>
 
-  <script>
-    /* ---- live countdown to Nov 13, 2026 — ticks every second ---- */
-    (function(){
-      var target = new Date('2026-11-13T09:00:00-08:00').getTime();
-      var wrap = document.getElementById('launch-wrap');
-      var elD = document.getElementById('cd-days');
-      var elH = document.getElementById('cd-hrs');
-      var elM = document.getElementById('cd-min');
-      var elS = document.getElementById('cd-sec');
-      function pad(n){ return n < 10 ? '0'+n : ''+n; }
-      function tick(){
-        var now = Date.now(), d = target - now;
-        if(d <= 0){
-          elD.textContent='00'; elH.textContent='00';
-          elM.textContent='00'; elS.textContent='00';
-          wrap && wrap.classList.add('live');
-          return;
-        }
-        var days = Math.floor(d/86400000);
-        var hrs  = Math.floor((d%86400000)/3600000);
-        var min  = Math.floor((d%3600000)/60000);
-        var sec  = Math.floor((d%60000)/1000);
-        elD.textContent = days;
-        elH.textContent = pad(hrs);
-        elM.textContent = pad(min);
-        elS.textContent = pad(sec);
-      }
-      tick(); setInterval(tick, 1000);
-    })();
+  <!-- B05 The receipts, on steel -->
+  <section class="band band--steel center" id="receipts">
+    <div class="wrap">
+      <p class="eyebrow">The receipts</p>
+      <h2 class="title" style="margin-bottom:60px">Don't take our word for it. Run the tests yourself.</h2>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">92.3%</div><div class="stat-l">APT-class attacks blocked — APT28 5/5, APT29 4/5, FIN7 3/3</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">false positives across 110 benign requests</div></div>
+        <div class="stat"><div class="stat-n">~1.07ns</div><div class="stat-l">per safety check, on-device — about three clock cycles</div></div>
+        <div class="stat"><div class="stat-n">8,906</div><div class="stat-l">tests passing in the public repo — run every one yourself</div></div>
+      </div>
+      <div class="actions mt-3" style="justify-content:center">
+        <a class="btn btn--on-dark" href="evidence/reports.html">Read the methodology</a>
+      </div>
+    </div>
+  </section>
 
-    /* ---- starfield on opener ---- */
-    (function(){
-      var sky = document.getElementById('stars'); if(!sky) return;
-      for(var i=0;i<60;i++){
-        var s=document.createElement('span'); s.className='star';
-        var z=Math.random()*2+0.5;
-        s.style.width=z.toFixed(1)+'px'; s.style.height=z.toFixed(1)+'px';
-        s.style.left=(48+Math.random()*50).toFixed(1)+'%';
-        s.style.top=(Math.random()*100).toFixed(1)+'%';
-        s.style.animationDelay=(Math.random()*4).toFixed(1)+'s';
-        sky.appendChild(s);
-      }
-    })();
+  <!-- Impact -->
+  <section class="band center">
+    <div class="wrap">
+      <p class="eyebrow">Impact</p>
+      <h2 class="title">Ten percent of all earnings, written into the bylaws.</h2>
+      <p class="lede">An M-class share obliges the company to direct 10% of all earnings to charitable causes, and a charitable benefit corporation holds that obligation for the long run. Not a pledge — a clause.</p>
+      <a class="link-arrow" href="impact/b-corp.html">B Corp &amp; the M-class share</a>
+    </div>
+  </section>
 
-    /* ---- play once on scroll-into-view, then hold poster ---- */
-    function holdPoster(v){ try{ v.pause(); }catch(e){} }
-    (function(){
-      var vids = document.querySelectorAll('.panel video');
-      var played = new WeakSet();
-      if(!('IntersectionObserver' in window)) return;
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          var v = e.target;
-          if(e.isIntersecting && !played.has(v)){
-            played.add(v);
-            v.play && v.play().catch(function(){});
-          }
-        });
-      }, {threshold:.5});
-      vids.forEach(function(v){ io.observe(v); });
-    })();
-  </script>
+  <div class="plate-wrap" style="padding-top:0;padding-bottom:var(--band-pad)">
+    <figure class="plate plate--short blueprint duotone">
+      <img src="media/plates/teacher-1600.jpg" alt="A teacher kneels beside a student, reading together at her desk." loading="lazy" style="object-position:60% 35%">
+    </figure>
+    <div class="plate-cap"><span>Plate II · The people it is for</span><a href="impact/giving.html">Giving Back →</a></div>
+  </div>
 
+  <!-- Launch band -->
+  <section class="band band--rule launch" id="launch">
+    <div class="wrap">
+      <div data-prelaunch>
+        <p class="eyebrow" style="color:var(--color-neutral-600)">Commercial launch · 13 November 2026</p>
+        <div class="launch-cd" data-cd aria-live="off">— : — : — : —</div>
+        <div class="launch-units">days · hrs · min · sec</div>
+      </div>
+      <p class="eyebrow" data-postlaunch hidden>JeanOS is live</p>
+      <p class="lede">JeanOS opens to the public. $20 a month, or $200 for a year — two months on us. A lifetime licence is $515: the interface, product and Jean updates, and every core feature shipped this year.</p>
+      <a class="btn btn--primary" href="products/pricing.html">Join the founder's circle</a>
+      <p class="seats">288 seats remaining · named publicly</p>
+    </div>
+  </section>
 
+</main>
 
-<script>
-(function(){
-  var h=document.getElementById('hamburger'),
-      m=document.getElementById('mobile-menu'),
-      s=document.getElementById('menu-scrim');
-  if(!h||!m||!s) return;
-  function toggle(open){
-    h.classList.toggle('open',open); m.classList.toggle('open',open);
-    s.classList.toggle('open',open); h.setAttribute('aria-expanded',open);
-    document.body.style.overflow=open?'hidden':'';
-  }
-  h.addEventListener('click',function(){toggle(!m.classList.contains('open'));});
-  s.addEventListener('click',function(){toggle(false);});
-  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggle(false);});});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')toggle(false);});
-})();
-</script>
+<div data-site-footer></div>
 </body>
 </html>

@@ -1,140 +1,14 @@
 <!DOCTYPE html>
-<!--
-  FILE / ROOT:  /site/become-a-believer.html  (mYa Solutions — Jean trailer / "Become a Believer")
-  OWNER:        Ayinde Rudolph, Ed.D. — mYa Solutions (arudolph@myasolutions.org)
-  CIPHER:       4KAM1431RAN
-  PURPOSE:      Unlisted trailer page. Bare by design — standard site header on top,
-                one cinematic video, nothing else. Not in nav. Reachable by direct link only.
-                Behavior by design: the only paths forward are the header nav links (into the
-                site) or replaying the video. No footer, no CTA, no scroll. The video is the page.
-  VIDEO:        YouTube UNLISTED embed (not hosted on GitHub — 2-min film exceeds sensible
-                GitHub Pages limits). Painted cinematic placeholder until the trailer is ready.
-                To go live: replace the .film-placeholder block with the YouTube iframe
-                (see commented iframe below) and set the video ID.
-  UPDATED:      2026-08-09 — initial build, placeholder hero.
--->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Become a Believer — mYa Solutions</title>
-<meta name="robots" content="noindex, nofollow">
-<meta name="description" content="See what's possible.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --space:#05080f; --space-2:#0a1018;
-    --dawn:#f4a259; --dawn-soft:#f6c89a;
-    --beacon:#2b8cc4; --beacon-soft:#7bc4e8; --beacon-glow:#a8d8ea;
-    --font-display:'Fraunces',Georgia,serif;
-    --font-body:'Inter',system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html,body{height:100%}
-  body{font-family:var(--font-body);background:#000;color:#fff;
-       -webkit-font-smoothing:antialiased;overflow:hidden}
-  a{color:var(--beacon-soft);text-decoration:none}
-
-  /* ========== TOPBAR — identical to the rest of the site ========== */
-  .topbar{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;
-          justify-content:space-between;padding:18px 36px;
-          background:linear-gradient(180deg,rgba(5,8,15,.85),rgba(5,8,15,0))}
-  .brand{display:flex;align-items:center;text-decoration:none}
-  .nav-logo{height:38px;width:auto;display:block;object-fit:contain;filter:brightness(1.05)}
-  .quick{display:flex;gap:24px;align-items:center}
-  .quick a{color:rgba(255,255,255,.82);text-decoration:none;font-size:13.5px;transition:color .2s}
-  .quick a:hover{color:#fff}
-  .quick a.signin{border:1px solid rgba(255,255,255,.4);border-radius:100px;
-                  padding:7px 16px;color:#fff;margin-left:6px}
-  .quick a.signin:hover{background:#fff;color:var(--space)}
-
-  /* ========== THE STAGE — video is the whole page ========== */
-  .stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
-         background:#000;z-index:1}
-  .film{position:relative;width:min(100vw,177.78vh);height:min(56.25vw,100vh);
-        max-width:100%;max-height:100%}
-  .film iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-
-  /* painted cinematic placeholder — a held breath before the film */
-  .film-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;
-    align-items:center;justify-content:center;gap:28px;
-    background:
-      radial-gradient(circle at 50% 46%, rgba(123,196,232,.14) 0%, transparent 30%),
-      radial-gradient(ellipse 80% 60% at 50% 100%, rgba(14,61,78,.5) 0%, transparent 60%),
-      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(43,140,196,.12) 0%, transparent 55%),
-      linear-gradient(180deg,#060d16 0%,#020509 100%)}
-  .film-placeholder .play{width:96px;height:96px;border-radius:50%;
-    background:rgba(123,196,232,.1);border:1.5px solid rgba(123,196,232,.4);
-    display:flex;align-items:center;justify-content:center;
-    transition:transform .3s,background .3s;position:relative}
-  .film-placeholder .play::after{content:"";position:absolute;inset:-14px;border-radius:50%;
-    border:1px solid rgba(123,196,232,.2);animation:ripple 3s ease-out infinite}
-  @keyframes ripple{0%{transform:scale(.9);opacity:.6}100%{transform:scale(1.4);opacity:0}}
-  .film-placeholder .play svg{width:34px;height:34px;fill:var(--beacon-glow);margin-left:5px}
-  .film-placeholder .eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;
-    font-weight:600;color:var(--beacon-soft)}
-  .film-placeholder h1{font-family:var(--font-display);font-weight:500;
-    font-size:clamp(32px,5vw,60px);line-height:1.05;color:#fff;
-    letter-spacing:-.015em;text-align:center;max-width:14ch}
-  .film-placeholder h1 .em{font-style:italic;color:var(--beacon-glow)}
-  .film-placeholder .whisper{font-size:14px;color:rgba(255,255,255,.4);letter-spacing:.02em}
-
-  @media(max-width:820px){
-    .topbar{padding:14px 18px;flex-wrap:wrap;gap:10px}
-    .quick{gap:14px;order:3;width:100%;overflow-x:auto}
-    .quick a{font-size:12.5px;white-space:nowrap}
-    body{overflow:auto}
-  }
-  @media(prefers-reduced-motion:reduce){
-    .film-placeholder .play::after{animation:none}
-  }
-</style>
+<meta charset="utf-8">
+<title>Moved — mYa Solutions</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://myasolutions.org/evidence/become-a-believer.html">
+<meta http-equiv="refresh" content="0; url=evidence/become-a-believer.html">
+<script>location.replace("evidence/become-a-believer.html" + location.search + location.hash);</script>
 </head>
 <body>
-
-  <!-- ===== TOPBAR — the only way "into" the site ===== -->
-  <div class="topbar">
-    <a class="brand" href="index.html">
-      <img src="logo.png" alt="mYa Solutions" class="nav-logo">
-    </a>
-    <nav class="quick">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="investor.html">Investor</a>
-      <a href="giving.html">Giving Back</a>
-      <a href="company.html">Company</a>
-      <a href="login.html" class="signin">Sign In</a>
-    </nav>
-  </div>
-
-  <!-- ===== THE STAGE — the video is the entire page ===== -->
-  <div class="stage">
-    <div class="film">
-
-      <!-- WHEN READY: delete .film-placeholder below and uncomment the iframe.
-           Set YOUR_VIDEO_ID to the YouTube UNLISTED video id.
-           rel=0 keeps suggestions limited to your own video (no rabbit hole).
-           loop + playlist=SAME_ID makes it replay — so the only way "onward" is your nav.
-      <iframe
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&modestbranding=1&loop=1&playlist=YOUR_VIDEO_ID"
-        title="Become a Believer — Jean"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      -->
-
-      <div class="film-placeholder">
-        <div class="eyebrow">Powered by Jean OS</div>
-        <h1>See what's <span class="em">possible.</span></h1>
-        <div class="play">
-          <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
-        </div>
-        <div class="whisper">The film is almost ready.</div>
-      </div>
-
-    </div>
-  </div>
-
+<p>This page has moved to <a href="evidence/become-a-believer.html">evidence/become-a-believer.html</a>.</p>
 </body>
 </html>

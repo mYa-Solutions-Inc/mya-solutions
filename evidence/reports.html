@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology reports — Evidence | mYa Solutions</title>
+<meta name="description" content="Every methodology report, recorded case and public repository behind mYa Solutions' claims — cybersecurity, education, robotics, marine, medicine and navigation — in one place, with how to reproduce or request the raw data.">
+<link rel="canonical" href="https://myasolutions.org/evidence/reports.html">
+<meta property="og:title" content="Methodology reports — mYa Solutions">
+<meta property="og:description" content="Don't take our word for it. The reports, the cases and the public repository, in one place.">
+<meta property="og:image" content="https://myasolutions.org/media/plates/robotics-1600.jpg">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/blocks.css">
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body data-group="Evidence" data-back="index.html" data-back-label="Home">
+<div data-site-header></div>
+<main id="main">
+
+  <section class="hero hero--interior">
+    <p class="eyebrow">Evidence · Methodology reports</p>
+    <h1 class="display">Don't take our word for it. <span class="em">Check the work.</span></h1>
+    <p class="lede">The same codebase — no retraining, no domain-specific rebuilds — tested across cybersecurity, education, medicine, robotics, marine and navigation. Every report, recorded case and repository is listed here.</p>
+    <div class="actions">
+      <a class="btn btn--primary" href="#reports">See the reports</a>
+      <a class="btn btn--line" href="#repo">Run the tests yourself</a>
+    </div>
+    <div class="stem" aria-hidden="true"></div>
+  </section>
+
+  <!-- What a report contains -->
+  <section class="band">
+    <div class="wrap split split--text-wide" style="align-items:start">
+      <div>
+        <p class="eyebrow">How we test</p>
+        <h2 class="title">An industry standard where one exists. <span class="em">Published criteria where it doesn't.</span></h2>
+        <p class="body">A Software-in-the-Loop test is an industry-standard approach for verifying AI behavior in simulation before physical deployment. For each domain, we first ask: does an accepted SIL standard exist? If yes, we run it. If not, we define the criteria, document them publicly, and hold ourselves to them.</p>
+        <p class="body">Raw trial data (JSON reports, Criterion benchmark outputs) is available for independent verification on request — we don't hide numbers that don't look perfect, we explain them.</p>
+      </div>
+      <ol class="promises">
+        <li><div><h3>The claim</h3><p>What is being tested, stated before the run.</p></div></li>
+        <li><div><h3>The method</h3><p>The harness, the criteria and what counts as a pass.</p></div></li>
+        <li><div><h3>The runs, with spread</h3><p>Every trial reported, not the best one.</p></div></li>
+        <li><div><h3>The boundaries</h3><p>What the result does not show.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- The reports -->
+  <section class="band band--steel" id="reports">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The reports</p>
+        <h2 class="title">Six domains. One architecture. <span class="em">All independently verifiable.</span></h2>
+      </div>
+      <div class="grid grid--3">
+
+        <article class="card blueprint">
+          <p class="card-kicker">Marine · New · August 2026</p>
+          <h3>Station-Keeping SIL — Methodology &amp; Results v1.0</h3>
+          <p>Jean's decision layer held a 6-DOF underwater vehicle on station for 363 s against a 120 s criterion, median drift 0.042 m, and refused all five impossible tasks for the right reason. The calibration journey is published in full.</p>
+          <div class="card-foot">
+            <a class="btn btn--on-dark" href="reports/marine-sil-methodology-v1.0.pdf" target="_blank" rel="noopener">Read the PDF</a>
+            <p class="fine">Opens in the browser · no registration · 9 pages</p>
+          </div>
+        </article>
+
+        <article class="card blueprint">
+          <p class="card-kicker">Cybersecurity · BethanyShell</p>
+          <h3>Red-team methodology report</h3>
+          <p>CALDERA nation-state emulation under SIL methodology: 92.3% APT-class block rate, zero false positives across 110 benign requests, ~1.07ns per check. Includes repo access and reproduction instructions.</p>
+          <div class="card-foot">
+            <a class="btn btn--on-dark" href="https://docsend.com/view/rxji2tik3jh35zwf" target="_blank" rel="noopener">View methodology</a>
+            <p class="fine">Opens in DocSend · quick email registration</p>
+          </div>
+        </article>
+
+        <article class="card blueprint">
+          <p class="card-kicker">Robotics · 7-DOF arm</p>
+          <h3>Manipulation SIL — no training data</h3>
+          <p>Standard targets threaded 11/11, impossible ones refused 4/4 with specific reasons, zero false successes across all runs. Fine-precision threading is a documented boundary, not a hidden one.</p>
+          <div class="card-foot">
+            <a class="btn btn--on-dark" href="https://docsend.com/view/qwr2vwvrpz565nuc" target="_blank" rel="noopener">View SIL methodology</a>
+            <p class="fine">Opens in DocSend · quick email registration</p>
+          </div>
+        </article>
+
+        <article class="card blueprint">
+          <p class="card-kicker">Education · Parlier, CA</p>
+          <h3>Live classroom pilot</h3>
+          <p>A +22 point student proficiency shift alongside 7–10 hours per week returned to the teacher. Student data never left the classroom. The testimonial is on record.</p>
+          <div class="card-foot">
+            <a class="btn btn--on-dark" href="https://docsend.com/view/khrkwr34z79zfryi" target="_blank" rel="noopener">Read the testimonial</a>
+            <p class="fine">Opens in DocSend</p>
+          </div>
+        </article>
+
+        <article class="card blueprint">
+          <p class="card-kicker">Medicine · NEJM</p>
+          <h3>Clinical diagnostics — local, private</h3>
+          <p>Seven consecutive New England Journal of Medicine diagnostic cases, answered on local hardware at roughly 27 seconds and 2 cents of compute per case. Each case is recorded.</p>
+          <div class="card-foot">
+            <a class="btn btn--on-dark" href="https://www.youtube.com/playlist?list=PLJNaCoDzaIu0" target="_blank" rel="noopener">Watch the cases</a>
+            <p class="fine">YouTube playlist</p>
+          </div>
+        </article>
+
+        <article class="card blueprint">
+          <p class="card-kicker">Navigation · Oakland</p>
+          <h3>Autonomous navigation — no learned policy</h3>
+          <p>5,490 live route nodes evaluated across Oakland road networks with zero LLM calls in the cognitive path. The full write-up is on the Ground page; raw data on request.</p>
+          <div class="card-foot">
+            <a class="btn btn--on-dark" href="../products/ground.html">Read the Ground results</a>
+            <p class="fine"><a href="mailto:ir@myasolutions.org?subject=Navigation%20SIL%20%E2%80%94%20raw%20data%20request">Request raw data</a></p>
+          </div>
+        </article>
+
+      </div>
+      <p class="fine mt-2">Defense: the five validation runs are published on the <a href="../products/defense.html#proof">Jean for Defense</a> page, with the full methodology in the cybersecurity report above.</p>
+    </div>
+  </section>
+
+  <!-- Repo -->
+  <section class="band" id="repo">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <p class="eyebrow">Verify anything</p>
+        <h2 class="title">The repository is public. <span class="em">Run every test yourself.</span></h2>
+        <p class="body">The BETHANY evaluation suite, methodology and SIL environment are open-source and reproducible — clone it and run the red-team emulation on your own machine. 8,906 tests, every one of them yours to run.</p>
+        <a class="link-arrow mt-1" href="https://github.com/AyindeRudolph/bethany-sil" target="_blank" rel="noopener">Open the repository</a>
+      </div>
+      <pre class="terminal"><span class="prompt">$ </span>git clone https://github.com/AyindeRudolph/bethany-sil
+<span class="prompt">$ </span>cd bethany-sil
+<span class="prompt">$ </span>cargo test
+<span class="prompt">$ </span>cargo test --test sil_run</pre>
+    </div>
+  </section>
+
+  <!-- Two doors -->
+  <section class="band band--mid">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Go further</p>
+        <h2 class="title">Ask for the raw data, <span class="em">or watch it work.</span></h2>
+      </div>
+      <div class="two-door">
+        <div class="card blueprint">
+          <p class="card-kicker">Independent verification</p>
+          <h3>JSON trial reports and benchmark outputs.</h3>
+          <p>Tell us which domain and what you want to check. We send the raw data, not a summary of it.</p>
+          <a class="btn btn--primary" href="mailto:ir@myasolutions.org?subject=Raw%20data%20request%20%E2%80%94%20%5Bdomain%5D">Request raw data</a>
+          <p class="fine">Sends to ir@myasolutions.org · we respond personally</p>
+        </div>
+        <div class="card blueprint">
+          <p class="card-kicker">The film</p>
+          <h3>Become a Believer.</h3>
+          <p>See what's possible. The film is almost ready.</p>
+          <a class="btn btn--line" href="become-a-believer.html">Go to the film</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div data-site-footer></div>
+</body>
+</html>

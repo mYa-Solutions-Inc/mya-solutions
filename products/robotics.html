@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jean for Robotics — mYa Solutions</title>
+<meta name="description" content="Jean controls a 7-DOF robotic arm without training data — deterministic reasoning, not a learned policy. 11/11 standard threading, 4/4 impossible tasks refused, zero false successes.">
+<link rel="canonical" href="https://myasolutions.org/products/robotics.html">
+<meta property="og:title" content="Jean for Robotics — Physical intelligence. No training required.">
+<meta property="og:description" content="11/11 standard threading, 4/4 impossible tasks refused with reasons, zero false successes — no training data.">
+<meta property="og:image" content="https://myasolutions.org/media/plates/robotics-1600.jpg">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/blocks.css">
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body data-group="Products" data-back="products/physical.html" data-back-label="Physical">
+<div data-site-header></div>
+<main id="main">
+
+  <!-- B02 Hero -->
+  <section class="hero hero--interior">
+    <p class="eyebrow">Jean for Robotics</p>
+    <h1 class="display">Physical intelligence.<br><span class="em">No training required.</span></h1>
+    <p class="lede">Jean controls a 7-DOF robotic arm using <strong>deterministic reasoning</strong> — not a learned policy, not a neural network trained on millions of examples. The same engine that handles education and cybersecurity handles a physical arm in the real world.</p>
+    <div class="actions">
+      <a class="btn btn--primary" href="#proof">See the results ↓</a>
+      <a class="btn btn--line" href="#get-in-touch">Start a conversation</a>
+    </div>
+    <div class="stem" aria-hidden="true"></div>
+  </section>
+
+  <div class="plate-wrap">
+    <figure class="plate blueprint duotone"><img src="../media/plates/robotics-1600.jpg" alt="A jointed robotic hand reaching forward against a deep blue field." style="object-position:40% 50%" fetchpriority="high"></figure>
+    <div class="plate-cap"><span>Robotics · The 7-DOF arm</span><span>Software-in-the-Loop · ROS 2 · MoveIt 2 · Gazebo</span></div>
+  </div>
+
+  <!-- The claim -->
+  <section class="band" id="claim">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The claim</p>
+        <h2 class="title">Jean's architecture is <span class="em">substrate-invariant.</span></h2>
+        <p class="lede">One deterministic reasoning engine generalizes across domains without being rebuilt for each. This SIL tests that claim in the substrate where Jean has the least prior advantage — physical manipulation.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">11/11</div><div class="stat-l">Standard threaded tasks completed — eye-scaled tolerance in 3D space</div></div>
+        <div class="stat"><div class="stat-n">4/4</div><div class="stat-l">Impossible tasks refused — with specific reasons given each time</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">False successes — Jean never reported a success it did not physically earn</div></div>
+        <div class="stat"><div class="stat-n">&lt;1mm</div><div class="stat-l">Typical landing accuracy on standard target threading</div></div>
+      </div>
+      <blockquote class="pull mt-3" style="max-width:62ch">"The result that survives a hostile reader is the only result worth showing. Jean's reasoning ran inside the loop — placement, perception, kinematics, and physics were provided by the simulation environment. None of it was authored by Jean."</blockquote>
+    </div>
+  </section>
+
+  <!-- Why this matters -->
+  <section class="band band--mid" id="meaning">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why this matters</p>
+        <h2 class="title">Two results that tell <span class="em">the whole story.</span></h2>
+      </div>
+      <div class="grid grid--2">
+        <div class="card blueprint">
+          <h3>Refusing impossible tasks is as important as completing possible ones</h3>
+          <p>Four tasks were designed to be physically impossible — targets out of reach, eyes too small for the gripper. Jean refused all four, <strong>with specific reasons each time</strong>.</p>
+          <p>A system that claims success on impossible tasks is dangerous. The integrity of any physical AI system depends on its ability to recognize and name its own limits. Jean does this — and it does it without being told in advance which tasks are impossible.</p>
+        </div>
+        <div class="card blueprint">
+          <h3>Zero false successes is the integrity guarantee</h3>
+          <p>Across all runs, Jean never reported a success it did not physically earn. No optimistic reporting, no partial completion counted as full success, no ambiguous result called a win.</p>
+          <p>In physical systems — industrial automation, surgical assistance, defense applications — <strong>a false success can cause real harm</strong>. The zero false success record is not a nice-to-have. It is the precondition for deployment in any high-stakes environment.</p>
+        </div>
+      </div>
+      <div class="split mt-3" style="align-items:start">
+        <h3 class="title-sm">How Jean reasons about physical space</h3>
+        <div>
+          <p class="body">Jean's reasoning ran <strong>inside</strong> the control loop. Placement decisions, perception of the workspace, inverse kinematics selection, and rigid-body physics were provided by the simulation stack (ROS 2, MoveIt 2, Gazebo). Jean supplied the reasoning layer — deciding which grasp to attempt, how to adjust for precision, and when to refuse.</p>
+          <p class="body">This is not a robotic arm trained on robot demonstrations. <strong>There is no training data. No learned policy. No neural network.</strong> The same deterministic reasoning engine that decides whether a student's lesson plan is complete decides whether a gripper approach is viable. Substrate changes. Engine doesn't.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How -->
+  <section class="band" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How Jean controls the arm</p>
+        <h2 class="title">Three decisions. <span class="em">All deterministic.</span></h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card blueprint"><div class="card-num">01</div><h3>Grasp selection</h3><p>Jean evaluates the target — geometry, accessibility, tolerance — and selects a grasp approach. <strong>Deterministic scoring, not probability sampling.</strong> Jean can explain why it chose the approach it did.</p></div>
+        <div class="card blueprint"><div class="card-num">02</div><h3>Precision adjustment</h3><p>Jean adjusts for the gap between the planned approach and the physical constraints of the target. <strong>On standard tolerance, this runs at sub-1mm accuracy.</strong> On fine tolerance, the current boundary is named below.</p></div>
+        <div class="card blueprint"><div class="card-num">03</div><h3>Refusal with reason</h3><p>When a task is physically impossible, Jean refuses — and names the reason. Out of reach. Eye too small. Gripper clearance insufficient. <strong>The system knows what it doesn't know.</strong></p></div>
+      </div>
+      <div class="card blueprint mt-3" style="border-color:var(--color-accent-400);background:var(--color-accent-100);padding:40px 38px">
+        <p class="card-kicker">The honest boundary — named, diagnosed, fix specified</p>
+        <h3>Fine-precision threading (0.4mm eye) is not yet achieved.</h3>
+        <p>On fine-tolerance trials, Jean's <strong>reasoning was correct every time</strong> — the grasp selection and precision adjustment decisions were right. The arm missed because a goal-pose correction was expressed in a link frame that rotates under the alternate IK configuration MoveIt selects for the fine pose.</p>
+        <p>This is a <strong>diagnosed motion-planning limitation, not a reasoning failure.</strong> The fix is specified: closed-loop visual servoing (perceive → correct → retry) eliminates the dependency on the static goal-pose expression. That is the next build milestone.</p>
+        <p>We report this boundary explicitly because <strong>the result that survives a hostile reader is the only result worth showing.</strong> A system that hides its limits cannot be trusted with its successes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- B17 The receipts, on steel -->
+  <section class="band band--steel" id="proof">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The receipts</p>
+        <h2 class="title">Every trial documented. <span class="em">Raw data available.</span></h2>
+        <p class="lede">This is a Software-in-the-Loop test — ROS 2, MoveIt 2, Gazebo on an AWS x86 instance. No physical hardware. All results posted publicly. Full methodology and raw JSON available on request.</p>
+      </div>
+      <h3 class="title-sm">Per-trial results — standard target (1.2mm eye)</h3>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>Target type</th><th>Result</th><th>Landing accuracy</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr class="is-hero"><td>Standard (1.2mm eye)</td><td>✓ Threaded</td><td>0.4–1.3mm</td><td>11/11 across all runs</td></tr>
+          <tr><td>Impossible — out of reach</td><td>✗ Refused</td><td>—</td><td>Specific reason given</td></tr>
+          <tr><td>Impossible — eye too small</td><td>✗ Refused</td><td>—</td><td>Specific reason given</td></tr>
+          <tr><td>Fine (0.4mm eye)</td><td>⚠ Boundary</td><td>Reasoning correct</td><td>Motion-planning limit — fix specified</td></tr>
+        </tbody>
+      </table></div>
+      <div class="actions mt-2">
+        <a class="btn btn--on-dark" href="https://docsend.com/view/qwr2vwvrpz565nuc" target="_blank" rel="noopener">View SIL methodology →</a>
+      </div>
+      <div class="stats mt-3">
+        <div class="stat"><div class="stat-n">11/11</div><div class="stat-l">Standard tolerance threading — all runs, all trials</div></div>
+        <div class="stat"><div class="stat-n">4/4</div><div class="stat-l">Impossible tasks refused with specific reasons</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">False successes across all runs — integrity guaranteed</div></div>
+        <div class="stat"><div class="stat-n">0</div><div class="stat-l">Training examples used — pure deterministic reasoning</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- One engine, many substrates -->
+  <section class="band band--mid" id="substrate">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">One engine, many substrates</p>
+        <h2 class="title">Robotics is one proof. <span class="em">The same engine runs everywhere.</span></h2>
+        <p class="lede">The robotics SIL is corroborating evidence for substrate invariance — the architectural property that one reasoning engine generalizes across physical domains without being rebuilt. Here's the full picture.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card blueprint" style="border-color:var(--color-accent-400)"><h3>Robotics</h3><p>7-DOF arm · 11/11 standard threading · 0 false successes · This SIL</p></div>
+        <div class="card blueprint"><h3>Medicine</h3><p>7/7 NEJM cases · 27s · 2¢ compute · No training data</p></div>
+        <div class="card blueprint"><h3>Cybersecurity</h3><p>92.3% APT block · 0 false positives · 1,700+ assessments</p></div>
+        <div class="card blueprint"><h3>Navigation</h3><p>5,490 Oakland nodes · 0 LLM calls · Live route evaluation</p></div>
+        <div class="card blueprint"><h3>Education</h3><p>+22pt proficiency · 7–10hrs returned · Live classroom pilot</p></div>
+        <div class="card blueprint"><h3>Next frontier</h3><p>Closed-loop visual servoing · Fine-precision threading · Physical dexterity</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who -->
+  <section class="band" id="who">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Who this is for</p>
+        <h2 class="title">Built for the people who know <span class="em">what zero false successes means.</span></h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="card blueprint"><p class="card-kicker">Robotics Engineers</p><h3>No training pipeline required</h3><p>Jean reasons about physical space without demonstration data. If your deployment environment makes training data expensive or impossible to collect, Jean's deterministic approach is a different category of solution.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Defense &amp; Industrial</p><h3>Integrity before capability</h3><p>Zero false successes and named refusals mean Jean can be trusted in high-stakes physical environments. A system that knows its limits and names them is safer than one that optimistically reports success.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Researchers</p><h3>Full methodology published</h3><p>The SIL methodology, per-trial results, honest boundary conditions, and raw JSON are all available. We built this to survive a hostile reader — and we welcome one.</p></div>
+        <div class="card blueprint"><p class="card-kicker">Investors</p><h3>Physical AI without the training moat</h3><p>The dominant assumption in physical AI is that you need massive demonstration datasets. Jean challenges that assumption with a live result. The substrate-invariant architecture means every new physical domain costs less than the last.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B12 Two-door CTA -->
+  <section class="band band--mid band--rule" id="get-in-touch">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 class="title">The methodology is published. <span class="em">The raw data is available.</span></h2>
+        <p class="lede">We built this to survive scrutiny. If you want to verify the results independently, request the raw JSON trial data. If you want to talk about what comes next — closed-loop visual servoing, fine-precision dexterity, physical deployment — write to us.</p>
+      </div>
+      <div class="two-door">
+        <div class="card blueprint">
+          <p class="card-kicker">The SIL methodology</p>
+          <h3>Every trial documented.</h3>
+          <p>Full methodology and raw JSON available on request.</p>
+          <a class="btn btn--primary" href="https://docsend.com/view/qwr2vwvrpz565nuc" target="_blank" rel="noopener">View SIL methodology →</a>
+        </div>
+        <div class="card blueprint">
+          <p class="card-kicker">Write to us directly</p>
+          <p>Tell us what you're building and where Jean's physical reasoning capability fits. We respond personally — <strong>no sales process, no auto-responder.</strong> If there's a fit, we'll know quickly.</p>
+          <a class="btn btn--line" href="mailto:contactus@myasolutions.org?subject=Jean%20for%20Robotics%20%E2%80%94%20inquiry&amp;body=Hi%20Ayinde%2C%0D%0A%0D%0AI%20came%20across%20Jean%20for%20Robotics%20and%20wanted%20to%20start%20a%20conversation.%0D%0A%0D%0AWhat%20we're%20building%3A%20%5Byour%20project%20%2F%20application%5D%0D%0AWhat%20drew%20us%20to%20Jean%3A%20%5Bwhat%20resonated%5D%0D%0AQuestions%3A%20%5Banything%20the%20page%20didn't%20answer%5D%0D%0A%0D%0AThank%20you.">Write to us →</a>
+          <p class="fine">contactus@myasolutions.org · raw JSON data available on request · we respond personally</p>
+        </div>
+      </div>
+      <nav class="plate-cap mt-3" aria-label="Physical domains" style="border-top:1px solid var(--color-divider);padding-top:18px;font-size:12.5px">
+        <a href="air.html">← Air</a>
+        <a href="physical.html">All domains</a>
+        <a href="marine.html">Marine →</a>
+      </nav>
+    </div>
+  </section>
+  <div class="bridge">
+    <p>Evaluating the robotics vertical as an investment? The full architecture briefing, substrate-invariance evidence, and five-domain proof stack are on the investor page.</p>
+    <a class="btn btn--line" href="../investor.html" style="white-space:nowrap;flex:none">Investor briefing →</a>
+  </div>
+
+</main>
+<div data-site-footer></div>
+</body>
+</html>
