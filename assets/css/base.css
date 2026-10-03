@@ -261,3 +261,8 @@ main:focus { outline: none; }
 /* Jean's highlight: the answer lights up, the rest steps back */
 .jean-focus { position: relative; z-index: 1; border-radius: var(--radius-card); box-shadow: 0 0 0 2px var(--sea), 0 0 70px 8px var(--halo) !important; transition: box-shadow 0.9s ease; scroll-margin-top: 6rem; }
 .jean-dim { opacity: 0.45; transition: opacity 0.9s ease; }
+
+/* Ask bar focus: ring the whole pill, not the text box inside it */
+.jean-bar input:focus, .jean-bar input:focus-visible { outline: none; }
+.jean-bar--glass:focus-within { box-shadow: inset 0 0 0 1px oklch(98% 0.008 85 / 0.3), 0 0 0 2px var(--sea); }
+.jean-bar--page:focus-within { box-shadow: 0 0 0 2px var(--sea), 0 20px 40px -28px var(--shadow); }
